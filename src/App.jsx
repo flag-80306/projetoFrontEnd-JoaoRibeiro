@@ -10,10 +10,8 @@ function App() {
 				</div>
 			</div>
 			<div className='homeImageTitle'>
-				<div>
-					<img src='./img/slide_2.jpg' alt='' />
-				</div>
-				<h1>image project - The Travel Blog</h1>
+				<img src='../img/slide_2.JPG' alt='' />
+				<h1>The Travel Blog</h1>
 			</div>
 			<div className='secondTitle'>Latest</div>
 			<div className='cardContainer'>
