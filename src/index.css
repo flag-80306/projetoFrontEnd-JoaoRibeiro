@@ -1,20 +1,5 @@
 body {
-	background-color: rgb(23, 48, 23);
-}
-.navBar {
-	border: solid 1px black;
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	padding: 5px 10px 5px;
-	margin: 10px;
-	background-color: rgb(185, 185, 11);
-	color: white;
-	font-size: 24px;
-	font-weight: bold;
-}
-.navBar > img {
-	display: block;
+	background-color: rgb(19, 119, 177);
 }
 
 .homeImageTitle {
@@ -26,37 +11,49 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	opacity: 0.5;
 }
-.homeImageTitle > h1 {
+.homePageTitle {
 	position: absolute;
-	top: 55%;
-	left: 75%;
-	transform: translate(50%, 50%);
+	object-fit: cover;
+
 	color: white;
 	font-size: 32px;
 	font-weight: bold;
+	top: 60%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 250px;
 }
 .secondTitle {
 	border-top: solid 3px rgb(255, 255, 255);
-	width: 500px;
+	width: 50%;
 	height: 30px;
-	padding: 30px;
-	font-size: 32px;
-	font-weight: bold;
-	margin: 0 auto;
-	display: block;
+	margin: 20px auto;
+}
+.secondTitle > h2 {
+	margin: 0px;
+	padding: 05px;
 	color: white;
+	font-size: 32px;
+	text-align: center;
 }
 .cardContainer {
+	margin: 50px;
 	display: flex;
 	flex-wrap: wrap;
 }
 .card {
 	border: solid 3px blue;
-	width: 240px;
+	border-radius: 25px;
+	background-color: aquamarine;
+	width: 220px;
 	margin: 0 auto;
 }
 .card > img {
+	border-radius: 20px;
+	padding-top: 10px;
 	display: block;
 	margin: 0 auto;
 }
@@ -67,6 +64,15 @@ p {
 }
 
 .mapArea {
+	color: white;
+	font-size: 24px;
+	display: block;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mapArea > img {
 	display: block;
 	margin: 0 auto;
 }

@@ -1,19 +1,13 @@
 function App() {
 	return (
 		<>
-			<div className='navBar'>
-				<div>
-					<img src='./img/logo.png' alt='' />
-				</div>
-				<div>
-					<nav>Navigation Bar</nav>
-				</div>
-			</div>
 			<div className='homeImageTitle'>
 				<img src='../img/slide_2.JPG' alt='' />
-				<h1>The Travel Blog</h1>
+				<div className='homePageTitle'>The Travel Blog</div>
 			</div>
-			<div className='secondTitle'>Latest</div>
+			<div className='secondTitle'>
+				<h2>Latest</h2>
+			</div>
 			<div className='cardContainer'>
 				<div className='card'>
 					<img src='https://picsum.photos/id/237/200' alt='arroz' />
@@ -42,7 +36,7 @@ function App() {
 				</div>
 			</div>
 			<div className='mapArea'>
-				<p>mapa</p>
+				<p>Mapa</p>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='imagem de mapa' />
 			</div>
 		</>
