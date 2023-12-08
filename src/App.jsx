@@ -43,7 +43,7 @@ function App() {
 						<img src='https://picsum.photos/id/237/200' alt='arroz' className='cardImage' />
 						<div className='cardText'>
 							<h3>Amarante</h3>
-							<p>(icon) 13/10/2020</p>
+							<p>(icon) 31/10/1985</p>
 						</div>
 					</a>
 				</div>
