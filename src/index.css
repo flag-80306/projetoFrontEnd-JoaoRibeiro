@@ -1,9 +1,8 @@
 body {
 	background-color: rgb(19, 119, 177);
 }
-
 .homeImageTitle {
-	border: solid 3px black;
+	border: solid 10px black;
 	margin: 10px;
 	height: 400px;
 }
@@ -16,15 +15,27 @@ body {
 .homePageTitle {
 	position: absolute;
 	object-fit: cover;
-
+	/* border: solid 5px orange; */
 	color: white;
 	font-size: 32px;
 	font-weight: bold;
-	top: 60%;
-	left: 15%;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	width: 250px;
+
+	margin: -50px auto;
+}
+.homePageTitle > h1 {
+	margin-block-start: unset;
+	margin-block-end: unset;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+.homePageTitle > h1 > span {
+	display: flex;
+	flex-wrap: flex;
+	align-items: center;
 }
 .secondTitle {
 	border-top: solid 3px rgb(255, 255, 255);
@@ -45,20 +56,20 @@ body {
 	flex-wrap: wrap;
 }
 .card {
-	border: solid 3px blue;
+	border: solid 4px rgb(255, 0, 200);
 	border-radius: 25px;
 	background-color: aquamarine;
 	width: 220px;
 	margin: 0 auto;
 }
-.card > img {
+.cardImage {
 	border-radius: 20px;
 	padding-top: 10px;
 	display: block;
 	margin: 0 auto;
 }
 
-.card > h3,
+.cardText > h3,
 p {
 	padding: 0px 20px;
 }
@@ -75,4 +86,71 @@ p {
 .mapArea > img {
 	display: block;
 	margin: 0 auto;
+}
+
+.navBar {
+	border: solid 1px black;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px 5px;
+	margin: 10px;
+	background-color: rgb(185, 185, 11);
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+.navBar > img {
+	display: block;
+}
+.headerMenu {
+	display: flex;
+	flex-wrap: wrap;
+	/* border: solid 5px brown; */
+	justify-content: space-between;
+	width: 100%;
+}
+
+.headerMenuLogo {
+	/* border: solid 2px rgb(0, 255, 42); */
+	height: 100%;
+}
+.logoHome {
+	display: block;
+}
+.headerMenuOptions {
+	/* border: solid 2px blue; */
+	width: 50%;
+	height: 100%;
+	align-content: center;
+}
+.headerMenuOptions > ul {
+	margin-block-start: unset;
+	padding-inline-start: unset;
+	margin-block-end: unset;
+}
+.mainMenu {
+	/* border: solid 2px red; */
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px 0px 15px 0px;
+}
+
+.footerContainer {
+	background-color: rgb(56, 56, 56);
+	margin: 10px 0px 20px -10px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+.footerCard {
+	border: solid 3px rgb(255, 0, 119);
+	border-radius: 25px;
+	background-color: rgb(127, 172, 255);
+	width: 300px;
+	margin: 10px;
+	padding: 5px;
 }

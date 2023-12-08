@@ -2,19 +2,26 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/favicon" href="/projetoFrontEnd-JoaoRibeiro/public/logo.ico" />
+		<link rel="icon" type="image/favicon" href="/projetoFrontEnd-JoaoRibeiro/public/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Joao Ribeiro - FrontEnd Project</title>
-		<link href="./indexCSS.css" rel="stylesheet" />
+		<link href="/projetoFrontEnd-JoaoRibeiro/index.css" rel="stylesheet" />
 	</head>
 	<header>
 		<div class="navBar">
-			<div>
-				<img src="./img/logo.png" alt="Logo Inside" />
-			</div>
-			<div>
-				<nav>Navigation Bar</nav>
-			</div>
+			<nav class="headerMenu">
+				<div class="headerMenuLogo">
+					<img src="./img/logo.png" alt="Logo Inside" class="logoHome" id="logoHome" />
+				</div>
+				<div class="headerMenuOptions">
+					<ul class="mainMenu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 	</header>
 	<body>
