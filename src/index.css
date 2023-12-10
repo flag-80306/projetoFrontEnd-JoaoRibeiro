@@ -5,6 +5,68 @@ body {
 	background-color: rgb(19, 119, 177);
 	margin: 0;
 }
+
+.navBar {
+	/* border: solid 0px rgb(185, 185, 11); */
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	/* padding: 5px 10px 5px; */
+	margin: 10px;
+	background-color: rgb(185, 185, 11);
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+/* .navBar > img {
+	display: block;
+} */
+.headerMenu {
+	display: flex;
+	flex-wrap: wrap;
+	/* border: solid 5px brown; */
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.headerMenuLogo {
+	/* border: solid 2px rgb(0, 255, 42); */
+	height: 100%;
+}
+.logoHome {
+	display: flex;
+	margin: auto auto;
+	height: 80%;
+	object-fit: cover;
+	padding: 5% 0px;
+}
+.headerMenuOptions {
+	/* border: solid 2px blue; */
+	height: 100%;
+	align-items: center;
+}
+.mainMenu > a > h3:hover,
+h3:hover {
+	background-color: rgb(19, 119, 177);
+}
+.mainMenu > a,
+h3 {
+	text-decoration: none;
+	color: white;
+	padding: 0px 10px;
+}
+.mainMenu {
+	/* border: solid 2px red; */
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px 10px 0px 0px;
+	height: 100%;
+	/* gap: 20px; */
+	align-content: center;
+}
 .homeImageTitle {
 	border: solid 10px black;
 	margin: 10px;
@@ -17,6 +79,7 @@ body {
 	opacity: 0.5;
 }
 .homePageTitle {
+	font-family: 'Satisfy', cursive;
 	position: absolute;
 	object-fit: cover;
 	/* border: solid 5px orange; */
@@ -27,7 +90,6 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-
 	margin: -50px auto;
 }
 .homePageTitle > h1 {
@@ -58,6 +120,7 @@ body {
 	margin: 50px;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 10px;
 }
 .card {
 	border: solid 4px rgb(255, 0, 200);
@@ -92,64 +155,15 @@ p {
 	margin: 0 auto;
 }
 
-.navBar {
-	border: solid 1px black;
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	padding: 5px 10px 5px;
-	margin: 10px;
-	background-color: rgb(185, 185, 11);
-	color: white;
-	font-size: 24px;
-	font-weight: bold;
-}
-.navBar > img {
-	display: block;
-}
-.headerMenu {
-	display: flex;
-	flex-wrap: wrap;
-	/* border: solid 5px brown; */
-	justify-content: space-between;
-	width: 100%;
-}
-
-.headerMenuLogo {
-	/* border: solid 2px rgb(0, 255, 42); */
-	height: 100%;
-}
-.logoHome {
-	display: block;
-}
-.headerMenuOptions {
-	/* border: solid 2px blue; */
-	width: 50%;
-	height: 100%;
-	align-content: center;
-}
-.headerMenuOptions > ul {
-	margin-block-start: unset;
-	padding-inline-start: unset;
-	margin-block-end: unset;
-}
-.mainMenu {
-	/* border: solid 2px red; */
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 15px 0px 15px 0px;
-}
-
 .footerContainer {
 	background-color: rgb(56, 56, 56);
-	margin: 10px 0px 20px -10px;
+	/* margin: 10px; */
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	/* width: 100%; */
 	justify-content: space-around;
 }
+
 .footerCard {
 	border: solid 3px rgb(255, 0, 119);
 	border-radius: 25px;
@@ -157,4 +171,7 @@ p {
 	width: 300px;
 	margin: 10px;
 	padding: 5px;
+}
+.imgNotFound {
+	width: 500px;
 }

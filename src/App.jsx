@@ -1,12 +1,11 @@
+import NavBar from './NavBar.jsx';
+import FooterBar from './FooterBar.jsx';
+import TitleContainer from './components/TitleContainer.jsx';
 function App() {
 	return (
 		<>
-			<div className='homeImageTitle'>
-				<img src='../img/slide_2.JPG' alt='' />
-				<div className='homePageTitle'>
-					<h1>The Travel Blog</h1>
-				</div>
-			</div>
+			<NavBar />
+			<TitleContainer />
 			<div className='secondTitle'>
 				<h2>Latest</h2>
 			</div>
@@ -43,7 +42,7 @@ function App() {
 						<img src='https://picsum.photos/id/237/200' alt='arroz' className='cardImage' />
 						<div className='cardText'>
 							<h3>Amarante</h3>
-							<p>(icon) 31/10/1985</p>
+							<p>(icon) 13/10/2020</p>
 						</div>
 					</a>
 				</div>
@@ -60,6 +59,7 @@ function App() {
 			<div className='mapArea'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='imagem de mapa' />
 			</div>
+			<FooterBar />
 		</>
 	);
 }
