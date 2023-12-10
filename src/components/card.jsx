@@ -1,32 +1,17 @@
-import NavBar from '../NavBar.jsx';
-import FooterBar from '../FooterBar.jsx';
 function Card() {
 	return (
 		<>
-			<NavBar />
-			<div className='contactTitle'>
-				<div className='homeImageTitle'>
-					<div className='homePageTitle'>
-						<h1>titulo</h1>
-						<h3>
-							<datagrid>13-03-2020 </datagrid>
-						</h3>
-						<img src='/img/slide_4.JPG' alt='' />
-					</div>
-					<div>
-						<p>
-							mapa <img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
-						</p>
-						<section>
-							<p></p>
-							<img src='/img/slide_4.JPG' alt='tempo' />
-						</section>
-					</div>
+			<div className='card'>
+				<a href='/CardInfo'>
+					<img src='https://picsum.photos/id/237/200' alt='arroz' className='cardImage' />
+				</a>
+				<div className='cardText'>
+					<h3>Amarante</h3>
+					<p>(icon) 13/10/2020</p>
 				</div>
 			</div>
-			<FooterBar />
 		</>
 	);
 }
 
-export default ContactView;
+export default Card;
