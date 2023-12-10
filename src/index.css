@@ -46,22 +46,32 @@ body {
 	height: 100%;
 	align-items: center;
 }
-.mainMenu > a > h3:hover,
+.mainMenu > h3:hover,
 h3:hover {
 	background-color: rgb(19, 119, 177);
 }
-.mainMenu > a,
-h3 {
-	text-decoration: none;
-	color: white;
-	padding: 0px 10px;
-}
-.mainMenu {
-	/* border: solid 2px red; */
+.mainMenuList {
+	margin: 0px;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	align-content: center;
 	justify-content: space-around;
+	border: solid 5px purple;
+	height: 90%;
+	padding: 0px;
+	width: 550px;
+}
+.mainMenuList > li {
+	text-decoration: none;
+	color: white;
+	padding: 0px 10px;
+	border: solid 1px blue;
+	display: flex;
+	flex-wrap: wrap;
+}
+.mainMenu {
+	/* border: solid 2px red; */
 	padding: 0px 10px 0px 0px;
 	height: 100%;
 	/* gap: 20px; */

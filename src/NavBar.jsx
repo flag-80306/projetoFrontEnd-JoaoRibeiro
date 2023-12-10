@@ -17,25 +17,29 @@ function NavBar() {
 					</div>
 					<div className='headerMenuOptions'>
 						<div className='mainMenu'>
-							<a href='/'>
-								<h3>Home</h3>
-							</a>
-							{/* qual devo utilizar o 'a' ou 'link' */}
-							<Link href='/Experiences'>
-								<h3>Experiences</h3>
-							</Link>
-							<Link href='/AboutUs'>
-								<h3>About us</h3>
-							</Link>
-
-							<Link href='/Contact'>
-								<h3>Contact</h3>
-							</Link>
-
-							{/* <Link href='/NotFoundPage'>
-								<h3>Not Found Page</h3>
-								<h4>404!!!!</h4>
-							</Link> */}
+							<ul className='mainMenuList'>
+								<li>
+									<Link href='/'>
+										<h3>Home</h3>
+									</Link>
+								</li>
+								{/* qual devo utilizar o 'a' ou 'link' */}
+								<li>
+									<Link href='/Experiences'>
+										<h3>Experiences</h3>
+									</Link>
+								</li>
+								<li>
+									<Link href='/AboutUs'>
+										<h3>About us</h3>
+									</Link>
+								</li>
+								<li>
+									<Link href='/Contact'>
+										<h3>Contact</h3>
+									</Link>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</nav>
