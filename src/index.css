@@ -1,5 +1,9 @@
+* {
+	box-sizing: bordex-box;
+}
 body {
 	background-color: rgb(19, 119, 177);
+	margin: 0;
 }
 .homeImageTitle {
 	border: solid 10px black;
