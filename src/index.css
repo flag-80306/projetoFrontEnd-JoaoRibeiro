@@ -1,5 +1,6 @@
 * {
 	box-sizing: bordex-box;
+	font-family: 'Satisfy', cursive;
 }
 body {
 	background-color: rgb(19, 119, 177);
@@ -89,7 +90,7 @@ h3:hover {
 	opacity: 0.5;
 }
 .homePageTitle {
-	font-family: 'Satisfy', cursive;
+	/* font-family: 'Satisfy', cursive; */
 	position: absolute;
 	object-fit: cover;
 	/* border: solid 5px orange; */
@@ -184,4 +185,51 @@ p {
 }
 .imgNotFound {
 	width: 500px;
+}
+.contactContainer {
+	text-align: center;
+	margin: 0px;
+	/* font-family: 'Satisfy', cursive; */
+	font-size: 20px;
+}
+.contactContainer > h2 {
+	color: white;
+	font-size: 32px;
+	/* font-family: 'Satisfy', cursive; */
+}
+.contactForm {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+.emailPhoneContactForm {
+	border: solid 1px rgb(30, 255, 0);
+	gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.DateContactForm {
+	border: solid 1px rgb(255, 0, 34);
+	gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.textBoxContactForm {
+	border: solid 1px rgb(255, 0, 34);
+	gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.allBoxContact {
+	border-radius: 20px;
+	text-align: center;
+}
+.asideInfo {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-direction: column;
 }

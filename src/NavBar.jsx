@@ -12,7 +12,7 @@ function NavBar() {
 				<nav className='headerMenu'>
 					<div className='headerMenuLogo'>
 						<a href='./index.html'>
-							<img src='/img\logo.png' className='logoHome' id='logoHome' />
+							<img src='/img/logo.png' className='logoHome' id='logoHome' />
 						</a>
 					</div>
 					<div className='headerMenuOptions'>
@@ -43,26 +43,26 @@ function NavBar() {
 						</div>
 					</div>
 				</nav>
-				<Switch>
-					<Route path='/'>
-						<HomeView />
-					</Route>
-					<Route path='/Experiences'>
-						<ExperiencesView />
-					</Route>
-					<Route path='/AboutUs'>
-						<AboutUsView />
-					</Route>
-
-					<Route path='/Contact'>
-						<ContactView />
-					</Route>
-
-					<Route path='/NotFoundPage'>
-						<NotFoundPageView />
-					</Route>
-				</Switch>
 			</div>
+			<Switch>
+				<Route path='/'>
+					<HomeView />
+				</Route>
+				<Route path='/Experiences'>
+					<ExperiencesView />
+				</Route>
+				<Route path='/AboutUs'>
+					<AboutUsView />
+				</Route>
+
+				<Route path='/Contact'>
+					<ContactView />
+				</Route>
+
+				<Route path=''>
+					<NotFoundPageView />
+				</Route>
+			</Switch>
 		</>
 	);
 }
