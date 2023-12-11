@@ -1,10 +1,7 @@
-import NavBar from '../NavBar.jsx';
-import FooterBar from '../FooterBar.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
 function ContactView() {
 	return (
 		<>
-			<NavBar />
 			<TitleContainer />
 			<div className='contactContainer'>
 				<h2>We are here for you!!! </h2>
@@ -63,7 +60,6 @@ function ContactView() {
 					</div>
 				</div>
 			</div>
-			<FooterBar />
 		</>
 	);
 }

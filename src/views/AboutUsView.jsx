@@ -1,10 +1,7 @@
-import NavBar from '../NavBar.jsx';
-import FooterBar from '../FooterBar.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
 function AboutUsView() {
 	return (
 		<>
-			<NavBar />
 			<TitleContainer />
 			<div>
 				<h2 className=''>About Us</h2>
@@ -37,7 +34,6 @@ function AboutUsView() {
 					</div>
 				</div>
 			</div>
-			<FooterBar />
 		</>
 	);
 }
