@@ -9,10 +9,10 @@ import CardInfo from './components/CardInfo.jsx';
 import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		{/* <App /> */}
+		<App />
 		{/* <NotFoundPageView /> */}
 		{/* <AboutUsView /> */}
 		{/* <ContactView /> */}
-		<CardInfo />
+		{/* <CardInfo /> */}
 	</React.StrictMode>,
 );
