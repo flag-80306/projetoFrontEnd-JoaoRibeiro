@@ -1,12 +1,12 @@
-import NavBar from './NavBar.jsx';
+import NavBar from './components/NavBar.jsx';
 import { Route, Switch } from 'wouter';
-import FooterBar from './FooterBar.jsx';
-import TitleContainer from './components/TitleContainer.jsx';
+import FooterBar from './components/FooterBar.jsx';
 import AboutUsView from './views/AboutUsView.jsx';
 import ContactView from './views/ContactView.jsx';
 import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
+import CardInfo from './components/CardInfo.jsx';
 function App() {
 	return (
 		<>
@@ -26,6 +26,9 @@ function App() {
 				</Route>
 				<Route path='*'>
 					<NotFoundPageView />
+				</Route>
+				<Route path='/CardInfo'>
+					<CardInfo />
 				</Route>
 			</Switch>
 

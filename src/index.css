@@ -56,7 +56,8 @@ body {
 /*----------------------MainMenu---------------*/
 .mainMenu > h3:hover,
 h3:hover {
-	background-color: rgb(19, 119, 177);
+	/* background-color: rgb(19, 119, 177); */
+	cursor: pointer;
 }
 .mainMenuList {
 	margin: 0px;
@@ -65,7 +66,7 @@ h3:hover {
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: space-around;
-	border: solid 5px purple;
+	/* border: solid 5px purple; */
 	height: 90%;
 	padding: 0px;
 	width: 550px;
@@ -74,7 +75,7 @@ h3:hover {
 	text-decoration: none;
 	color: white;
 	padding: 0px 10px;
-	border: solid 1px blue;
+	/* border: solid 1px blue; */
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -132,7 +133,7 @@ h3:hover {
 	border-top: solid 3px rgb(255, 255, 255);
 	width: 50%;
 	height: 30px;
-	margin: 20px auto;
+	margin: 30px auto;
 }
 .secondTitle > h2 {
 	margin: 0px;
@@ -141,27 +142,43 @@ h3:hover {
 	font-size: 32px;
 	text-align: center;
 }
-.cardContainer {
-	margin: 50px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
+.secondTitle > p {
+	margin-top: 0px;
+	padding: 05px;
+	color: white;
+	font-size: 24px;
+	text-align: center;
 }
 /*-------------------------------------*/
 
 /*----------------------Card---------------*/
+.cardContainer {
+	margin: 80px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-evenly;
+}
+
 .card {
 	border: solid 4px rgb(255, 0, 200);
 	border-radius: 25px;
 	background-color: aquamarine;
-	width: 220px;
+	width: 300px;
+	height: 400px;
 	margin: 0 auto;
+	gap: 40px;
 }
-.cardImage {
+.card > img {
 	border-radius: 20px;
-	padding-top: 10px;
+	padding-top: 15px;
 	display: block;
 	margin: 0 auto;
+	object-fit: cover;
+	width: 80%;
+	height: 70%;
+	border-radius: 10px;
+	object-position: 70%;
 }
 
 .cardText > h3,
@@ -191,7 +208,8 @@ p {
 
 .footerContainer {
 	background-color: rgb(56, 56, 56);
-	/* margin: 10px; */
+	margin: 10px;
+	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	/* width: 100%; */
@@ -205,12 +223,10 @@ p {
 	width: 300px;
 	margin: 10px;
 	padding: 5px;
+	text-align: center;
 }
 
 /*-------------------------------------*/
-.imgNotFound {
-	width: 500px;
-}
 
 /*----------------------contact---------------*/
 .contactContainer {
@@ -218,33 +234,49 @@ p {
 	margin: 0px;
 	/* font-family: 'Satisfy', cursive; */
 	font-size: 20px;
+	width: 70%;
 }
 .contactContainer > h2 {
 	color: white;
 	font-size: 32px;
 	/* font-family: 'Satisfy', cursive; */
 }
+.contactFormContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: 0px 10px 30px;
+}
+.asideInfo {
+	background-color: #f2f2f2;
+	width: 30%;
+	font-size: 24px;
+	box-sizing: border-box;
+	text-align: center;
+	/* border: solid 5px pink; */
+}
 .contactForm {
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
+	margin: 0px auto;
 }
 .emailPhoneContactForm {
-	border: solid 1px rgb(30, 255, 0);
+	/* border: solid 1px rgb(30, 255, 0); */
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .DateContactForm {
-	border: solid 1px rgb(255, 0, 34);
+	/* border: solid 1px rgb(255, 0, 34); */
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .textBoxContactForm {
-	border: solid 1px rgb(255, 0, 34);
+	/* border: solid 1px rgb(255, 0, 34); */
 	gap: 10px;
 	display: flex;
 	flex-wrap: wrap;
@@ -261,4 +293,18 @@ p {
 	flex-direction: column;
 }
 
+/*-------------------------------------*/
+/*----------------Button Send---------------------*/
+.sendButton {
+	/* border: solid 1px rgb(255, 0, 34); */
+	border-radius: 25px;
+	height: 40px;
+	width: 120px;
+	margin: 0px auto;
+}
+.sendButton:hover {
+	background-color: rgb(185, 180, 180);
+	font-size: 24px;
+	cursor: pointer;
+}
 /*-------------------------------------*/

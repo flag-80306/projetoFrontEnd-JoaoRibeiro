@@ -1,10 +1,8 @@
-import NavBar from '../NavBar.jsx';
-import FooterBar from '../FooterBar.jsx';
-import TitleContainer from '../components/TitleContainer.jsx';
+import TitleContainer from './TitleContainer.jsx';
+
 function CardInfo() {
 	return (
 		<>
-			<NavBar />
 			<TitleContainer />
 
 			<div className='CardTitle'>
@@ -24,12 +22,10 @@ function CardInfo() {
 						</p>
 					</div>
 					<div>
-						<img src='../img/joao.png' alt='tempo' />
+						<img src='../img/weather.png' alt='tempo' />
 					</div>
 				</section>
 			</div>
-
-			<FooterBar />
 		</>
 	);
 }
