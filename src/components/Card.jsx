@@ -5,11 +5,11 @@ function Card() {
 			<Link href='/CardInfo'>
 				<div className='cardContainer'>
 					<div className='card'>
-						<img src='../img/natureza_tour_adventure_jeep_800x533.png' />
 						<div className='cardText'>
-							<h3>Amarante</h3>
+							<h3>Inside Marão</h3>
+							<p>Duration: 3 hours</p>
 
-							<p>(icon) 13/10/2020</p>
+							<p>(icon) Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et at iusto aut sit.</p>
 						</div>
 					</div>
 				</div>

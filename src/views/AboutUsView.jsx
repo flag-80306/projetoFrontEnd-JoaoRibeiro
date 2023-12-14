@@ -1,10 +1,8 @@
-import TitleContainer from '../components/TitleContainer.jsx';
 function AboutUsView() {
 	return (
 		<>
-			<TitleContainer />
-			<div>
-				<h2 className=''>About Us</h2>
+			<div className='aboutUsContainer'>
+				<h2 className='AboutUsTitle'>About Us</h2>
 				<div>
 					<div>
 						<div>

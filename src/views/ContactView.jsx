@@ -2,7 +2,6 @@ import TitleContainer from '../components/TitleContainer.jsx';
 function ContactView() {
 	return (
 		<>
-			<TitleContainer />
 			<div className='contactFormContainer'>
 				<div className='contactContainer'>
 					<h2>We are here for you!!! </h2>
