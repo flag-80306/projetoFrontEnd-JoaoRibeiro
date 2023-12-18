@@ -1,14 +1,15 @@
-import TitleContainer from './TitleContainer.jsx';
+import Slider from './Slider.jsx';
+import { slides } from '../data/carouselData.json';
 
 function CardInfo() {
 	return (
 		<>
-			<TitleContainer />
-
-			<div className='CardTitle'>
+			<div className='cardTitle'>
 				<h1>titulo</h1>
 				<h4>13-03-2020</h4>
-				<img src='/img/slide_4.JPG' alt='' />
+				<Slider data={slides} />
+
+				{/* <img src='/img/natureza_tour_adventure_jeep_800x533.png' alt='' /> */}
 			</div>
 			<div>
 				<p>
@@ -22,7 +23,7 @@ function CardInfo() {
 						</p>
 					</div>
 					<div>
-						<img src='../img/weather.png' alt='tempo' />
+						<img src='/img/weather.png' alt='tempo' />
 					</div>
 				</section>
 			</div>
