@@ -30,7 +30,7 @@ function NavBar() {
 								</li>
 								<li>
 									<Link href='/Contact'>
-										<h3>Contact</h3>
+										<h3>Contact Us</h3>
 									</Link>
 								</li>
 							</ul>

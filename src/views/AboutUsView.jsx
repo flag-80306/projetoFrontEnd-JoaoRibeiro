@@ -2,14 +2,14 @@ function AboutUsView() {
 	return (
 		<>
 			<div className='aboutUsContainer'>
-				<h2 className='AboutUsTitle'>About Us</h2>
+				<h2 className='contactContainer AboutUsTitle'>About Us</h2>
 				<div>
 					<div>
 						<div>
-							<h3>Hello, my name is João Pedro! </h3>
+							<h2>Hello, my name is João Pedro! </h2>
 							<img src='/img/joao.png' alt='João Pedro' />
 						</div>
-						<p>
+						<p className='contactTextPage'>
 							The adventurous spirit and the passion for nature adventure were always present in my life. From my childhood to University, I participate in different adventure activities. I begin in
 							the field of sports playing football and I would switch this for some hiking in the nature or to practice Kayak in water lines. I finished my academic life and challenged myself to leave
 							Portugal to work in a cruise ship and that allowed me to travel all over the world and experience new experiences and improve my skills. I was flow rider monitor (surf simulator) and did
