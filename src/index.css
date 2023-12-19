@@ -12,7 +12,7 @@ body {
 /*----------------------NavBar---------------*/
 .navBar {
 	/* border: solid 0px rgb(185, 185, 11); */
-	height: 100px;
+	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -118,7 +118,7 @@ h3:hover {
 	align-items: center;
 }
 .homePageTitle > h1,
-h4 {
+h3 {
 	text-align: center;
 	/* color: #99a98f; */
 }
@@ -129,31 +129,78 @@ h4 {
 	border-top: solid 3px rgb(5, 102, 73);
 	width: 50%;
 	height: 30px;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 .secondTitle > h2 {
-	margin: 0px;
+	margin: 10px;
 	padding: 05px;
 	/* color: white; */
 	font-size: 32px;
 	text-align: center;
 }
 .secondTitle > p {
-	margin-top: 0px;
-	padding: 05px;
+	margin-top: 50px 0px 30px;
+	/* padding: 5px; */
 	/* color: white; */
-	font-size: 24px;
+	font-size: 32px;
 	text-align: center;
 }
 /*-------------------------------------*/
+/*----------------AboutUs---------------------*/
+.aboutUsTitle {
+	padding: 0px 0px 10px;
+	text-align: center;
+	border-bottom: solid 5px rgb(5, 102, 73);
+	width: 500px;
+	margin: 0px auto 30px;
+}
+.aboutUsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 20px;
+	/* border: solid 1px red; */
+	margin: 0px 10px;
+}
+.aboutTitle {
+	/* border: solid 3px rgb(5, 102, 73); */
+}
+.aboutTitle > img {
+	width: 400px;
+	border-radius: 50%;
+	padding: 10px;
+}
+.aboutTitle > p {
+	width: 900px;
+	font-size: 24px;
+	text-align: left;
+	padding: 20px 10px;
+}
+.companyContainer {
+	/* border: solid 5px blue; */
+	background-color: #dbcc95;
+}
+.companyContainer > h2 {
+	font-size: 28px;
+}
+.companyContainer > img {
+	width: 400px;
+}
+.companyContainer > p {
+	width: 600px;
+	font-size: 24px;
+	text-align: left;
+	padding: 20px 10px;
+}
 
 /*----------------------Card---------------*/
 .cardContainer {
-	margin: 50px 0px;
+	margin: 80px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 5px;
 	justify-content: space-evenly;
+	border: solid 0px rgb(214, 76, 34);
 }
 
 .card {
@@ -168,7 +215,7 @@ h4 {
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
 }
 
 .cardText {
@@ -178,7 +225,7 @@ h4 {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	transform: translateY(82%);
+	transform: translateY(83%);
 	transition: all 0.4s ease-in-out;
 	color: white;
 	backdrop-filter: blur(6px);
@@ -262,8 +309,8 @@ h4 {
 	margin: 0px 10px 30px;
 }
 .asideInfo {
-	background-color: #f2f2f2;
-	width: 30%;
+	background-color: #dbcc95;
+	width: 400px;
 	font-size: 24px;
 	box-sizing: border-box;
 	text-align: center;

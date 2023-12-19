@@ -9,7 +9,7 @@ function TitleContainer() {
 
 				<div className='homePageTitle'>
 					<h1>Amarante Experiences</h1>
-					<h4>Discover With Locals</h4>
+					<h3>Discover With Locals</h3>
 				</div>
 			</div>
 		</>
