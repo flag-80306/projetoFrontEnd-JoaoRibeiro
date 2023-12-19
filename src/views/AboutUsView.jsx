@@ -4,19 +4,6 @@ function AboutUsView() {
 			<div>
 				<h1 className='aboutUsTitle'>About Us</h1>
 				<div className='aboutUsContainer'>
-					<div className='aboutTitle'>
-						<h2>Hello, my name is João Pedro! </h2>
-						<img src='/img/joao.png' alt='João Pedro' />
-
-						<p className='c'>
-							The adventurous spirit and the passion for nature adventure were always present in my life. From my childhood to University, I participate in different adventure activities. I begin in
-							the field of sports playing football and I would switch this for some hiking in the nature or to practice Kayak in water lines. I finished my academic life and challenged myself to leave
-							Portugal to work in a cruise ship and that allowed me to travel all over the world and experience new experiences and improve my skills. I was flow rider monitor (surf simulator) and did
-							the training to be indoor skydiving instructor (indoor skydiving tunnel). Back to Portugal, I followed my passion and created Inside Experiences (together with Liliana Pereira) with
-							various activities for which I have been trained and have always maintained contact and passion over the years. Adventure yourselves and come to explore our experiences! Feel invited!
-						</p>
-					</div>
-
 					<div className='companyContainer'>
 						<h2>Amarante Experiences</h2>
 						<img src='/img/myLogo.png' alt='Amarante Experiences Logo' />
@@ -33,6 +20,18 @@ function AboutUsView() {
 							<br />
 							The leaf in our logo is a symbol of our passion for nature, fresh air and the feeling of freedom. <br />
 							<br />A symbol of the experience that will forever remain in your memory.
+						</p>
+					</div>
+					<div className='aboutTitle'>
+						<h2>Hello, my name is João Pedro! </h2>
+						<img src='/img/joao.png' alt='João Pedro' />
+
+						<p className='c'>
+							Certamente! Aqui está um resumo da apresentação: My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to
+							pursuits in nature such as hiking and kayaking. After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my
+							horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel).
+							Upon returning to Portugal, I co-founded Inside Experiences with Liliana Pereira, channeling our shared passion into a diverse range of activities. I invite you to join us in exploring
+							and immersing yourselves in our unique experiences!
 						</p>
 					</div>
 				</div>

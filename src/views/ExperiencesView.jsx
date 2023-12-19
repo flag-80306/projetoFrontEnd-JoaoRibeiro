@@ -3,7 +3,7 @@ import Card from '../components/Card.jsx';
 function ExperiencesView() {
 	return (
 		<>
-			{/* <TitleContainer /> */}
+			<TitleContainer />
 			<div className='secondTitle'>
 				<h2>Enjoy a Perfect Tour</h2>
 				<p>This list contains all the tours that we have. See here the best selling and best rated experiences. Take a look!</p>

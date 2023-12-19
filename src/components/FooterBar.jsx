@@ -15,7 +15,9 @@ function FooterBar() {
 					</div>
 
 					<div className='footerCard'>
-						<h3>Social Media</h3>
+						<a href='https://www.instagram.com/insideexperiences/' target='_blank'>
+							<h3>Social Media</h3>
+						</a>
 					</div>
 				</div>
 			</footer>

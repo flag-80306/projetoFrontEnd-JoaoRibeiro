@@ -6,7 +6,7 @@ function HomeView() {
 		<>
 			<TitleContainer />
 			<div className='secondTitle'>
-				{/* <h2>Enjoy a Perfect Tour</h2> */}
+				<h2>Top-notch Journey Experiences</h2>
 				<p>This list contains our best selling and best rated experiences. Take a look!</p>
 			</div>
 			<div className='cardContainer'>
