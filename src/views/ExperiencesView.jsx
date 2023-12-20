@@ -4,9 +4,12 @@ function ExperiencesView() {
 	return (
 		<>
 			<TitleContainer />
-			<div className='secondTitle'>
-				<h2>Enjoy a Perfect Tour</h2>
-				<p>This list contains all the tours that we have. See here the best selling and best rated experiences. Take a look!</p>
+			<div className='experiencesTitle'>
+				<h2>Premium Expedition Experiences</h2>
+				<p>
+					Explore our handpicked selection of top-rated and best-selling tours! Delve into a world of thrilling adventures and captivating experiences. Discover our most sought-after and highly
+					acclaimed offerings. Come, join us, and embark on unforgettable journeys that promise excitement and wonder!
+				</p>
 			</div>
 			<div className='cardContainer'>
 				<Card />

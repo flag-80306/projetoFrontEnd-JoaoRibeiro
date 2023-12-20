@@ -5,9 +5,10 @@
 	padding: 0px;
 }
 body {
-	/* background-color: #f4f2de; */
-	margin: 0;
+	background-color: #f4f2de;
+	margin: 0px 150px;
 	color: #4a6660;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
 }
 /*----------------------NavBar---------------*/
 .navBar {
@@ -15,13 +16,14 @@ body {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	position: relative;
+	/* position: relative; */
 	/* background-color: #a1ccd1; */
 	font-size: 24px;
 	font-weight: bold;
 	width: 100%;
 	color: #4a6660 !important;
 	background-color: transparent;
+	box-shadow: rgba(222, 184, 135, 0.767) 0px 03px 20px 0px;
 }
 /* .navBar > img {
 	display: block;
@@ -29,6 +31,11 @@ body {
 /*-------------------------------------*/
 
 /*----------------------Header---------------*/
+.topHeader {
+	background-color: #c3e2c2;
+	height: 30px;
+	object-fit: cover;
+}
 .headerMenu {
 	display: flex;
 	flex-wrap: wrap;
@@ -59,10 +66,12 @@ body {
 /*-------------------------------------*/
 
 /*----------------------MainMenu---------------*/
-.mainMenu > h3:hover,
-h3:hover {
+.mainMenuList > li > h3:hover {
 	/* background-color: rgb(19, 119, 177); */
 	cursor: pointer;
+	background-color: #c3e2c2;
+	padding: 10px 3px;
+	border-radius: 15px;
 }
 .mainMenuList {
 	margin: 0px;
@@ -124,23 +133,32 @@ h3 {
 /*----------------------HomeView---------------*/
 .secondTitle {
 	border-top: solid 3px rgb(5, 102, 73);
-	width: 50%;
+	width: 60%;
 	height: 30px;
-	margin: 20px auto;
+	margin: 20px auto 150px;
 }
-.secondTitle > h2 {
+.experiencesTitle {
+	border-top: solid 3px rgb(5, 102, 73);
+	width: 60%;
+	height: 30px;
+	margin: 20px auto 300px;
+}
+.secondTitle > h2,
+.experiencesTitle > h2 {
 	margin: 10px;
 	padding: 05px;
 	/* color: white; */
 	font-size: 32px;
 	text-align: center;
 }
-.secondTitle > p {
-	margin-top: 50px 0px 30px;
+.secondTitle > p,
+.experiencesTitle > p {
 	/* padding: 5px; */
 	/* color: white; */
 	font-size: 32px;
 	text-align: center;
+	width: 100%;
+	margin: 0px auto;
 }
 /*-------------------------------------*/
 /*----------------AboutUs---------------------*/
@@ -154,14 +172,15 @@ h3 {
 .aboutUsContainer {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	gap: 20px;
-	/* border: solid 1px red; */
-	margin: 0px 10px;
 }
 .aboutTitle {
 	/* border: solid 3px rgb(5, 102, 73); */
 	background-color: #dbcc95;
+	/* margin: 0px -20px 0px 0px; */
+	width: 34%;
+	min-width: 350px;
 }
 .aboutTitle > h2 {
 	margin: 20px;
@@ -174,44 +193,54 @@ h3 {
 	padding: 10px;
 }
 .aboutTitle > p {
-	width: 600px;
 	font-size: 24px;
 	text-align: left;
-	padding: 20px 10px;
+	padding: 20px 20px;
+	line-height: 1.5;
 }
 .companyContainer {
 	/* border: solid 5px blue; */
+	width: 60%;
 }
 .companyContainer > h2 {
 	font-size: 28px;
 	margin: 20px;
 }
 .companyContainer > img {
-	width: 400px;
+	width: 350px;
+	border-radius: 20%;
 }
 .companyContainer > p {
-	width: 900px;
 	font-size: 24px;
 	text-align: left;
-	padding: 20px 10px;
+	padding: 20px 20px;
+}
+
+.aboutUsContainer {
+	/* color: white; */
+	text-align: center;
+	/* border: solid 1px rgb(255, 0, 34); */
 }
 
 /*----------------------Card---------------*/
 .cardContainer {
-	margin: 80px 0px;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
+	margin: 0px 0px 50px;
 	justify-content: space-evenly;
-	border: solid 0px rgb(214, 76, 34);
+
+	row-gap: 50px;
+}
+.card:hover {
+	cursor: pointer;
 }
 
 .card {
 	border: solid 4px #e9b384;
 	border-radius: 15px;
 	background: url('../img/natureza_tour_adventure_jeep_800x533.png');
-	width: 300px;
-	height: 450px;
+	width: 250px;
+	height: 400px;
 	margin: 0 10px;
 	/* gap: 40px; */
 	background-position: center;
@@ -228,7 +257,7 @@ h3 {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	transform: translateY(83%);
+	transform: translateY(75%);
 	transition: all 0.4s ease-in-out;
 	color: white;
 	backdrop-filter: blur(6px);
@@ -236,12 +265,14 @@ h3 {
 .cardText > h3 {
 	font-size: 28px;
 	margin: 10px 0px 0px;
+	padding-bottom: 15px;
 }
 .cardText > p {
 	font-size: 18px;
+	padding-bottom: 10px;
 }
 .card:hover .cardText {
-	transform: translateY(40%);
+	transform: translateY(20%);
 }
 /*-------------------------------------*/
 
@@ -358,16 +389,6 @@ h3 {
 }
 
 /*-------------------------------------*/
-.aboutUsContainer {
-	/* color: white; */
-	text-align: center;
-	/* border: solid 1px rgb(255, 0, 34); */
-}
-.AboutUsTitle {
-	text-align: center;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
-}
 
 /*----------------Button Send---------------------*/
 .sendButton {

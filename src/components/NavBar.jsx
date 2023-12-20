@@ -3,6 +3,7 @@ import { Link } from 'wouter'; // npm i wouter
 function NavBar() {
 	return (
 		<>
+			<div className='topHeader'></div>
 			<div className='navBar'>
 				<nav className='headerMenu'>
 					<div className='headerMenuLogo'>
