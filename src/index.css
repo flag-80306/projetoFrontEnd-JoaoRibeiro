@@ -6,7 +6,7 @@
 }
 body {
 	background-color: #f4f2de;
-	margin: 0px 150px;
+	margin: 0px 10%;
 	color: #4a6660;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
 }
@@ -15,13 +15,13 @@ body {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-
+	padding: 8px 48px;
 	font-size: 24px;
 	font-weight: bold;
-	width: 100%;
+	/* width: 100%; */
 	color: #4a6660 !important;
-	background-color: transparent;
-	box-shadow: rgba(222, 184, 135, 0.767) 0px 03px 20px 0px;
+	/* background-color: transparent; */
+	box-shadow: rgba(182, 148, 106, 0.767) 0px 03px 20px 0px;
 }
 
 /*-------------------------------------*/
@@ -29,7 +29,7 @@ body {
 /*----------------------Header---------------*/
 .topHeader {
 	background-color: #c3e2c2;
-	height: 30px;
+	height: 32px;
 	object-fit: cover;
 }
 .headerMenu {
@@ -41,19 +41,56 @@ body {
 }
 
 .headerMenuLogo {
-	height: 90%;
+	height: 100%;
 }
 .logoHome {
-	display: flex;
-	margin: auto auto;
 	height: 80%;
-	object-fit: cover;
+	object-fit: fill;
 	padding: 5% 0px;
 }
 .headerMenuOptions {
 	height: 100%;
 	align-items: center;
 	color: #4a6660 !important;
+}
+/*------------responsive-------------------------*/
+.headerMenuMobile {
+	display: none;
+}
+.headerMenuMobile > button {
+	border-radius: 10px;
+	background-color: #c3e2c2;
+	border: solid 1px #c3e2c2;
+	width: 75px;
+	height: 75px;
+}
+.mobileMenu {
+	display: none;
+}
+.menuMobileIcon {
+	background-color: #c3e2c2;
+	width: 65px;
+	border-radius: 10px;
+	border: none;
+}
+@media screen and (max-width: 1199px) {
+	.mainMenu {
+		display: none;
+	}
+	.headerMenuMobile {
+		display: block;
+		cursor: pointer;
+	}
+	.mobileMenu {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 16px;
+	}
+	.mainMobileMenuList {
+		display: block;
+		padding-top: 20px;
+	}
 }
 
 /*-------------------------------------*/
@@ -485,4 +522,7 @@ h3 {
 /*-------------------------------------*/
 .marginBottom {
 	margin-bottom: 20px;
+}
+.open {
+	display: block;
 }
