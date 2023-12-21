@@ -6,7 +6,7 @@ function FooterBar() {
 			<footer>
 				<div className='footerContainer'>
 					<div className='footerCard'>
-						<h3>Need help?</h3>
+						<h3>©João Ribeiro 2024</h3>
 					</div>
 					<div className='footerCard'>
 						<Link href='/Contact'>

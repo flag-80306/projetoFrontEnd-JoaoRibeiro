@@ -13,7 +13,6 @@ function Card() {
 					</div>
 				</div>
 			</Link>
-			;
 		</>
 	);
 }

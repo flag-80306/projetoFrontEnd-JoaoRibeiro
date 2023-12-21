@@ -7,6 +7,7 @@ import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
 import CardInfo from './components/CardInfo.jsx';
+import BookNowView from './views/BookNowView.jsx';
 function App() {
 	return (
 		<>
@@ -29,6 +30,9 @@ function App() {
 				</Route>
 				<Route path='/CardInfo'>
 					<CardInfo />
+				</Route>
+				<Route path='/BookNow'>
+					<BookNowView />
 				</Route>
 			</Switch>
 

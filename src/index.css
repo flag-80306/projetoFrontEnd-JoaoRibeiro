@@ -12,12 +12,10 @@ body {
 }
 /*----------------------NavBar---------------*/
 .navBar {
-	/* border: solid 0px rgb(185, 185, 11); */
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	/* position: relative; */
-	/* background-color: #a1ccd1; */
+
 	font-size: 24px;
 	font-weight: bold;
 	width: 100%;
@@ -25,9 +23,7 @@ body {
 	background-color: transparent;
 	box-shadow: rgba(222, 184, 135, 0.767) 0px 03px 20px 0px;
 }
-/* .navBar > img {
-	display: block;
-} */
+
 /*-------------------------------------*/
 
 /*----------------------Header---------------*/
@@ -39,14 +35,12 @@ body {
 .headerMenu {
 	display: flex;
 	flex-wrap: wrap;
-	/* border: solid 5px brown; */
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
 
 .headerMenuLogo {
-	/* border: solid 2px rgb(0, 255, 42); */
 	height: 90%;
 }
 .logoHome {
@@ -57,7 +51,6 @@ body {
 	padding: 5% 0px;
 }
 .headerMenuOptions {
-	/* border: solid 2px blue; */
 	height: 100%;
 	align-items: center;
 	color: #4a6660 !important;
@@ -67,10 +60,10 @@ body {
 
 /*----------------------MainMenu---------------*/
 .mainMenuList > li > h3:hover {
-	/* background-color: rgb(19, 119, 177); */
 	cursor: pointer;
-	background-color: #c3e2c2;
-	padding: 10px 3px;
+	background-color: #4a6660;
+	color: #f4f2de;
+	cursor: pointer;
 	border-radius: 15px;
 }
 .mainMenuList {
@@ -80,44 +73,32 @@ body {
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: space-around;
-	/* border: solid 5px purple; */
 	height: 90%;
-	padding: 0px;
+	padding: 0px 10px;
 	width: 600px;
 	letter-spacing: -1px;
 }
-.mainMenuList > li {
-	text-decoration: none;
-	/* color: white; */
-	padding: 0px 10px;
-	/* border: solid 1px blue; */
-	display: flex;
-	flex-wrap: wrap;
+.mainMenuList > li > h3 {
+	/* border: solid 3px red; */
+	padding: 10px;
 }
 .mainMenu {
-	/* border: solid 2px red; */
 	padding: 0px 10px 0px 0px;
 	height: 100%;
-	/* gap: 20px; */
 	align-content: center;
 }
 /*-------------------------------------*/
 
 /*----------------------TitleContainer---------------*/
 .mainImageTitle {
-	/* border: solid 10px black; */
-	/* margin: 10px; */
 	height: 100%;
-	top: 0px;
+	position: relative;
 }
 .mainImageTitle > video {
 	opacity: 0.4;
 	object-fit: cover;
 }
 .mainTitle {
-	/* position: absolute; */
-	/* border: solid 5px orange; */
-	/* color: white; */
 	font-size: 32px;
 	margin: -250px 0px 150px 0px;
 	align-items: right;
@@ -126,35 +107,27 @@ body {
 .mainTitle > h1,
 h3 {
 	text-align: center;
-	/* color: #99a98f; */
 }
 /*-------------------------------------*/
 
 /*----------------------HomeView---------------*/
-.secondTitle {
-	border-top: solid 3px rgb(5, 102, 73);
-	width: 60%;
-	height: 30px;
-	margin: 20px auto 150px;
-}
+.secondTitle,
 .experiencesTitle {
 	border-top: solid 3px rgb(5, 102, 73);
 	width: 60%;
 	height: 30px;
-	margin: 20px auto 300px;
+	margin: 20px auto 220px;
 }
+
 .secondTitle > h2,
 .experiencesTitle > h2 {
-	margin: 10px;
-	padding: 05px;
-	/* color: white; */
 	font-size: 32px;
 	text-align: center;
 }
 .secondTitle > p,
 .experiencesTitle > p {
-	/* padding: 5px; */
-	/* color: white; */
+	padding: 20px;
+
 	font-size: 32px;
 	text-align: center;
 	width: 100%;
@@ -162,44 +135,35 @@ h3 {
 }
 /*-------------------------------------*/
 /*----------------AboutUs---------------------*/
-.aboutUsTitle {
-	padding: 0px 0px 10px;
-	text-align: center;
-	border-bottom: solid 5px rgb(5, 102, 73);
-	width: 500px;
-	margin: 0px auto 30px;
-}
+
 .aboutUsContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 20px;
 }
-.aboutTitle {
-	/* border: solid 3px rgb(5, 102, 73); */
+.aboutUsTitle {
 	background-color: #dbcc95;
-	/* margin: 0px -20px 0px 0px; */
 	width: 34%;
 	min-width: 350px;
 }
-.aboutTitle > h2 {
+.aboutUsTitle > h2 {
 	margin: 20px;
 }
-.aboutTitle > img {
+.aboutUsTitle > img {
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
 	padding: 10px;
 }
-.aboutTitle > p {
+.aboutUsTitle > p {
 	font-size: 24px;
 	text-align: left;
 	padding: 20px 20px;
 	line-height: 1.5;
 }
 .companyContainer {
-	/* border: solid 5px blue; */
 	width: 60%;
 }
 .companyContainer > h2 {
@@ -212,21 +176,21 @@ h3 {
 }
 .companyContainer > p {
 	font-size: 24px;
-	text-align: left;
+	text-align: center;
 	padding: 20px 20px;
+	line-height: 2;
+	margin-top: 20px;
 }
 
 .aboutUsContainer {
-	/* color: white; */
 	text-align: center;
-	/* border: solid 1px rgb(255, 0, 34); */
 }
 
 /*----------------------Card---------------*/
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 0px 50px;
+	margin: 0px 0px 150px;
 	justify-content: space-evenly;
 
 	row-gap: 50px;
@@ -242,7 +206,6 @@ h3 {
 	width: 250px;
 	height: 400px;
 	margin: 0 10px;
-	/* gap: 40px; */
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -278,12 +241,58 @@ h3 {
 
 /*----------------------CardInfo---------------*/
 .cardTitle {
-	position: relative;
+	text-align: center;
+	margin: 20px 0px 20px;
+	font-size: 24px;
+	gap: 20px;
 }
+.CardCarroussel {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.cardMap {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 80px auto;
+
+	text-align: center;
+}
+.cardMap > img {
+	width: 60%;
+	border-radius: 10%;
+}
+.cardMap > p {
+	font-size: 20px;
+	margin: 20px 0px;
+}
+.infoCard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0px auto;
+}
+.cardDescription {
+	width: 60%;
+	font-size: 24px;
+	line-height: 2;
+	padding: 20px;
+}
+.cardWeather {
+	width: 34%;
+	text-align: center;
+}
+.cardWeather > img {
+	border: solid 2px black;
+	border-radius: 20%;
+}
+
 /*-------------------------------------*/
 /*----------------------map---------------*/
 .mapArea {
-	/* color: white; */
 	font-size: 24px;
 	display: block;
 	margin: 20px;
@@ -301,78 +310,107 @@ h3 {
 /*----------------------footer---------------*/
 
 .footerContainer {
-	background-color: #a1ccd1;
-	/* margin: 10px; */
+	background-color: #c3e2c2;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	/* width: 100%; */
 	justify-content: space-around;
 }
 
 .footerCard {
-	/* border: solid 3px rgb(255, 0, 119); */
 	border-radius: 25px;
-	background-color: rgb(157, 186, 240);
 	width: 300px;
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
 	font-size: 24px;
 }
+.footerCard > a {
+	text-decoration: none;
+	color: #4a6660;
+}
+.footerCard:hover,
+.button:hover,
+.footerCard > a:hover {
+	background-color: #4a6660;
+	color: #c3e2c2;
+	cursor: pointer;
+}
 
 /*-------------------------------------*/
-
+/*----------------Button Send---------------------*/
+.button {
+	border: solid 1px #c3e2c2;
+	border-radius: 25px;
+	background-color: #c3e2c2;
+	height: 60px;
+	width: 250px;
+	margin: 0px auto;
+	font-size: 26px;
+}
+.button > p {
+	text-align: center;
+	margin: 10px 0px;
+}
+.button:hover {
+	background-color: #4a6660;
+	color: #c3e2c2;
+	cursor: pointer;
+}
+/*-------------------------------------*/
 /*----------------------contact---------------*/
 .contactContainer {
 	text-align: center;
-	margin: 0px;
-	/* font-family: 'Satisfy', cursive; */
-	font-size: 20px;
-	width: 70%;
+	margin: 20px;
+	font-size: 24px;
+	width: 60%;
 }
 .contactContainer > h2 {
-	/* color: white; */
 	font-size: 32px;
-	/* font-family: 'Satisfy', cursive; */
+	padding: 10px;
+}
+.contactContainer > p {
+	line-height: 2;
+	padding: 20px;
 }
 .contactFormContainer {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
-	margin: 0px 10px 30px;
+	justify-content: space-between;
 }
-.asideInfo {
+.contactInfo {
 	background-color: #dbcc95;
-	width: 400px;
-	font-size: 24px;
-	box-sizing: border-box;
+	width: 34%;
+	font-size: 28px;
 	text-align: center;
-	/* border: solid 5px pink; */
+}
+.contactInfo > h5 {
+	margin: 20px;
+	padding: 10px;
 }
 .contactForm {
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
 	margin: 0px auto;
+	font-size: 28px;
 }
 .emailPhoneContactForm {
-	/* border: solid 1px rgb(30, 255, 0); */
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 20px;
 }
 .DateContactForm {
-	/* border: solid 1px rgb(255, 0, 34); */
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 20px;
 }
 .textBoxContactForm {
-	/* border: solid 1px rgb(255, 0, 34); */
-	gap: 10px;
+	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -380,34 +418,20 @@ h3 {
 .allBoxContact {
 	border-radius: 20px;
 	text-align: center;
-}
-.asideInfo {
-	display: flex;
-	margin: 0px;
-	padding: 0px;
-	flex-direction: column;
-}
-
-/*-------------------------------------*/
-
-/*----------------Button Send---------------------*/
-.sendButton {
-	/* border: solid 1px rgb(255, 0, 34); */
-	border-radius: 25px;
 	height: 40px;
-	width: 120px;
-	margin: 0px auto;
+	font-size: 18px;
 }
-.sendButton:hover {
-	background-color: rgb(185, 180, 180);
-	font-size: 24px;
-	cursor: pointer;
+.contactTextArea {
+	border-radius: 20px;
+	text-align: center;
+	height: 100px;
+	font-size: 18px;
 }
+
 /*-------------------------------------*/
 
 /*---------------Slider----------------------*/
 .sliderContainer {
-	/* border: solid 3px blue; */
 	margin: 5px;
 	align-items: center;
 	display: flex;
@@ -419,7 +443,6 @@ h3 {
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px grey;
 	width: 100%;
-	/* height: 100%; */
 }
 .slideHidden {
 	display: none;
@@ -460,3 +483,6 @@ h3 {
 }
 
 /*-------------------------------------*/
+.marginBottom {
+	margin-bottom: 20px;
+}

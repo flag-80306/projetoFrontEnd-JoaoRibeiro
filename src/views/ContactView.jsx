@@ -1,4 +1,4 @@
-import TitleContainer from '../components/TitleContainer.jsx';
+import { Link } from 'wouter'; // npm i wouter
 function ContactView() {
 	return (
 		<>
@@ -37,16 +37,17 @@ function ContactView() {
 						</div>
 						<div className='textBoxContactForm'>
 							<div>
-								<label for='mensagem'>Your Message: </label>
+								<label for='mensagem'>Your Message:</label>
 							</div>
+
 							<div>
-								<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='allBoxContact'></textarea>
+								<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea'></textarea>
 							</div>
 						</div>
-						<input type='submit' value='Send' className='sendButton' />
+						<input type='submit' value='Send' className='button' />
 					</form>
 				</div>
-				<div className='asideInfo'>
+				<div className='contactInfo'>
 					<h5>
 						Phone number:
 						<br />
@@ -57,6 +58,11 @@ function ContactView() {
 						<br />
 						amaranteexperiences@outlook.com
 					</h5>
+					<div className='button'>
+						<Link href='/BookNow'>
+							<p>Make a Booking</p>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</>

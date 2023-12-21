@@ -6,10 +6,7 @@ function ExperiencesView() {
 			<TitleContainer />
 			<div className='experiencesTitle'>
 				<h2>Premium Expedition Experiences</h2>
-				<p>
-					Explore our handpicked selection of top-rated and best-selling tours! Delve into a world of thrilling adventures and captivating experiences. Discover our most sought-after and highly
-					acclaimed offerings. Come, join us, and embark on unforgettable journeys that promise excitement and wonder!
-				</p>
+				<p>Discover our most sought-after and highly acclaimed offerings. Come, join us, and embark on unforgettable journeys that promise excitement and wonder!</p>
 			</div>
 			<div className='cardContainer'>
 				<Card />
