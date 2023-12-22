@@ -6,7 +6,9 @@ function FooterBar() {
 			<footer>
 				<div className='footerContainer'>
 					<div className='footerCard'>
-						<h3>©João Ribeiro 2024</h3>
+						<a href='https://www.instagram.com/insideexperiences/' target='_blank'>
+							<h3>Social Media</h3>
+						</a>
 					</div>
 					<div className='footerCard'>
 						<Link href='/Contact'>
@@ -15,9 +17,7 @@ function FooterBar() {
 					</div>
 
 					<div className='footerCard'>
-						<a href='https://www.instagram.com/insideexperiences/' target='_blank'>
-							<h3>Social Media</h3>
-						</a>
+						<h3>©João Ribeiro 2024</h3>
 					</div>
 				</div>
 			</footer>

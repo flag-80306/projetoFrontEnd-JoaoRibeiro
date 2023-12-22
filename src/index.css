@@ -6,7 +6,7 @@
 }
 body {
 	background-color: #f4f2de;
-	margin: 0px 10%;
+	margin: 0px 5%;
 	color: #4a6660;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
 }
@@ -53,47 +53,6 @@ body {
 	align-items: center;
 	color: #4a6660 !important;
 }
-/*------------responsive-------------------------*/
-.headerMenuMobile {
-	display: none;
-}
-.headerMenuMobile > button {
-	border-radius: 10px;
-	background-color: #c3e2c2;
-	border: solid 1px #c3e2c2;
-	width: 75px;
-	height: 75px;
-}
-.mobileMenu {
-	display: none;
-}
-.menuMobileIcon {
-	background-color: #c3e2c2;
-	width: 65px;
-	border-radius: 10px;
-	border: none;
-}
-@media screen and (max-width: 1199px) {
-	.mainMenu {
-		display: none;
-	}
-	.headerMenuMobile {
-		display: block;
-		cursor: pointer;
-	}
-	.mobileMenu {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		padding-bottom: 16px;
-	}
-	.mainMobileMenuList {
-		display: block;
-		padding-top: 20px;
-	}
-}
-
-/*-------------------------------------*/
 
 /*----------------------MainMenu---------------*/
 .mainMenuList > li > h3:hover {
@@ -227,10 +186,10 @@ h3 {
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 0px 150px;
+	margin: 0px 50px 150px;
 	justify-content: space-evenly;
-
-	row-gap: 50px;
+	gap: 80px;
+	row-gap: 100px;
 }
 .card:hover {
 	cursor: pointer;
@@ -526,3 +485,53 @@ h3 {
 .open {
 	display: block;
 }
+/*------------responsive-------------------------*/
+.headerMenuMobile {
+	display: none;
+}
+.headerMenuMobile > button {
+	border-radius: 10px;
+	background-color: #c3e2c2;
+	border: solid 1px #c3e2c2;
+	width: 75px;
+	height: 75px;
+}
+.mobileMenu {
+	display: none;
+}
+.menuMobileIcon {
+	background-color: #c3e2c2;
+	width: 65px;
+	border-radius: 10px;
+	border: none;
+	/* list-style: none; */
+}
+.mainMobileMenu {
+	/* list-style-type: none; */
+	display: none;
+}
+
+@media screen and (max-width: 1199px) {
+	.mainMenu {
+		display: none;
+	}
+	.headerMenuMobile {
+		display: block;
+		cursor: pointer;
+	}
+	.mobileMenu {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 16px;
+	}
+	.mainMobileMenuList {
+		display: block;
+		padding-top: 20px;
+	}
+	body {
+		margin: 0px -275px 0px 0px;
+	}
+}
+
+/*-------------------------------------*/
