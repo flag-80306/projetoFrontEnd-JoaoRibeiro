@@ -8,6 +8,7 @@ import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
 import CardInfo from './components/CardInfo.jsx';
 import BookNowView from './views/BookNowView.jsx';
+
 function App() {
 	return (
 		<>

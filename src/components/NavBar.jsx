@@ -1,4 +1,5 @@
 import { Link } from 'wouter'; // npm i wouter
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
 	return (
@@ -6,10 +7,19 @@ function NavBar() {
 			<div className='topHeader'></div>
 			<div className='navBar'>
 				<nav className='headerMenu'>
-					<a href='./index.html' className='headerMenuLogo'>
-						<img src='/img/logo.png' className='logoHome' id='logoHome' />
-					</a>
-
+					<div>
+						<a href='./index.html' className='headerMenuLogo'>
+							<img src='/img/logo.png' className='logoHome' id='logoHome' />
+						</a>
+					</div>
+					<div className='hamburguerMenu'>
+						<span className='mobileHamburguer'></span>
+						<span className='mobileHamburguer'></span>
+						<span className='mobileHamburguer'></span>
+						{/* <button>
+							<img className='menuMobileIcon' src='./img/mobileMenu/menu_white_36dp.svg' alt='mobile menu icon' />
+						</button> */}
+					</div>
 					<div className='headerMenuOptions'>
 						<div className='mainMenu'>
 							<ul className='mainMenuList'>
@@ -38,13 +48,9 @@ function NavBar() {
 					</div>
 				</nav>
 			</div>
-			<div className='headerMenuMobile'>
-				<button>
-					<img className='menuMobileIcon' src='./img/mobileMenu/menu_white_36dp.svg' alt='mobile menu icon' />
-				</button>
-			</div>
+
 			<div className='mobileMenu'>
-				<div className='mainMobileMenu'>
+				<nav className='mainMobileMenu'>
 					<Link href='/'>
 						<h3>Home</h3>
 					</Link>
@@ -60,7 +66,7 @@ function NavBar() {
 					<Link href='/Contact'>
 						<h3>Contact Us</h3>
 					</Link>
-				</div>
+				</nav>
 			</div>
 		</>
 	);
