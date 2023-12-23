@@ -1,73 +1,52 @@
 import { Link } from 'wouter'; // npm i wouter
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 function NavBar() {
+	const [seeMenu, setSeeMenu] = useState(false);
+
 	return (
 		<>
 			<div className='topHeader'></div>
-			<div className='navBar'>
-				<nav className='headerMenu'>
-					<div>
-						<a href='./index.html' className='headerMenuLogo'>
-							<img src='/img/logo.png' className='logoHome' id='logoHome' />
-						</a>
-					</div>
-					<div className='hamburguerMenu'>
-						<span className='mobileHamburguer'></span>
-						<span className='mobileHamburguer'></span>
-						<span className='mobileHamburguer'></span>
-						{/* <button>
-							<img className='menuMobileIcon' src='./img/mobileMenu/menu_white_36dp.svg' alt='mobile menu icon' />
-						</button> */}
-					</div>
-					<div className='headerMenuOptions'>
-						<div className='mainMenu'>
-							<ul className='mainMenuList'>
-								<li>
-									<Link href='/'>
-										<h3>Home</h3>
-									</Link>
-								</li>
-								<li>
-									<Link href='/Experiences'>
-										<h3>Experiences</h3>
-									</Link>
-								</li>
-								<li>
-									<Link href='/AboutUs'>
-										<h3>About us</h3>
-									</Link>
-								</li>
-								<li>
-									<Link href='/Contact'>
-										<h3>Contact Us</h3>
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-
-			<div className='mobileMenu'>
-				<nav className='mainMobileMenu'>
-					<Link href='/'>
-						<h3>Home</h3>
-					</Link>
-
-					<Link href='/Experiences'>
-						<h3>Experiences</h3>
-					</Link>
-
-					<Link href='/AboutUs'>
-						<h3>About us</h3>
-					</Link>
-
-					<Link href='/Contact'>
-						<h3>Contact Us</h3>
-					</Link>
-				</nav>
-			</div>
+			<nav className='navBar'>
+				<Link href='/' className='headerMenu'>
+					<img src='/img/logo.png' className='headerMenuLogo' id='logoHome' />
+				</Link>
+				{/* <>depois de adicionar a condição na className da ul vimoas adicionar uma ação onClick para abrir e fechar o menu. Aqui vamos criar uma função vazia e acrescentamos o valor setSeeMenu e recertemos o valor, se open será para fechar o menu e vice-versa </> */}
+				<div
+					className='hamburguerMenu'
+					onClick={function () {
+						setSeeMenu(!seeMenu);
+					}}
+				>
+					<span className='mobileHamburguer'></span>
+					<span className='mobileHamburguer'></span>
+					<span className='mobileHamburguer'></span>
+				</div>
+				{/* <>na ul vamos colocar uma className com uma condição dentro com base na variavel do menu.  se a variavel (seeMenu) for verdadeira adicionamos uma className com nome open, se for falso fica sem nome na className  </> */}
+				<ul className={seeMenu ? 'open' : ''}>
+					<li>
+						<Link href='/'>
+							<h3>Home</h3>
+						</Link>
+					</li>
+					<li>
+						<Link href='/Experiences'>
+							<h3>Experiences</h3>
+						</Link>
+					</li>
+					<li>
+						<Link href='/AboutUs'>
+							<h3>About us</h3>
+						</Link>
+					</li>
+					<li>
+						<Link href='/Contact'>
+							<h3>Contact Us</h3>
+						</Link>
+					</li>
+				</ul>
+			</nav>
 		</>
 	);
 }
