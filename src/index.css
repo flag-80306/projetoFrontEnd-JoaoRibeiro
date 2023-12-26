@@ -1,9 +1,10 @@
 * {
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	font-family: 'Satisfy', cursive;
 	margin: 0px;
 	padding: 0px;
 }
+
 body {
 	background-color: #f4f2de;
 	margin: 0px 5%;
@@ -21,7 +22,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 8px 48px;
-	font-size: 24px;
+
 	font-weight: bold;
 	color: #4a6660 !important;
 	/* background-color: transparent; */
@@ -37,6 +38,7 @@ body {
 }
 .headerMenuLogo {
 	cursor: pointer;
+	height: 200%;
 }
 nav ul {
 	display: flex;
@@ -50,6 +52,7 @@ nav ul {
 }
 nav ul > li {
 	list-style: none;
+	font-size: 32px;
 }
 nav ul.open {
 	display: flex;
@@ -102,15 +105,15 @@ nav ul > li > h3:not(.active):hover {
 	object-fit: cover;
 }
 .mainTitle {
-	font-size: 32px;
-	margin: -250px 0px 150px 0px;
-	align-items: right;
+	margin: -300px 0px 150px 0px;
+	font-size: 48px;
 }
 
 .mainTitle > h1,
 h3 {
 	text-align: center;
 }
+
 /*-------------------------------------*/
 
 /*----------------------HomeView---------------*/
@@ -122,19 +125,19 @@ h3 {
 	margin: 20px auto 220px;
 }
 
-.secondTitle > h2,
-.experiencesTitle > h2 {
-	font-size: 32px;
+.secondTitle > h2 {
+	font-size: 48px;
 	text-align: center;
 }
-.secondTitle > p,
-.experiencesTitle > p {
-	padding: 20px;
-
+.secondTitle > p {
+	padding: 0px 20px 20px;
 	font-size: 32px;
 	text-align: center;
 	width: 100%;
 	margin: 0px auto;
+}
+.marginFifty {
+	margin-top: 50px;
 }
 /*-------------------------------------*/
 /*----------------AboutUs---------------------*/
@@ -243,15 +246,10 @@ h3 {
 /*-------------------------------------*/
 
 /*----------------------CardInfo---------------*/
-.cardTitle {
-	text-align: center;
-	margin: 20px 0px 20px;
-	font-size: 24px;
-	gap: 20px;
-}
+
 .CardCarroussel {
 	width: 90%;
-	margin: 20px auto;
+	margin: -90px auto;
 }
 
 .cardMap {
@@ -259,8 +257,7 @@ h3 {
 	width: 100%;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 80px auto;
-
+	margin: 150px auto 40px;
 	text-align: center;
 }
 .cardMap > img {
@@ -268,7 +265,7 @@ h3 {
 	border-radius: 10%;
 }
 .cardMap > p {
-	font-size: 20px;
+	font-size: 24px;
 	margin: 20px 0px;
 }
 .infoCard {
@@ -280,7 +277,7 @@ h3 {
 }
 .cardDescription {
 	width: 60%;
-	font-size: 24px;
+	font-size: 32px;
 	line-height: 2;
 	padding: 20px;
 }
@@ -290,7 +287,8 @@ h3 {
 }
 .cardWeather > img {
 	border: solid 2px black;
-	border-radius: 20%;
+	border-radius: 15%;
+	width: 80%;
 }
 
 /*-------------------------------------*/
@@ -493,8 +491,13 @@ h3 {
 	display: block;
 }
 /*------------responsive-------------------------*/
+/* @media screen and (max-width: 1300px) {
+	nav ul > li {
+		font-size: 28px;
+	}
+} */
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1300px) {
 	.hamburguerMenu {
 		display: flex;
 		cursor: pointer;
@@ -530,6 +533,10 @@ h3 {
 }
 
 @media screen and (max-width: 480px) {
+	.bodybody {
+		margin: 0;
+		min-width: 300px;
+	}
 	/* nav ul {
 		display: none;
 	}

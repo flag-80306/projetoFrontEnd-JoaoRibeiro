@@ -5,14 +5,15 @@ import { Link } from 'wouter'; // npm i wouter
 function CardInfo() {
 	return (
 		<>
-			<div className='cardTitle'>
+			<div className='marginFifty'></div>
+			<div className='secondTitle'>
 				<h2>Inside Marão</h2>
 				<p>(icon)13-03-2020</p>
-				<div className='CardCarroussel'>
-					<Carroussel data={slides} />
-				</div>
 
 				{/* <img src='/img/natureza_tour_adventure_jeep_800x533.png' alt='' /> */}
+			</div>
+			<div className='CardCarroussel'>
+				<Carroussel data={slides} />
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />

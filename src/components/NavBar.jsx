@@ -1,5 +1,6 @@
 import { Link } from 'wouter'; // npm i wouter
-import { NavLink } from 'react-router-dom';
+
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function NavBar() {
