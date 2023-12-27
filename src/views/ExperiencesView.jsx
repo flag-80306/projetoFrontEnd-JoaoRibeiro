@@ -4,9 +4,9 @@ function ExperiencesView() {
 	return (
 		<>
 			<TitleContainer />
-			<div className='secondTitle'>
+			<div className='experiencesTitle'>
 				<h2>Premium Expedition Experiences</h2>
-				<p>Discover our most sought-after and highly acclaimed offerings. Come, join us, and embark on unforgettable journeys that promise excitement and wonder!</p>
+				<p>Discover our most sought-after and highly acclaimed offerings. Come and embark on unforgettable journeys that promise excitement and wonder!</p>
 			</div>
 			<div className='cardContainer'>
 				<Card />

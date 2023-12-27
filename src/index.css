@@ -22,10 +22,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 8px 48px;
-
 	font-weight: bold;
 	color: #4a6660 !important;
-	/* background-color: transparent; */
 	box-shadow: rgba(182, 148, 106, 0.767) 0px 03px 20px 0px;
 	align-items: center;
 }
@@ -34,7 +32,6 @@ body {
 	height: 100%;
 	width: 100%;
 	object-fit: fill;
-	border: solid 4px red;
 }
 .headerMenuLogo {
 	cursor: pointer;
@@ -42,13 +39,6 @@ body {
 }
 nav ul {
 	display: flex;
-	/* flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-around;
-	height: 90%;
-	padding: 0px 10px;
-	width: 600px;
-	letter-spacing: -1px; */
 }
 nav ul > li {
 	list-style: none;
@@ -105,7 +95,7 @@ nav ul > li > h3:not(.active):hover {
 	object-fit: cover;
 }
 .mainTitle {
-	margin: -300px 0px 150px 0px;
+	margin: -300px 0px 100px 0px;
 	font-size: 48px;
 }
 
@@ -124,12 +114,17 @@ h3 {
 	height: 30px;
 	margin: 20px auto 220px;
 }
+.experiencesTitle {
+	width: 75%;
+}
 
-.secondTitle > h2 {
+.secondTitle > h2,
+.experiencesTitle > h2 {
 	font-size: 48px;
 	text-align: center;
 }
-.secondTitle > p {
+.secondTitle > p,
+.experiencesTitle > p {
 	padding: 0px 20px 20px;
 	font-size: 32px;
 	text-align: center;
@@ -139,59 +134,8 @@ h3 {
 .marginFifty {
 	margin-top: 50px;
 }
+
 /*-------------------------------------*/
-/*----------------AboutUs---------------------*/
-
-.aboutUsContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 20px;
-}
-.aboutUsTitle {
-	background-color: #dbcc95;
-	width: 34%;
-	min-width: 350px;
-}
-.aboutUsTitle > h2 {
-	margin: 20px;
-}
-.aboutUsTitle > img {
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	border-radius: 50%;
-	padding: 10px;
-}
-.aboutUsTitle > p {
-	font-size: 24px;
-	text-align: left;
-	padding: 20px 20px;
-	line-height: 1.5;
-}
-.companyContainer {
-	width: 60%;
-}
-.companyContainer > h2 {
-	font-size: 28px;
-	margin: 20px;
-}
-.companyContainer > img {
-	width: 350px;
-	border-radius: 20%;
-}
-.companyContainer > p {
-	font-size: 24px;
-	text-align: center;
-	padding: 20px 20px;
-	line-height: 2;
-	margin-top: 20px;
-}
-
-.aboutUsContainer {
-	text-align: center;
-}
-
 /*----------------------Card---------------*/
 .cardContainer {
 	display: flex;
@@ -251,7 +195,38 @@ h3 {
 	width: 90%;
 	margin: -90px auto;
 }
+.infoCard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0px auto;
+}
+.cardDescription {
+	display: flex;
+	width: 60%;
+	font-size: 32px;
+	line-height: 2;
+	padding: 30px;
+	margin: auto;
+}
+.cardWeather {
+	/* display: flex; */
+	margin: 10px auto;
+	width: 34%;
+	min-width: 360px;
+	text-align: center;
+	padding: 10px;
+}
+.cardWeather > img {
+	border: solid 2px black;
+	border-radius: 15%;
+	width: 80%;
+	min-width: 350px;
+}
 
+/*-------------------------------------*/
+/*----------------------map---------------*/
 .cardMap {
 	display: flex;
 	width: 100%;
@@ -261,52 +236,13 @@ h3 {
 	text-align: center;
 }
 .cardMap > img {
-	width: 60%;
+	width: 80%;
 	border-radius: 10%;
 }
 .cardMap > p {
 	font-size: 24px;
 	margin: 20px 0px;
 }
-.infoCard {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 100%;
-	margin: 0px auto;
-}
-.cardDescription {
-	width: 60%;
-	font-size: 32px;
-	line-height: 2;
-	padding: 20px;
-}
-.cardWeather {
-	width: 34%;
-	text-align: center;
-}
-.cardWeather > img {
-	border: solid 2px black;
-	border-radius: 15%;
-	width: 80%;
-}
-
-/*-------------------------------------*/
-/*----------------------map---------------*/
-.mapArea {
-	font-size: 24px;
-	display: block;
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.mapArea > img {
-	display: block;
-	margin: 0 auto;
-}
-
-/*-------------------------------------*/
 
 /*----------------------footer---------------*/
 
@@ -316,19 +252,20 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-content: center;
 }
-
 .footerCard {
 	border-radius: 25px;
 	width: 300px;
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 32px;
 }
 .footerCard > a {
 	text-decoration: none;
 	color: #4a6660;
+	font-size: 32px;
 }
 .footerCard:hover,
 .button:hover,
@@ -337,57 +274,151 @@ h3 {
 	color: #c3e2c2;
 	cursor: pointer;
 }
-
 /*-------------------------------------*/
-/*----------------Button Send---------------------*/
+/*----------------Button---------------------*/
 .button {
-	border: solid 1px #c3e2c2;
+	display: block;
 	border-radius: 25px;
+	border: solid 5px #4a6660;
 	background-color: #c3e2c2;
 	height: 60px;
 	width: 250px;
 	margin: 0px auto;
-	font-size: 26px;
+	cursor: pointer;
+}
+.buttonSize {
+	width: 300px;
+	height: 100px;
+	border-radius: 45px;
+}
+.btnSendSize {
+	width: 300px;
+	height: 50px !important;
+	border-radius: 45px;
+	font-size: 24px;
 }
 .button > p {
-	text-align: center;
-	margin: 10px 0px;
+	padding: 6px;
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 32px;
 }
 .button:hover {
 	background-color: #4a6660;
+	border: solid 5px #c3e2c2;
+	rotate: 360deg;
+	border-radius: 100px 0px;
+	box-shadow: 40px 40px 5px 1px #c3e2c2;
+	transition: background-color 3s, rotate 3s, border-radius 3s, box-shadow 3s;
+}
+
+.button > p:hover {
+	rotate: 360deg;
+	transition: rotate 4s, color 4s;
 	color: #c3e2c2;
-	cursor: pointer;
 }
 /*-------------------------------------*/
-/*----------------------contact---------------*/
-.contactContainer {
+/*----------------AboutUs---------------------*/
+.aboutUsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
 	text-align: center;
-	margin: 20px;
-	font-size: 24px;
+}
+.companyContainer {
 	width: 60%;
 }
+.companyContainer > h2,
 .contactContainer > h2 {
-	font-size: 32px;
+	font-size: 36px;
+	margin: 40px;
+}
+.companyContainer > img {
+	width: 350px;
+	border-radius: 20%;
+	/* margin: 0px 50px; */
+	margin: auto;
+}
+.companyContainer > p {
+	font-size: 28px;
+	text-align: justify;
+	padding: 20px 10px 20px 40px;
+	line-height: 2.5;
+	margin-top: 20px;
+}
+.aboutUsTitle {
+	background-color: #dbcc95;
+	width: 34%;
+	min-width: 445px;
+	/* margin: auto; */
+	text-align: center;
+	padding: 0px;
+}
+
+.aboutUsTitle > h2 {
+	margin: 30px;
+	padding: 10px;
+	font-size: 28px;
+}
+.aboutUsTitle > img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
 	padding: 10px;
 }
-.contactContainer > p {
+.aboutUsTitle > p {
+	font-size: 28px;
+	text-align: left;
+	padding: 20px 20px;
 	line-height: 2;
-	padding: 20px;
 }
+
+/*----------------------contact---------------*/
 .contactFormContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	gap: 20px;
+
+	text-align: center;
+}
+
+.contactContainer {
+	text-align: center;
+	font-size: 24px;
+	max-width: 60%;
+
+	padding: 0px 20px;
+	width: 60%;
+	margin: 0px auto 50px;
+}
+
+.contactContainer > p {
+	line-height: 2;
+	padding: 20px;
+	font-size: 28px;
+}
+
+.contactInfo > h5 > a {
+	text-decoration: none;
+	color: #4a6660;
 }
 .contactInfo {
 	background-color: #dbcc95;
-	width: 34%;
+	min-width: 34%;
 	font-size: 28px;
 	text-align: center;
+	margin: 0px auto;
 }
+
 .contactInfo > h5 {
 	margin: 20px;
 	padding: 10px;
+	font-size: 32px;
+	line-height: 2;
 }
 .contactForm {
 	display: flex;
@@ -412,7 +443,7 @@ h3 {
 }
 .textBoxContactForm {
 	padding: 20px;
-	display: flex;
+	/* display: flex; */
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -420,13 +451,14 @@ h3 {
 	border-radius: 20px;
 	text-align: center;
 	height: 40px;
-	font-size: 18px;
+	font-size: 26px;
 }
 .contactTextArea {
 	border-radius: 20px;
 	text-align: center;
 	height: 100px;
-	font-size: 18px;
+	width: 500px;
+	font-size: 26px;
 }
 
 /*-------------------------------------*/
@@ -485,35 +517,32 @@ h3 {
 
 /*-------------------------------------*/
 .marginBottom {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 .open {
 	display: block;
 }
 /*------------responsive-------------------------*/
-/* @media screen and (max-width: 1300px) {
-	nav ul > li {
-		font-size: 28px;
-	}
-} */
 
 @media screen and (max-width: 1300px) {
 	.hamburguerMenu {
 		display: flex;
 		cursor: pointer;
+		position: relative;
+		right: -20px;
 	}
 	nav ul {
 		display: none;
 		flex-direction: column;
-		width: 50%;
+		/* width: 50%; */
 		background-color: #c3e2c2;
-		position: relative;
-		/* margin-top: 295px;
-		margin-right: -25px; */
-		margin: 310px -20px 0px 0px;
-		padding: 8px;
+		position: absolute;
+		right: 0px;
+		margin: 367px 5% 0px 0px;
+		padding: 0px 20px;
 		z-index: 1;
-		border-radius: 0px 0px 20px 20px;
+		border-radius: 0px 0px 0px 50px;
+		font-size: 28px;
 	}
 	nav ul > li {
 		width: 100%;
@@ -521,22 +550,130 @@ h3 {
 		padding: 0px;
 		justify-content: right;
 	}
+	.mainTitle {
+		font-size: 36px;
+		margin: -320px 0px 170px 0px;
+	}
+	.secondTitle {
+		width: 65%;
+	}
+	.experiencesTitle {
+		width: 75%;
+		margin: 20px auto 300px;
+	}
+
+	.aboutUsTitle {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	.companyContainer {
+		width: 60%;
+	}
+	.aboutUsTitle {
+		width: 100%;
+	}
+	.companyContainer,
+	.companyContainer > img {
+		margin: auto;
+	}
+	.cardDescription {
+		width: 80%;
+		line-height: 1.5;
+	}
+}
+@media screen and (max-width: 863px) {
+	.mainTitle {
+		margin: -320px 0px 70px 0px;
+	}
+	.mapArea > img {
+		width: 100%;
+	}
+	.secondTitle > h2,
+	.experiencesTitle > h2 {
+		font-size: 40px;
+	}
+	.secondTitle > p,
+	.experiencesTitle > p {
+		font-size: 32px;
+	}
+	.experiencesTitle {
+		margin: 20px auto 330px;
+	}
+	.companyContainer {
+		width: 100%;
+	}
+	.companyContainer > h2,
+	.contactContainer > h2 {
+		font-size: 36px;
+	}
+	.companyContainer > img {
+		width: 60%;
+	}
+	.companyContainer > p,
+	.companyContainer > p {
+		width: 80%;
+		line-height: 2;
+		margin: auto;
+	}
 }
 @media screen and (max-width: 768px) {
-	/* nav ul {
-		display: none;
+	.mainTitle {
+		font-size: 32px;
+		margin: -290px 0px 70px 0px;
 	}
-	.hamburguerMenu {
-		display: flex;
-		cursor: pointer;
-	} */
+	.secondTitle {
+		margin: 20px auto 300px;
+	}
+	.secondTitle > h2,
+	.experiencesTitle > h2 {
+		font-size: 36px;
+	}
+	.secondTitle > p,
+	.experiencesTitle > p {
+		font-size: 28px;
+	}
+	.experiencesTitle {
+		/* margin: 20px auto 330px; */
+		width: 80%;
+	}
+	.cardDescription {
+		font-size: 24px;
+	}
+	.companyContainer > h2,
+	.contactContainer > h2 {
+		font-size: 36px;
+		margin: 40px;
+	}
+	.companyContainer > img {
+		width: 50%;
+	}
+	.companyContainer > p,
+	.companyContainer > p {
+		font-size: 28px;
+		line-height: 1.5;
+		margin-top: 10px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-	.bodybody {
-		margin: 0;
-		min-width: 300px;
+	body {
+		margin: 0px 5%;
+		min-width: 320px;
 	}
+	.headerMenuLogo {
+		height: 120%;
+	}
+	.companyContainer > img {
+		width: 250px;
+		border-radius: 20%;
+		margin: auto;
+		border: solid 5px red;
+	}
+	.aboutUsTitle > img {
+		width: 250px;
+	}
+
 	/* nav ul {
 		display: none;
 	}

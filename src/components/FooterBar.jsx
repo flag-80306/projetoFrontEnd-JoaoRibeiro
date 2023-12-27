@@ -17,7 +17,9 @@ function FooterBar() {
 					</div>
 
 					<div className='footerCard'>
-						<h3>©João Ribeiro 2024</h3>
+						<a href='https://www.linkedin.com/in/jo%C3%A3o-pedro-ribeiro-b7649b49/' target='_blank'>
+							<h3>©João Ribeiro</h3>
+						</a>
 					</div>
 				</div>
 			</footer>

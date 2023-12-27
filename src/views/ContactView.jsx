@@ -41,26 +41,26 @@ function ContactView() {
 							</div>
 
 							<div>
-								<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea'></textarea>
+								<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea '></textarea>
 							</div>
 						</div>
-						<input type='submit' value='Send' className='button' />
+						<input type='submit' value='Send' className='button btnSendSize' />
 					</form>
 				</div>
 				<div className='contactInfo'>
 					<h5>
-						Phone number:
+						Phone Number:
 						<br />
-						+351 918 409 757
+						<a href='tel:+351918409757'>+351 918409757</a>
 					</h5>
 					<h5>
 						Email:
 						<br />
-						amaranteexperiences@outlook.com
+						<a href='mailto:amaranteexperiences@outlook.com'>amaranteexperiences@outlook.com</a>
 					</h5>
-					<div className='button'>
+					<div className='button marginBottom buttonSize'>
 						<Link href='/BookNow'>
-							<p>Make a Booking</p>
+							<p>Ready for a Booking</p>
 						</Link>
 					</div>
 				</div>

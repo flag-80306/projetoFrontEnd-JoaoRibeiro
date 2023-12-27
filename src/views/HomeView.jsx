@@ -7,10 +7,7 @@ function HomeView() {
 			<TitleContainer />
 			<div className='secondTitle'>
 				<h2>Top-notch Journey Experiences</h2>
-				<p>
-					This list contains our best selling and best rated experiences. <br />
-					Take a look!
-				</p>
+				<p>This list contains our best selling and best rated experiences.</p>
 			</div>
 			<div className='cardContainer'>
 				<Card />
@@ -20,8 +17,8 @@ function HomeView() {
 				<Card />
 				{/* incluir aqui apenas as 5 tours com melhor ranking  */}
 			</div>
-			<div className='mapArea'>
-				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='imagem de mapa' />
+			<div className='cardMap'>
+				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
 			</div>
 		</>
 	);

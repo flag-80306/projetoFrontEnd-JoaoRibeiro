@@ -35,6 +35,7 @@ function App() {
 				<Route path='/BookNow'>
 					<BookNowView />
 				</Route>
+				<Route component={NotFoundPageView} />
 			</Switch>
 
 			<FooterBar />

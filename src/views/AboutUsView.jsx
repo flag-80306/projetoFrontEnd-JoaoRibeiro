@@ -1,7 +1,6 @@
 function AboutUsView() {
 	return (
 		<>
-			{/* <h1 className='aboutUsTitle'>About Us</h1> */}
 			<div className='aboutUsContainer'>
 				<div className='companyContainer'>
 					<h2>Amarante Experiences</h2>
@@ -31,7 +30,7 @@ function AboutUsView() {
 						My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking.
 						After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and
 						enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside
-						Experiences with Liliana Pereira, channeling our shared passion into a diverse range of activities. I invite you to join us in exploring and immersing yourselves in our unique experiences!
+						Experiences with Liliana Pereira.
 					</p>
 				</div>
 			</div>
