@@ -75,13 +75,14 @@ nav ul > li > h3:not(.active):hover {
 	right: 10%;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 64px;
-	height: 64px;
+	width: 48px;
+	height: 48px;
 	cursor: pointer;
+	margin-right: 30px;
 	/* border: solid 3px red; */
 }
 .mobileHamburguer {
-	height: 12px;
+	height: 8px;
 	width: 100%;
 	background-color: #4a6660;
 	border-radius: 3px;
@@ -97,6 +98,7 @@ nav ul > li > h3:not(.active):hover {
 .mainImageTitle > video {
 	opacity: 0.4;
 	object-fit: cover;
+	height: 100%;
 }
 .mainTitle {
 	margin: -200px 0px 70px 0px;
@@ -117,13 +119,13 @@ nav ul > li > h3:not(.active):hover {
 .secondTitle,
 .experiencesTitle {
 	border-top: solid 3px rgb(5, 102, 73);
-	width: 60%;
+	width: 75%;
 	height: 30px;
 	margin: 20px auto 220px;
 }
-.experiencesTitle {
+/* .experiencesTitle {
 	width: 75%;
-}
+} */
 
 .secondTitle > h2,
 .experiencesTitle > h2 {
@@ -161,8 +163,8 @@ nav ul > li > h3:not(.active):hover {
 	border: solid 4px #e9b384;
 	border-radius: 15px;
 	background: url('../img/natureza_tour_adventure_jeep_800x533.png');
-	width: 250px;
-	height: 400px;
+	width: 220px;
+	height: 350px;
 	margin: 0 10px;
 	background-position: center;
 	background-size: cover;
@@ -598,7 +600,7 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 1.5;
 	}
 }  */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
 	.navBar {
 		padding: 8px 15px 8px 5px;
 	}
@@ -610,7 +612,13 @@ nav ul > li > h3:not(.active):hover {
 		letter-spacing: -3px;
 	}
 	.mainTitle {
-		margin: -320px 0px 70px 0px;
+		margin: -170px 0px 50px 0px;
+	}
+	.mainTitle > h1 {
+		font-size: 56px;
+	}
+	.mainTitle > h3 {
+		font-size: 40px;
 	}
 	.mapArea > img {
 		width: 100%;
@@ -624,7 +632,8 @@ nav ul > li > h3:not(.active):hover {
 		font-size: 32px;
 	}
 	.experiencesTitle {
-		margin: 20px auto 330px;
+		margin: 20px auto 240px;
+		width: 80%;
 	}
 	.companyContainer {
 		width: 100%;
@@ -642,9 +651,6 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 2;
 		margin: auto;
 	}
-	.mainImageTitle > video {
-		height: 100%;
-	}
 }
 @media screen and (max-width: 768px) {
 	.navBar {
@@ -656,6 +662,7 @@ nav ul > li > h3:not(.active):hover {
 		position: relative;
 		right: -20px;
 	}
+
 	nav ul {
 		display: none;
 		flex-direction: column;
@@ -675,8 +682,17 @@ nav ul > li > h3:not(.active):hover {
 		justify-content: right;
 		font-size: 32px;
 	}
+	.mainTitle {
+		margin: -150px 0px 50px 0px;
+	}
+	.mainTitle > h1 {
+		font-size: 48px;
+	}
+	.mainTitle > h3 {
+		font-size: 32px;
+	}
 	.secondTitle {
-		margin: 20px auto 300px;
+		margin: 20px auto 220px;
 	}
 	.secondTitle > h2,
 	.experiencesTitle > h2 {
@@ -687,7 +703,7 @@ nav ul > li > h3:not(.active):hover {
 		font-size: 28px;
 	}
 	.experiencesTitle {
-		/* margin: 20px auto 330px; */
+		/* margin: 20px auto 240px; */
 		width: 80%;
 	}
 	.cardDescription {
@@ -707,11 +723,6 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 1.5;
 		margin-top: 10px;
 	}
-
-	.mainTitle {
-		font-size: 28px;
-		margin: -180px 0px 70px 0px;
-	}
 }
 
 @media screen and (max-width: 640px) {
@@ -722,6 +733,13 @@ nav ul > li > h3:not(.active):hover {
 	.headerMenuLogo {
 		height: 120%;
 	}
+	nav ul {
+		width: 35%;
+		margin: 354px 5% 0px 0px;
+	}
+	nav ul > li {
+		font-size: 28px;
+	}
 	.companyContainer > img {
 		width: 250px;
 		border-radius: 20%;
@@ -731,10 +749,14 @@ nav ul > li > h3:not(.active):hover {
 	.aboutUsTitle > img {
 		width: 250px;
 	}
-
 	.mainTitle {
-		font-size: 20px;
-		margin: -140px 0px 70px 0px;
+		margin: -120px 0px 40px 0px;
+	}
+	.mainTitle > h1 {
+		font-size: 40px;
+	}
+	.mainTitle > h3 {
+		font-size: 24px;
 	}
 	.secondTitle > h2,
 	.experiencesTitle > h2 {
