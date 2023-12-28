@@ -5,8 +5,7 @@ import { Link } from 'wouter'; // npm i wouter
 function CardInfo() {
 	return (
 		<>
-			<div className='marginFifty'></div>
-			<div className='secondTitle'>
+			<div className='secondTitle marginFifty'>
 				<h2>Inside Marão</h2>
 				<p>(icon)13-03-2020</p>
 

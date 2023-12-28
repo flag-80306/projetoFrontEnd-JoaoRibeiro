@@ -17,8 +17,6 @@ function ExperiencesView() {
 				<Card />
 				<Card />
 				<Card />
-				<Card />
-				<Card />
 			</div>
 		</>
 	);

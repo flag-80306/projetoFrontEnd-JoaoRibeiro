@@ -56,7 +56,7 @@ function ContactView() {
 					<h5>
 						Email:
 						<br />
-						<a href='mailto:amaranteexperiences@outlook.com'>amaranteexperiences@outlook.com</a>
+						<a href='mailto:info@amaranteexperiences.com'>info@amaranteexperiences.com</a>
 					</h5>
 					<div className='button marginBottom buttonSize'>
 						<Link href='/BookNow'>

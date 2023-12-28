@@ -1,3 +1,4 @@
+import { Link } from 'wouter'; // npm i wouter
 function AboutUsView() {
 	return (
 		<>
@@ -21,6 +22,11 @@ function AboutUsView() {
 						<br />
 						It represents an experience etched in memory for a lifetime.
 					</p>
+					<div className='button marginBottom buttonSize'>
+						<Link href='/AboutUsLiliana'>
+							<p>Get to know Liliana</p>
+						</Link>
+					</div>
 				</div>
 				<div className='aboutUsTitle'>
 					<h2>Hello, my name is João Pedro! </h2>

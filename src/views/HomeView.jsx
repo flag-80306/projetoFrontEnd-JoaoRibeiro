@@ -14,7 +14,7 @@ function HomeView() {
 				<Card />
 				<Card />
 				<Card />
-				<Card />
+
 				{/* incluir aqui apenas as 5 tours com melhor ranking  */}
 			</div>
 			<div className='cardMap'>

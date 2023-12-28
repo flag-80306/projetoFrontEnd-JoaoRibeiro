@@ -38,12 +38,12 @@ function NavBar() {
 					</li>
 					<li>
 						<Link href='/AboutUs'>
-							<h3>About us</h3>
+							<h3>Our Story</h3>
 						</Link>
 					</li>
 					<li>
 						<Link href='/Contact'>
-							<h3>Contact Us</h3>
+							<h3>Let's Connect</h3>
 						</Link>
 					</li>
 				</ul>
