@@ -21,8 +21,7 @@ body {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	padding: 8px 48px;
-	font-weight: bold;
+	padding: 8px 20px;
 	color: #4a6660 !important;
 	box-shadow: rgba(182, 148, 106, 0.767) 0px 03px 20px 0px;
 	align-items: center;
@@ -39,11 +38,15 @@ body {
 }
 nav ul {
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 }
 nav ul > li {
 	list-style: none;
-	font-size: 32px;
+	font-size: 28px;
+	letter-spacing: -1px;
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
 }
 nav ul.open {
 	display: flex;
@@ -595,7 +598,17 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 1.5;
 	}
 }  */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+	.navBar {
+		padding: 8px 15px 8px 5px;
+	}
+	.headerMenuLogo {
+		height: 150%;
+	}
+	nav ul > li {
+		font-size: 24px;
+		letter-spacing: -3px;
+	}
 	.mainTitle {
 		margin: -320px 0px 70px 0px;
 	}
@@ -634,6 +647,34 @@ nav ul > li > h3:not(.active):hover {
 	}
 }
 @media screen and (max-width: 768px) {
+	.navBar {
+		padding: 8px 30px 8px 5px;
+	}
+	.hamburguerMenu {
+		display: flex;
+		cursor: pointer;
+		position: relative;
+		right: -20px;
+	}
+	nav ul {
+		display: none;
+		flex-direction: column;
+		width: 50%;
+		background-color: #c3e2c2;
+		position: absolute;
+		right: 0px;
+		margin: 380px 5% 0px 0px;
+		padding: 0px 20px;
+		z-index: 1;
+		border-radius: 0px 0px 0px 50px;
+	}
+	nav ul > li {
+		width: 100%;
+		display: flex;
+		padding: 0px;
+		justify-content: right;
+		font-size: 32px;
+	}
 	.secondTitle {
 		margin: 20px auto 300px;
 	}
