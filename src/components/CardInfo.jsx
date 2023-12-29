@@ -5,11 +5,9 @@ import { Link } from 'wouter'; // npm i wouter
 function CardInfo() {
 	return (
 		<>
-			<div className='secondTitle marginFifty'>
+			<div className='cardInfoTitle marginFifty'>
 				<h2>Inside Marão</h2>
 				<p>(icon)13-03-2020</p>
-
-				{/* <img src='/img/natureza_tour_adventure_jeep_800x533.png' alt='' /> */}
 			</div>
 			<div className='CardCarroussel'>
 				<Carroussel data={slides} />

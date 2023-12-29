@@ -115,30 +115,31 @@ nav ul > li > h3:not(.active):hover {
 
 /*-------------------------------------*/
 
-/*----------------------HomeView---------------*/
+/*----------------------Title---------------*/
 .secondTitle,
-.experiencesTitle {
+.experiencesTitle,
+.cardInfoTitle {
 	border-top: solid 3px rgb(5, 102, 73);
 	width: 75%;
 	height: 30px;
 	margin: 20px auto 220px;
 }
-/* .experiencesTitle {
-	width: 75%;
-} */
-
 .secondTitle > h2,
 .experiencesTitle > h2 {
 	font-size: 48px;
 	text-align: center;
 }
+.cardInfoTitle > h2 {
+	font-size: 40px;
+	text-align: center;
+}
 .secondTitle > p,
-.experiencesTitle > p {
+.experiencesTitle > p,
+.cardInfoTitle > p {
 	padding: 5px 20px 20px;
 	font-size: 32px;
 	text-align: center;
-	width: 100%;
-	margin: 0px auto;
+
 	line-height: 1.5;
 }
 .marginFifty {
@@ -160,12 +161,12 @@ nav ul > li > h3:not(.active):hover {
 }
 
 .card {
-	border: solid 4px #e9b384;
+	border: solid 4px #c3e2c2;
 	border-radius: 15px;
 	background: url('../img/natureza_tour_adventure_jeep_800x533.png');
-	width: 220px;
-	height: 350px;
-	margin: 0 10px;
+	width: 200px;
+	height: 300px;
+	/* margin: 0 10px; */
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -180,22 +181,22 @@ nav ul > li > h3:not(.active):hover {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	transform: translateY(75%);
+	transform: translateY(72%);
 	transition: all 0.4s ease-in-out;
 	color: white;
 	backdrop-filter: blur(6px);
 }
 .cardText > h3 {
-	font-size: 28px;
+	font-size: 24px;
 	margin: 10px 0px 0px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 .cardText > p {
-	font-size: 18px;
-	padding: 10px 0px 5px;
+	font-size: 16px;
+	padding-bottom: 5px;
 }
 .card:hover .cardText {
-	transform: translateY(20%);
+	transform: translateY(10%);
 }
 /*-------------------------------------*/
 
@@ -209,33 +210,37 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 100%;
-	margin: 0px auto;
+	margin-bottom: 30px;
+	/* border: solid 3px red; */
 }
 .cardDescription {
 	display: flex;
-	width: 60%;
-	font-size: 32px;
-	line-height: 2;
-	padding: 30px;
-	margin: auto;
+	width: 530px;
+	/* padding-bottom: 30px; */
+	margin: 10px auto;
+	/* border: solid 3px blue; */
 }
 .cardDescription > p {
-	margin-left: 40px;
+	margin-left: 20px;
+	font-size: 40px;
+	line-height: 1.5;
 }
 .cardWeather {
-	/* display: flex; */
-	margin: 30px auto;
-	width: 34%;
-	min-width: 360px;
+	display: flex;
+	margin: 10px auto 50px;
 	text-align: center;
+	/* border: solid 3px red; */
+	padding: 0px 10px;
 }
 .cardWeather > img {
 	border: solid 5px rgb(55, 211, 120);
-	padding: 10px;
+	/* align-items: center; */
 	border-radius: 15%;
-	width: 90%;
-	min-width: 340px;
+	min-width: 300px;
+	min-height: 300px;
+	margin: auto;
+
+	/* object-fit: contain; */
 }
 
 /*-------------------------------------*/
@@ -651,6 +656,10 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 2;
 		margin: auto;
 	}
+	.cardDescription {
+		width: 90%;
+		padding-bottom: 30px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.navBar {
@@ -680,6 +689,10 @@ nav ul > li > h3:not(.active):hover {
 		display: flex;
 		padding: 0px;
 		justify-content: right;
+		font-size: 32px;
+	}
+	.footerCard > h3,
+	.footerCard > a > h3 {
 		font-size: 32px;
 	}
 	.mainTitle {
@@ -723,6 +736,9 @@ nav ul > li > h3:not(.active):hover {
 		line-height: 1.5;
 		margin-top: 10px;
 	}
+	.cardDescription > p {
+		font-size: 32px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -730,14 +746,21 @@ nav ul > li > h3:not(.active):hover {
 		margin: 0px 5%;
 		min-width: 320px;
 	}
+	.navBar {
+		height: 70px;
+	}
 	.headerMenuLogo {
-		height: 120%;
+		height: 180%;
 	}
 	nav ul {
-		width: 35%;
-		margin: 354px 5% 0px 0px;
+		width: 45%;
+		margin: 324px 5% 0px 0px;
 	}
 	nav ul > li {
+		font-size: 28px;
+	}
+	.footerCard > h3,
+	.footerCard > a > h3 {
 		font-size: 28px;
 	}
 	.companyContainer > img {
@@ -764,6 +787,10 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.secondTitle > p,
 	.experiencesTitle > p {
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.cardDescription > p {
 		font-size: 28px;
 	}
 }
