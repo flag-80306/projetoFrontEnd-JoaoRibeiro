@@ -229,18 +229,14 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	margin: 10px auto 50px;
 	text-align: center;
-	/* border: solid 3px red; */
 	padding: 0px 10px;
 }
 .cardWeather > img {
 	border: solid 5px rgb(55, 211, 120);
-	/* align-items: center; */
 	border-radius: 15%;
 	min-width: 300px;
 	min-height: 300px;
 	margin: auto;
-
-	/* object-fit: contain; */
 }
 
 /*-------------------------------------*/
@@ -305,8 +301,8 @@ nav ul > li > h3:not(.active):hover {
 	cursor: pointer;
 }
 .buttonSize {
-	width: 300px;
-	height: 100px;
+	width: 320px;
+	height: 60px;
 	border-radius: 10px 90px;
 }
 .btnSendSize {
@@ -316,11 +312,11 @@ nav ul > li > h3:not(.active):hover {
 	font-weight: 600;
 }
 .button > p {
-	padding: 6px;
+	padding: 8px;
 	display: flex;
 	justify-content: center;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 28px;
 }
 .button:hover {
 	background-color: #4a6660;
@@ -342,56 +338,72 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
 	gap: 20px;
-	text-align: center;
+	/* text-align: center; */
+	/* border: solid 5px red; */
 }
 .companyContainer {
-	width: 62%;
+	display: flex;
+	flex-direction: column;
+	width: 61%;
+	margin: auto;
+	align-items: flex-start;
+	/* border: solid 5px red; */
 }
 .companyContainer > h2,
 .contactContainer > h2 {
 	font-size: 36px;
-	margin: 40px;
+	width: 100%;
+	margin: 30px auto 30px;
+	text-align: center;
+	/* border: solid 5px red; */
 }
 .companyContainer > img {
-	width: 350px;
+	width: 280px;
+	height: 280px;
 	border-radius: 20%;
-	/* margin: 0px 50px; */
 	margin: auto;
+	border: solid 5px #c3e2c2;
+	/* border: solid 5px red; */
 }
 .companyContainer > p {
 	font-size: 32px;
-	text-align: left;
-	padding: 20px 0px 20px 40px;
-	line-height: 2.5;
-	margin-top: 20px;
+	line-height: 2;
+
+	margin: 30px auto 50px;
+	/* border: solid 5px red; */
+	width: 90%;
 }
 .aboutUsTitle {
 	background-color: #dbcc95;
-	width: 34%;
-	min-width: 445px;
-	/* margin: auto; */
-	text-align: center;
-	padding: 0px;
+	width: 36%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* border: solid 5px red; */
 }
 
 .aboutUsTitle > h2 {
-	margin: 30px;
+	margin: 20px;
+	text-align: center;
 	padding: 10px;
 	font-size: 32px;
+	/* border: solid 5px red; */
 }
 .aboutUsTitle > img {
-	width: 300px;
-	height: 300px;
+	border: solid 5px rgb(55, 211, 120);
+	width: 280px;
+	height: 280px;
 	object-fit: cover;
 	border-radius: 50%;
-	padding: 10px;
+	/* padding: 10px; */
 }
 .aboutUsTitle > p {
-	font-size: 32px;
+	font-size: 28px;
 	text-align: left;
-	padding: 20px 20px;
-	line-height: 2;
+	padding: 20px 30px;
+	line-height: 1.5;
 	/* text-align: justify; */
 }
 
@@ -400,19 +412,21 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* gap: 10px; */
-	text-align: center;
-	/* border: solid 3px red; */
+	border: solid 3px red;
+	gap: 20px;
 }
 
 .contactContainer {
-	text-align: center;
-	font-size: 24px;
+	/* font-size: 24px; */
 	max-width: 50%;
-	padding: 0px 20px;
-	width: 60%;
-	margin: 0px 0px 50px;
-	/* border: solid 3px orange; */
+
+	border: solid 3px orange;
+
+	display: flex;
+	flex-direction: column;
+	width: 61%;
+	margin: auto;
+	align-items: flex-start;
 }
 
 .contactContainer > p {
@@ -545,6 +559,16 @@ nav ul > li > h3:not(.active):hover {
 .open {
 	display: block;
 }
+.countainerPageNF {
+	margin: -100px auto 30px;
+}
+.pageNotFound {
+	width: 60%;
+	border-radius: 45%;
+	border: solid 2px #c3e2c2;
+	display: flex;
+	margin: 0px auto;
+}
 /*------------responsive-------------------------*/
 
 /* @media screen and (max-width: 1300px) {
@@ -611,9 +635,13 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.headerMenuLogo {
 		height: 150%;
+		margin-left: -10px;
+	}
+	nav ul {
+		margin-left: -20px;
 	}
 	nav ul > li {
-		font-size: 24px;
+		font-size: 28px;
 		letter-spacing: -3px;
 	}
 	.mainTitle {
@@ -640,22 +668,19 @@ nav ul > li > h3:not(.active):hover {
 		margin: 20px auto 240px;
 		width: 80%;
 	}
-	.companyContainer {
+	.companyContainer,
+	.aboutUsTitle {
 		width: 100%;
 	}
 	.companyContainer > h2,
 	.contactContainer > h2 {
 		font-size: 36px;
 	}
-	.companyContainer > img {
-		width: 60%;
-	}
-	.companyContainer > p,
-	.companyContainer > p {
-		width: 80%;
-		line-height: 2;
-		margin: auto;
-	}
+
+	/* .companyContainer > p,
+	.contactContainer > p {
+		width: 90%;
+	} */
 	.cardDescription {
 		width: 90%;
 		padding-bottom: 30px;
@@ -664,6 +689,9 @@ nav ul > li > h3:not(.active):hover {
 @media screen and (max-width: 768px) {
 	.navBar {
 		padding: 8px 30px 8px 5px;
+	}
+	.headerMenuLogo {
+		margin-left: 0px;
 	}
 	.hamburguerMenu {
 		display: flex;
@@ -719,17 +747,13 @@ nav ul > li > h3:not(.active):hover {
 		/* margin: 20px auto 240px; */
 		width: 80%;
 	}
-	.cardDescription {
-		font-size: 24px;
-	}
+
 	.companyContainer > h2,
 	.contactContainer > h2 {
 		font-size: 36px;
 		margin: 40px;
 	}
-	.companyContainer > img {
-		width: 50%;
-	}
+
 	.companyContainer > p,
 	.companyContainer > p {
 		font-size: 28px;
@@ -738,6 +762,9 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.cardDescription > p {
 		font-size: 32px;
+	}
+	.countainerPageNF {
+		margin: -130px auto 30px;
 	}
 }
 
@@ -767,10 +794,10 @@ nav ul > li > h3:not(.active):hover {
 		width: 250px;
 		border-radius: 20%;
 		margin: auto;
-		border: solid 5px red;
+		/* border: solid 5px red; */
 	}
-	.aboutUsTitle > img {
-		width: 250px;
+	.aboutUsContainer {
+		gap: 20px;
 	}
 	.mainTitle {
 		margin: -120px 0px 40px 0px;
@@ -792,5 +819,14 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.cardDescription > p {
 		font-size: 28px;
+	}
+	.marginFifty {
+		margin-top: 30px;
+	}
+	.countainerPageNF {
+		margin: -110px auto 30px;
+	}
+	.pageNotFound {
+		width: 80%;
 	}
 }

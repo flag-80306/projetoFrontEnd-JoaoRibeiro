@@ -24,11 +24,7 @@ function AboutUsViewLiliana() {
 					</p>
 					<div className='button marginBottom buttonSize'>
 						<Link href='/AboutUs'>
-							<p>
-								Get to know
-								<br />
-								João Pedro
-							</p>
+							<p>Get to know João</p>
 						</Link>
 					</div>
 				</div>
