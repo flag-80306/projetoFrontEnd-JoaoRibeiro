@@ -306,7 +306,7 @@ nav ul > li > h3:not(.active):hover {
 	border-radius: 10px 90px;
 }
 .btnSendSize {
-	width: 300px;
+	width: 300px !important;
 	height: 60px !important;
 	font-size: 28px;
 	font-weight: 600;
@@ -412,92 +412,111 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	border: solid 3px red;
+	/* border: solid 3px red; */
 	gap: 20px;
+	width: 100%;
 }
 
 .contactContainer {
-	/* font-size: 24px; */
-	max-width: 50%;
-
-	border: solid 3px orange;
-
 	display: flex;
 	flex-direction: column;
-	width: 61%;
+	width: 90%;
 	margin: auto;
 	align-items: flex-start;
 }
 
+.contactContainer > h2 {
+	/* border: solid 3px red; */
+	margin: 20px auto 0px;
+}
 .contactContainer > p {
 	line-height: 2;
 	padding: 20px 10px;
 	font-size: 32px;
+	/* border: solid 3px red; */
 }
 
-.contactInfo > h5 > a {
+.contactInfo {
+	width: 90%;
+	display: flex;
+	margin-bottom: 30px;
+}
+.contactInfo > p > a {
 	text-decoration: none;
 	color: #4a6660;
+	line-height: 0px;
+	font-size: 28px;
 	/* margin: 0px auto; */
 }
-.contactInfo {
-	background-color: #dbcc95;
-	min-width: 30%;
-	/* font-size: 28px; */
-	text-align: center;
-
-	/* border: solid 3px green; */
-}
-
-.contactInfo > h5 {
-	/* margin: 0px; */
+.contactInfo > p {
 	padding: 15px;
 	font-size: 32px;
-	line-height: 2.5;
+
+	text-align: left;
+	margin: 0px auto;
+	/* border: solid 3px red; */
 }
+.contactBox {
+	background-color: #dbcc95;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .contactForm {
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
-	margin: 0px auto;
+	/* margin: 0px auto; */
 	font-size: 28px;
+	/* border: solid 3px red; */
 }
-.emailPhoneContactForm {
+.infoContactForm {
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
+	/* align-content: center; */
+	/* align-items: center; */
 	justify-content: center;
-	padding: 20px;
+	/* flex-direction: column; */
+	padding-bottom: 20px;
+	margin: auto;
+	/* border: solid 4px red; */
 }
 .DateContactForm {
-	gap: 30px;
+	gap: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 20px;
 }
 .textBoxContactForm {
 	padding: 20px;
-	/* display: flex; */
-	flex-wrap: wrap;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+	/* border: solid 4px red; */
 }
 .allBoxContact {
 	border-radius: 20px;
 	text-align: center;
 	height: 40px;
+
 	font-size: 26px;
 	color: rgb(90, 85, 85);
 }
 .contactTextArea {
-	border-radius: 20px;
-	text-align: center;
-	height: 100px;
-	width: 500px;
-	font-size: 26px;
-	color: rgb(90, 85, 85);
+	height: 50%;
+	width: 90%;
+	margin: 0px auto;
+	display: flex;
 }
-
+.writeMessage {
+	padding-left: 6%;
+}
+.boxSize {
+	width: 430px;
+}
 /*-------------------------------------*/
 
 /*---------------Slider----------------------*/
@@ -677,13 +696,15 @@ nav ul > li > h3:not(.active):hover {
 		font-size: 36px;
 	}
 
-	/* .companyContainer > p,
-	.contactContainer > p {
-		width: 90%;
-	} */
+	.boxSize {
+		width: 378px;
+	}
 	.cardDescription {
 		width: 90%;
 		padding-bottom: 30px;
+	}
+	.contactInfo > p > a {
+		letter-spacing: -2px;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -763,6 +784,13 @@ nav ul > li > h3:not(.active):hover {
 	.cardDescription > p {
 		font-size: 32px;
 	}
+	.contactInfo {
+		flex-wrap: wrap;
+	}
+	.contactInfo > p {
+		margin: 0px;
+	}
+
 	.countainerPageNF {
 		margin: -130px auto 30px;
 	}
@@ -820,6 +848,7 @@ nav ul > li > h3:not(.active):hover {
 	.cardDescription > p {
 		font-size: 28px;
 	}
+
 	.marginFifty {
 		margin-top: 30px;
 	}

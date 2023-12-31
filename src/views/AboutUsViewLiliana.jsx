@@ -1,5 +1,5 @@
 import { Link } from 'wouter'; // npm i wouter
-function AboutUsViewLiliana() {
+function AboutUsView() {
 	return (
 		<>
 			<div className='aboutUsContainer'>
@@ -22,18 +22,12 @@ function AboutUsViewLiliana() {
 						<br />
 						It represents an experience etched in memory for a lifetime.
 					</p>
-					<div className='button marginBottom buttonSize'>
-						<Link href='/AboutUs'>
-							<p>Get to know João</p>
-						</Link>
-					</div>
 				</div>
 				<div className='aboutUsTitle'>
 					<h2>
 						Hey there, <br />
 						I'm Liliana!
 					</h2>
-
 					<img src='/img/Liliana.png' alt='Liliana' />
 
 					<p>
@@ -41,6 +35,11 @@ function AboutUsViewLiliana() {
 						mysteries of ancient cities, I blend my love for history with a deep connection to Amarante, my hometown. Together with João Ribeiro, we're embarking on an exciting new project. Join us in
 						discovering Amarante—a romantic city nestled in breathtaking nature.
 					</p>
+					<div className='button marginBottom buttonSize'>
+						<Link href='/AboutUs'>
+							<p>Get to know João</p>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</>
