@@ -2,7 +2,7 @@ import NavBar from './components/NavBar.jsx';
 import { Route, Switch } from 'wouter';
 import FooterBar from './components/FooterBar.jsx';
 import AboutUsView from './views/AboutUsView.jsx';
-import AboutUsViewLiliana from './views/AboutUsViewLiliana.jsx';
+import AboutUsLiliana from './views/AboutUsLiliana.jsx';
 import ContactView from './views/ContactView.jsx';
 import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
@@ -25,7 +25,7 @@ function App() {
 					<AboutUsView />
 				</Route>
 				<Route path='/AboutUsLiliana'>
-					<AboutUsViewLiliana />
+					<AboutUsLiliana />
 				</Route>
 				<Route path='/Contact'>
 					<ContactView />

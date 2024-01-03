@@ -1,5 +1,5 @@
-import Carroussel from './Carroussel.jsx';
-import { slides } from '../data/carouselData.json';
+import Slide from './Slide.jsx';
+import { marao } from '../services/slideData.json';
 import { Link } from 'wouter'; // npm i wouter
 
 function CardInfo() {
@@ -9,8 +9,8 @@ function CardInfo() {
 				<h2>Inside Marão</h2>
 				<p>(icon)13-03-2020</p>
 			</div>
-			<div className='CardCarroussel'>
-				<Carroussel data={slides} />
+			<div className='CardSlide'>
+				<Slide services={marao} />
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />

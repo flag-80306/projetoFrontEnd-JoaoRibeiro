@@ -1,5 +1,5 @@
 import { Link } from 'wouter'; // npm i wouter
-function AboutUsView() {
+function AboutUsLiliana() {
 	return (
 		<>
 			<div className='aboutUsContainer'>
@@ -46,4 +46,4 @@ function AboutUsView() {
 	);
 }
 
-export default AboutUsViewLiliana;
+export default AboutUsLiliana;
