@@ -3,8 +3,8 @@ function TitleContainer() {
 		<>
 			<div className='mainImageTitle'>
 				<video width='100%' height='700px' autoPlay muted loop>
-					<source src='/video/amarante_tours_1080.mp4' type='video/mp4' />
-					Seu navegador não suporta o elemento de vídeo.
+					<source src='/public/video/amarante_tours_1080.mp4' type='video/mp4' />
+					Your browser do not support this promotional video about Inside Experiences.
 				</video>
 
 				<div className='mainTitle'>

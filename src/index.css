@@ -151,9 +151,9 @@ nav ul > li > h3:not(.active):hover {
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 30px 150px;
+	margin: 0px 20px 150px;
 	justify-content: space-evenly;
-	gap: 30px;
+	gap: 10px;
 	row-gap: 100px;
 }
 .card:hover {
@@ -161,34 +161,46 @@ nav ul > li > h3:not(.active):hover {
 }
 
 .card {
-	border: solid 4px #c3e2c2;
-	border-radius: 15px;
-	background: url('..//img/cardPhoto/marao.png');
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
+
 	width: 200px;
-	height: 300px;
-	/* margin: 0 10px; */
+	height: 310px;
+	/* margin: 0 20px; */
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
+}
+.card > img {
+	object-fit: cover;
+	width: 192px;
+	height: 302px;
+	border: solid 4px #c3e2c2;
+	border-radius: 20px;
+	position: absolute;
+	z-index: 1;
 }
 
 .cardText {
-	padding: 0px 20px;
+	padding-left: 20px;
+
 	background-color: rgba(0, 0, 0, 0.192);
 	box-sizing: border-box;
+	border: solid 4px #c3e2c2;
+	border-top: none;
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	transform: translateY(72%);
+	transform: translateY(74%);
 	transition: all 0.4s ease-in-out;
 	color: white;
 	backdrop-filter: blur(6px);
+	z-index: 2;
 }
 .cardText > h3 {
 	font-size: 24px;
-	margin: 10px 0px 0px;
+	margin-top: 05px;
 	padding-bottom: 10px;
 }
 .cardText > p {
@@ -338,7 +350,6 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
 	gap: 20px;
 	/* text-align: center; */
 	/* border: solid 5px red; */
@@ -530,7 +541,7 @@ nav ul > li > h3:not(.active):hover {
 }
 .slide {
 	border-radius: 20px;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 10px #c3e2c2;
 	width: 100%;
 }
 .slideHidden {
@@ -540,8 +551,8 @@ nav ul > li > h3:not(.active):hover {
 	position: absolute;
 	width: 2rem;
 	height: 2rem;
-	color: white;
-	filter: drop-shadow(0px 0px 10px black);
+	color: #c3e2c2;
+	filter: drop-shadow(0px 0px 10px #4a6660);
 }
 .arrow:hover {
 	cursor: pointer;
@@ -555,17 +566,19 @@ nav ul > li > h3:not(.active):hover {
 .indicators {
 	right: 50%;
 	position: absolute;
-	bottom: 1rem;
+	bottom: 16px;
 }
 .indicator {
-	background-color: white;
-	height: 1.5rem;
+	border: solid 1px #c3e2c2;
+	background-color: #c3e2c2;
+	height: 24px;
 	width: 1.5rem;
 	border-radius: 100%;
-	gap: 3px;
+	/* gap: 20px; */
 }
 .indicatorInactive {
-	background-color: #746f6fc2;
+	border: solid 1px #4a6660;
+	background-color: #4a6660;
 	height: 1rem;
 	width: 1rem;
 	cursor: pointer;
@@ -695,7 +708,10 @@ nav ul > li > h3:not(.active):hover {
 	.contactContainer > h2 {
 		font-size: 36px;
 	}
-
+	.cardContainer {
+		margin: 0px 40px 150px;
+		gap: 50px;
+	}
 	.boxSize {
 		width: 378px;
 	}
