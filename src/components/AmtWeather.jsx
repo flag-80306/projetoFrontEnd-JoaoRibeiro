@@ -10,7 +10,6 @@ function AmtWeather() {
 
 			setWeather(result);
 		});
-		console.log(result);
 	}, []);
 
 	return (
@@ -18,7 +17,7 @@ function AmtWeather() {
 			<div className='weatherContainer'>
 				<div className='weatherCard'>
 					{weather.map(item => {
-						return <div key={item}>{item}</div>;
+						return <div key={item.id}>{item}</div>;
 					})}
 				</div>
 			</div>

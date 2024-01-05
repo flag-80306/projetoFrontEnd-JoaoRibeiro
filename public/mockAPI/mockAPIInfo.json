@@ -1,120 +1,4 @@
 {
-	"video": "/video/amarante_tours_1080.mp4",
-	"slideInfo": {
-		"marao": [
-			{
-				"src": "/img/slider/marao_1.png",
-				"alt": "marao Jeep photo"
-			},
-			{
-				"src": "/img/slider/marao_2.png",
-				"alt": "marao Jeep photo"
-			},
-			{
-				"src": "/img/slider/marao_3.png",
-				"alt": "marao Jeep photo"
-			}
-		],
-		"city": [
-			{
-				"src": "/img/slider/city_1.png",
-				"alt": "Amarante tour"
-			},
-			{
-				"src": "/img/slider/city_2.png",
-				"alt": "Amarante tour"
-			},
-			{
-				"src": "/img/slider/city_3.png",
-				"alt": "Amarante tour"
-			}
-		],
-		"pastry": [
-			{
-				"src": "/img/slider/Pastry_1.png",
-				"alt": "Pastry workshp experience"
-			},
-			{
-				"src": "/img/slider/Pastry_2.png",
-				"alt": "Pastry workshp experience"
-			},
-			{
-				"src": "/img/slider/Pastry_3.png",
-				"alt": "Pastry workshp experience"
-			}
-		],
-		"verde": [
-			{
-				"src": "/img/slider/verde_1.png",
-				"alt": "Verde Wine tour"
-			},
-			{
-				"src": "/img/slider/verde_2.png",
-				"alt": "Verde Wine tour"
-			},
-			{
-				"src": "/img/slider/verde_3.png",
-				"alt": "Verde Wine tour"
-			}
-		],
-		"kayak": [
-			{
-				"src": "/img/slider/kayak_1.png",
-				"alt": "Kayak tour"
-			},
-			{
-				"src": "/img/slider/kayak_2.png",
-				"alt": "Kayak tour"
-			},
-			{
-				"src": "/img/slider/kayak_3.png",
-				"alt": "Kayak tour"
-			}
-		],
-		"aboboreira": [
-			{
-				"src": "/img/slider/Aboboreira_1.png",
-				"alt": "Aboboreira jeep tour"
-			},
-			{
-				"src": "/img/slider/Aboboreira_2.png",
-				"alt": "Aboboreira jeep tour"
-			},
-			{
-				"src": "/img/slider/Aboboreira_3.png",
-				"alt": "Aboboreira jeep tour"
-			}
-		],
-		"amadeo": [
-			{
-				"src": "/img/slider/Amadeo_1.png",
-				"alt": "Amadeo tour"
-			},
-			{
-				"src": "/img/slider/Amadeo_2.png",
-				"alt": "Amadeo tour"
-			},
-			{
-				"src": "/img/slider/Amadeo_3.png",
-
-				"alt": "Amadeo tour"
-			}
-		],
-		"verde": [
-			{
-				"src": "/img/slider/hike_1.png",
-				"alt": "Hiking tour"
-			},
-			{
-				"src": "/img/slider/hike_2.png",
-				"alt": "Hiking tour"
-			},
-			{
-				"src": "/img/slider/hike_3.png",
-				"alt": "Hiking tour"
-			}
-		]
-	},
 	"info": [
 		{
 			"id": 1,
@@ -123,7 +7,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" }
+			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/marao_1.png",
+					"alt": "marao Jeep photo"
+				},
+				{
+					"src": "/img/slider/marao_2.png",
+					"alt": "marao Jeep photo"
+				},
+				{
+					"src": "/img/slider/marao_3.png",
+					"alt": "marao Jeep photo"
+				}
+			]
 		},
 		{
 			"id": 2,
@@ -132,7 +30,24 @@
 			"price": "22€ per person",
 			"shortDescription": "Guided visit to the city center with the Convent Sweets degustation.",
 			"description": "Immerse yourself in the rich history the emblematic and romantic city of Amarante, where you can breathe history and discover a unique heritage with monuments and distinct personalities. These city tours include the tasting of conventual sweets.",
-			"cardImage": { "src": "/img/cardPhoto/city.png", "alt": "Amarante tour" }
+			"cardImage": {
+				"src": "/img/cardPhoto/city.png",
+				"alt": "Amarante tour"
+			},
+			"slideInfo": [
+				{
+					"src": "/img/slider/city_1.png",
+					"alt": "Amarante tour"
+				},
+				{
+					"src": "/img/slider/city_2.png",
+					"alt": "Amarante tour"
+				},
+				{
+					"src": "/img/slider/city_3.png",
+					"alt": "Amarante tour"
+				}
+			]
 		},
 		{
 			"id": 3,
@@ -141,7 +56,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/Pastry.png", "alt": "Pastry workshp experience" }
+			"cardImage": { "src": "/img/cardPhoto/Pastry.png", "alt": "Pastry workshp experience" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/Pastry_1.png",
+					"alt": "Pastry workshp experience"
+				},
+				{
+					"src": "/img/slider/Pastry_2.png",
+					"alt": "Pastry workshp experience"
+				},
+				{
+					"src": "/img/slider/Pastry_3.png",
+					"alt": "Pastry workshp experience"
+				}
+			]
 		},
 		{
 			"id": 4,
@@ -150,7 +79,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/verde.png", "alt": "Verde Wine tour" }
+			"cardImage": { "src": "/img/cardPhoto/verde.png", "alt": "Verde Wine tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/verde_1.png",
+					"alt": "Verde Wine tour"
+				},
+				{
+					"src": "/img/slider/verde_2.png",
+					"alt": "Verde Wine tour"
+				},
+				{
+					"src": "/img/slider/verde_3.png",
+					"alt": "Verde Wine tour"
+				}
+			]
 		},
 		{
 			"id": 5,
@@ -159,7 +102,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" }
+			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/kayak_1.png",
+					"alt": "Kayak tour"
+				},
+				{
+					"src": "/img/slider/kayak_2.png",
+					"alt": "Kayak tour"
+				},
+				{
+					"src": "/img/slider/kayak_3.png",
+					"alt": "Kayak tour"
+				}
+			]
 		},
 		{
 			"id": 6,
@@ -168,7 +125,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/Aboboreira.png", "alt": "Aboboreira jeep tour" }
+			"cardImage": { "src": "/img/cardPhoto/Aboboreira.png", "alt": "Aboboreira jeep tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/Aboboreira_1.png",
+					"alt": "Aboboreira jeep tour"
+				},
+				{
+					"src": "/img/slider/Aboboreira_2.png",
+					"alt": "Aboboreira jeep tour"
+				},
+				{
+					"src": "/img/slider/Aboboreira_3.png",
+					"alt": "Aboboreira jeep tour"
+				}
+			]
 		},
 		{
 			"id": 7,
@@ -177,7 +148,22 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/Amadeo.png", "alt": "Amadeo tour" }
+			"cardImage": { "src": "/img/cardPhoto/Amadeo.png", "alt": "Amadeo tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/Amadeo_1.png",
+					"alt": "Amadeo tour"
+				},
+				{
+					"src": "/img/slider/Amadeo_2.png",
+					"alt": "Amadeo tour"
+				},
+				{
+					"src": "/img/slider/Amadeo_3.png",
+
+					"alt": "Amadeo tour"
+				}
+			]
 		},
 		{
 			"id": 8,
@@ -186,7 +172,21 @@
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" }
+			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/hike_1.png",
+					"alt": "Hiking tour"
+				},
+				{
+					"src": "/img/slider/hike_2.png",
+					"alt": "Hiking tour"
+				},
+				{
+					"src": "/img/slider/hike_3.png",
+					"alt": "Hiking tour"
+				}
+			]
 		}
 	]
 }

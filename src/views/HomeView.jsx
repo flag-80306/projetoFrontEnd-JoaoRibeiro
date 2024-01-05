@@ -1,5 +1,6 @@
 import Card from '../components/Card.jsx';
-import PokeCardContainer from '../components/PokeCardContainer.jsx';
+import ExperienceContainer from '../components/ExperienceContainer.jsx';
+
 import TitleContainer from '../components/TitleContainer.jsx';
 
 function HomeView() {
@@ -11,11 +12,9 @@ function HomeView() {
 				<p>This list contains our best selling and best rated experiences.</p>
 			</div>
 			<div className='cardContainer'>
-				<Card />
-				<PokeCardContainer />
-
 				{/* <Card />
 				<Card /> */}
+				<ExperienceContainer />
 
 				{/* incluir aqui apenas as 5 tours com melhor ranking  */}
 			</div>

@@ -1,17 +1,16 @@
 import { Link } from 'wouter';
 import { useEffect, useState } from 'react';
-import fetchTourService from '../services/fetchTourService';
-function Card() {
+import tourAPIService from '../services/tourAPIService';
+function Card(tourURL) {
 	const [tour, setTour] = useState({});
 
-	async function getCardInfo() {
-		const result = await fetchTourService.fetchTourInfo();
-		// console.log(result);
-		setTour(result);
-	}
-
 	useEffect(function () {
-		getCardInfo();
+		(async function () {
+			// SIF - Self Invoking Function
+			const result = await tourAPIService.tourAPIInfo(tourURL);
+			// console.log(result);
+			setTour(result);
+		})();
 	}, []);
 
 	return (
