@@ -13,13 +13,7 @@ function HomeView() {
 				<p>This list contains our best selling and best rated experiences.</p>
 			</div>
 			<div className='cardContainer'>
-				{/* <Card />
-				<Card />
-				<Card />
-				<Card /> */}
 				<ExperienceContainer />
-
-				{/* incluir aqui apenas as 5 tours com melhor ranking  */}
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />

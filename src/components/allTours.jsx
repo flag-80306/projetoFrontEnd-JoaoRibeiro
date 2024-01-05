@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Card from '../components/Card.jsx';
-import tourAPIService from '../services/tourAPIService';
+import Card from './Card.jsx';
+import tourAPIService from '../services/tourAPIService.js';
 
-function ExperienceContainer() {
+function InsideTours() {
 	const [experienceInfo, setExperienceInfo] = useState([]);
 
 	useEffect(function () {
@@ -24,4 +24,4 @@ function ExperienceContainer() {
 	);
 }
 
-export default ExperienceContainer;
+export default InsideTours;
