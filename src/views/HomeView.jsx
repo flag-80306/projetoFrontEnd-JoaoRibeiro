@@ -1,4 +1,5 @@
 import Card from '../components/Card.jsx';
+import PokeCardContainer from '../components/PokeCardContainer.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
 
 function HomeView() {
@@ -11,9 +12,10 @@ function HomeView() {
 			</div>
 			<div className='cardContainer'>
 				<Card />
-				<Card />
-				<Card />
-				<Card />
+				<PokeCardContainer />
+
+				{/* <Card />
+				<Card /> */}
 
 				{/* incluir aqui apenas as 5 tours com melhor ranking  */}
 			</div>

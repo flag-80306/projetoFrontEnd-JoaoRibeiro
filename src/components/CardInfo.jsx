@@ -1,6 +1,7 @@
 import Slide from './Slide.jsx';
-import { marao } from '../services/slideData.json';
-import { Link } from 'wouter'; // npm i wouter
+import { city } from '/public/mockAPI/slideData.json';
+import { Link } from 'wouter';
+// import AmtWeather from './AmtWeather.jsx';
 
 function CardInfo() {
 	return (
@@ -10,10 +11,11 @@ function CardInfo() {
 				<p>(icon)13-03-2020</p>
 			</div>
 			<div className='CardSlide'>
-				<Slide services={marao} />
+				<Slide services={city} />
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
+
 				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p>
 			</div>
 			<div className='infoCard'>
@@ -27,6 +29,7 @@ function CardInfo() {
 
 				<div className='cardWeather'>
 					<img src='/img/weather.png' alt='tempo' />
+					{/* <AmtWeather /> */}
 				</div>
 			</div>
 			<div className='button marginBottom'>

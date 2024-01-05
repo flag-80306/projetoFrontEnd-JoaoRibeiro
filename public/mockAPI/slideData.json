@@ -15,7 +15,7 @@
 	],
 	"city": [
 		{
-			"src": "/public/img/slider/city_1.png",
+			"src": "/img/slider/city_1.png",
 			"alt": "Amarante tour"
 		},
 		{
@@ -23,91 +23,91 @@
 			"alt": "Amarante tour"
 		},
 		{
-			"src": "/public/img/slider/city_3.png",
+			"src": "/img/slider/city_3.png",
 			"alt": "Amarante tour"
 		}
 	],
 	"pastry": [
 		{
-			"src": "/public/img/slider/Pastry_1.png",
+			"src": "/img/slider/Pastry_1.png",
 			"alt": "Pastry workshp experience"
 		},
 		{
-			"src": "/public/img/slider/Pastry_2.png",
+			"src": "/img/slider/Pastry_2.png",
 			"alt": "Pastry workshp experience"
 		},
 		{
-			"src": "/public/img/slider/Pastry_3.png",
+			"src": "/img/slider/Pastry_3.png",
 			"alt": "Pastry workshp experience"
 		}
 	],
 	"verde": [
 		{
-			"src": "/public/img/slider/verde_1.png",
+			"src": "/img/slider/verde_1.png",
 			"alt": "Verde Wine tour"
 		},
 		{
-			"src": "/public/img/slider/verde_2.png",
+			"src": "/img/slider/verde_2.png",
 			"alt": "Verde Wine tour"
 		},
 		{
-			"src": "/public/img/slider/verde_3.png",
+			"src": "/img/slider/verde_3.png",
 			"alt": "Verde Wine tour"
 		}
 	],
 	"kayak": [
 		{
-			"src": "/public/img/slider/kayak_1.png",
+			"src": "/img/slider/kayak_1.png",
 			"alt": "Kayak tour"
 		},
 		{
-			"src": "/public/img/slider/kayak_2.png",
+			"src": "/img/slider/kayak_2.png",
 			"alt": "Kayak tour"
 		},
 		{
-			"src": "/public/img/slider/kayak_3.png",
+			"src": "/img/slider/kayak_3.png",
 			"alt": "Kayak tour"
 		}
 	],
 	"aboboreira": [
 		{
-			"src": "/public/img/slider/Aboboreira_1.png",
+			"src": "/img/slider/Aboboreira_1.png",
 			"alt": "Aboboreira jeep tour"
 		},
 		{
-			"src": "/public/img/slider/Aboboreira_2.png",
+			"src": "/img/slider/Aboboreira_2.png",
 			"alt": "Aboboreira jeep tour"
 		},
 		{
-			"src": "/public/img/slider/Aboboreira_3.png",
+			"src": "/img/slider/Aboboreira_3.png",
 			"alt": "Aboboreira jeep tour"
 		}
 	],
 	"amadeo": [
 		{
-			"src": "/public/img/slider/Amadeo_1.png",
+			"src": "/img/slider/Amadeo_1.png",
 			"alt": "Amadeo tour"
 		},
 		{
-			"src": "/public/img/slider/Amadeo_2.png",
+			"src": "/img/slider/Amadeo_2.png",
 			"alt": "Amadeo tour"
 		},
 		{
-			"src": "/public/img/slider/Amadeo_3.png",
+			"src": "/img/slider/Amadeo_3.png",
 			"alt": "Amadeo tour"
 		}
 	],
 	"verde": [
 		{
-			"src": "/public/img/slider/hike_1.png",
+			"src": "/img/slider/hike_1.png",
 			"alt": "Hiking tour"
 		},
 		{
-			"src": "/public/img/slider/hike_2.png",
+			"src": "/img/slider/hike_2.png",
 			"alt": "Hiking tour"
 		},
 		{
-			"src": "/public/img/slider/hike_3.png",
+			"src": "/img/slider/hike_3.png",
 			"alt": "Hiking tour"
 		}
 	]

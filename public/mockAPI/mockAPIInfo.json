@@ -1,10 +1,6 @@
 {
-	"video": [
-		{
-			"src": "/video/amarante_tours_1080.mp4"
-		}
-	],
-	"photos": {
+	"video": "/video/amarante_tours_1080.mp4",
+	"slideInfo": {
 		"marao": [
 			{
 				"src": "/img/slider/marao_1.png",
@@ -119,24 +115,15 @@
 			}
 		]
 	},
-	"CardPhoto": {
-		"marao": [{ "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" }],
-		"city": [{ "src": "/img/cardPhoto/city.png", "alt": "Amarante tour" }],
-		"pastry": [{ "src": "/img/cardPhoto/Pastry.png", "alt": "Pastry workshp experience" }],
-		"verde": [{ "src": "/img/cardPhoto/verde.png", "alt": "Verde Wine tour" }],
-		"kayak": [{ "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" }],
-		"aboboreira": [{ "src": "/img/cardPhoto/Aboboreira.png", "alt": "Aboboreira jeep tour" }],
-		"amadeo": [{ "src": "/img/cardPhoto/Amadeo.png", "alt": "Amadeo tour" }],
-		"verde": [{ "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" }]
-	},
-	"Info": [
+	"info": [
 		{
 			"id": 1,
 			"name": "Inside Marão",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" }
 		},
 		{
 			"id": 2,
@@ -144,15 +131,17 @@
 			"duration": "2 hours",
 			"price": "22€ per person",
 			"shortDescription": "Guided visit to the city center with the Convent Sweets degustation.",
-			"description": "Immerse yourself in the rich history the emblematic and romantic city of Amarante, where you can breathe history and discover a unique heritage with monuments and distinct personalities. These city tours include the tasting of conventual sweets."
+			"description": "Immerse yourself in the rich history the emblematic and romantic city of Amarante, where you can breathe history and discover a unique heritage with monuments and distinct personalities. These city tours include the tasting of conventual sweets.",
+			"cardImage": { "src": "/img/cardPhoto/city.png", "alt": "Amarante tour" }
 		},
 		{
 			"id": 3,
-			"name": "Inside Pastry",
+			"name": "Inside Pastries",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/Pastry.png", "alt": "Pastry workshp experience" }
 		},
 		{
 			"id": 4,
@@ -160,7 +149,8 @@
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/verde.png", "alt": "Verde Wine tour" }
 		},
 		{
 			"id": 5,
@@ -168,7 +158,8 @@
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" }
 		},
 		{
 			"id": 6,
@@ -176,7 +167,8 @@
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/Aboboreira.png", "alt": "Aboboreira jeep tour" }
 		},
 		{
 			"id": 7,
@@ -184,7 +176,8 @@
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/Amadeo.png", "alt": "Amadeo tour" }
 		},
 		{
 			"id": 8,
@@ -192,7 +185,8 @@
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds."
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" }
 		}
 	]
 }

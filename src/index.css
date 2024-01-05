@@ -175,7 +175,7 @@ nav ul > li > h3:not(.active):hover {
 .card > img {
 	object-fit: cover;
 	width: 192px;
-	height: 302px;
+	height: 300px;
 	border: solid 4px #c3e2c2;
 	border-radius: 20px;
 	position: absolute;
@@ -189,13 +189,14 @@ nav ul > li > h3:not(.active):hover {
 	box-sizing: border-box;
 	border: solid 4px #c3e2c2;
 	border-top: none;
+	border-radius: 20px;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	transform: translateY(74%);
-	transition: all 0.4s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	color: white;
-	backdrop-filter: blur(6px);
+	backdrop-filter: blur(5px);
 	z-index: 2;
 }
 .cardText > h3 {

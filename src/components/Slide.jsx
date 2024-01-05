@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 function Slide({ services }) {
 	const [slide, setSlide] = useState(0);
@@ -14,6 +14,7 @@ function Slide({ services }) {
 		<>
 			<div className='sliderContainer'>
 				<BsArrowLeftCircleFill className='arrow left-arrow' onClick={PrevSlide} />
+
 				{services.map((item, index) => {
 					return <img src={item.src} alt={item.alt} key={index} className={slide === index ? 'slide' : 'slide slideHidden'} />;
 				})}
