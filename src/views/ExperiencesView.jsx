@@ -1,5 +1,6 @@
 import TitleContainer from '../components/TitleContainer.jsx';
 import Card from '../components/Card.jsx';
+import ExperienceContainer from '../components/ExperienceContainer.jsx';
 function ExperiencesView() {
 	return (
 		<>
@@ -9,14 +10,7 @@ function ExperiencesView() {
 				<p>Discover and embark on unforgettable journeys that promise excitement and wonder!</p>
 			</div>
 			<div className='cardContainer'>
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
+				<ExperienceContainer />
 			</div>
 		</>
 	);

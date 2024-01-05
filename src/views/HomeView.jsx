@@ -1,5 +1,6 @@
 import Card from '../components/Card.jsx';
 import ExperienceContainer from '../components/ExperienceContainer.jsx';
+import tourAPIService from '../services/tourAPIService';
 
 import TitleContainer from '../components/TitleContainer.jsx';
 
@@ -13,6 +14,8 @@ function HomeView() {
 			</div>
 			<div className='cardContainer'>
 				{/* <Card />
+				<Card />
+				<Card />
 				<Card /> */}
 				<ExperienceContainer />
 

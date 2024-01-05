@@ -4,7 +4,7 @@ function AmtWeather() {
 	const [weather, setWeather] = useState([]);
 	useEffect(function () {
 		(async function () {
-			const url = 'https://tile.openweathermap.org/map/{temp_new}/{127}/{127}/{127}.png?appid={20a33353c598f90c78dc5d9127b60779}';
+			const url = 'http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={20a33353c598f90c78dc5d9127b60779}';
 			const response = await fetch(url);
 			const result = await response.json();
 

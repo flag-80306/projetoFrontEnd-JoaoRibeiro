@@ -3,6 +3,10 @@
 		{
 			"id": 1,
 			"name": "Inside Marão",
+			"lat": 0,
+			"lon": 0,
+			"date": "Since 05.05.2018",
+			"city": "Amarante",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
@@ -26,6 +30,10 @@
 		{
 			"id": 2,
 			"name": "Inside Amarante",
+			"lat": 0,
+			"lon": 0,
+			"date": "Since 05.05.2018",
+			"city": "Amarante",
 			"duration": "2 hours",
 			"price": "22€ per person",
 			"shortDescription": "Guided visit to the city center with the Convent Sweets degustation.",
@@ -52,11 +60,15 @@
 		{
 			"id": 3,
 			"name": "Inside Pastries",
+			"lat": 0,
+			"lon": 0,
+			"date": "Since 05.05.2018",
+			"city": "Amarante",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/Pastry.png", "alt": "Pastry workshp experience" },
+			"cardImage": { "src": "/img/cardPhoto/pastry.png", "alt": "Pastry workshp experience" },
 			"slideInfo": [
 				{
 					"src": "/img/slider/Pastry_1.png",
@@ -75,6 +87,10 @@
 		{
 			"id": 4,
 			"name": "Inside Verde",
+			"lat": 0,
+			"lon": 0,
+			"date": "Since 05.05.2018",
+			"city": "Amarante",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",

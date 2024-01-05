@@ -8,15 +8,15 @@ function ExperienceContainer() {
 	useEffect(function () {
 		(async function () {
 			const result = await tourAPIService.getToursData();
-			const bestTours = result.info.slice(0, 5);
-			setExperienceInfo(bestTours);
+
+			setExperienceInfo(result);
 		})();
 	}, []);
 
 	return (
 		<>
 			<div className='cardContainer'>
-				{experienceInfo.map(item => (
+				{experienceInfo.info?.map(item => (
 					<Card key={item.id} tour={item} />
 				))}
 			</div>

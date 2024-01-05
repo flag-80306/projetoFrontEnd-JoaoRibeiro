@@ -13,16 +13,14 @@ async function tourAPIInfo(url) {
 	};
 }
 
-{
-	async function getTourCard() {
-		const response = await fetch('../services/tourAPIService' + limit);
-		const result = await response.json();
+async function getToursData() {
+	const response = await fetch('/mockAPI/mockAPIInfo.json');
+	const result = await response.json();
 
-		return result;
-	}
+	return result;
 }
 
 export default {
 	tourAPIInfo,
-	getTourCard,
+	getToursData,
 };
