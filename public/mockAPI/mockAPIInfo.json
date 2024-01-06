@@ -183,7 +183,30 @@
 		},
 		{
 			"id": 8,
-			"name": "Inside Hike",
+			"name": "Inside Hiking",
+			"duration": "6 hours",
+			"price": "70€ per person",
+			"shortDescription": "Jeep tour in Marão's Mountain",
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/hike_1.png",
+					"alt": "Hiking tour"
+				},
+				{
+					"src": "/img/slider/hike_2.png",
+					"alt": "Hiking tour"
+				},
+				{
+					"src": "/img/slider/hike_3.png",
+					"alt": "Hiking tour"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "Inside Hiking",
 			"duration": "6 hours",
 			"price": "70€ per person",
 			"shortDescription": "Jeep tour in Marão's Mountain",

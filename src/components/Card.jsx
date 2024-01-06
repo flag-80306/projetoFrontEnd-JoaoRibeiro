@@ -1,5 +1,4 @@
 import { Link } from 'wouter';
-import { useEffect, useState } from 'react';
 
 function Card({ tour }) {
 	return (
