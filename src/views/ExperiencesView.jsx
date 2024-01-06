@@ -1,5 +1,5 @@
 import TitleContainer from '../components/TitleContainer.jsx';
-import InsideTours from '../components/AllTours.jsx';
+import InsideTours from '../components/InsideTours.jsx';
 
 function ExperiencesView() {
 	return (

@@ -153,7 +153,7 @@ nav ul > li > h3:not(.active):hover {
 	flex-wrap: wrap;
 	margin: 0px 20px 150px;
 	justify-content: space-evenly;
-	gap: 10px;
+	gap: 90px;
 	row-gap: 100px;
 }
 .card:hover {
@@ -186,30 +186,36 @@ nav ul > li > h3:not(.active):hover {
 	padding-left: 20px;
 	background-color: rgba(0, 0, 0, 0.192);
 	box-sizing: border-box;
-	border: solid 1px #c3e2c2;
+	border: solid 0px #c3e2c2;
 	border-top: none;
 	border-radius: 20px;
-	height: 100%;
+	height: 97%;
 	width: 100%;
 	position: absolute;
-	transform: translateY(74%);
+	transform: translateY(68%);
 	transition: all 0.3s ease-in-out;
 	color: white;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(1px);
 	z-index: 2;
+	/* margin: 0px 0px 0px 5px; */
 }
 .cardText > h3 {
 	font-size: 24px;
 	margin-top: 05px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	letter-spacing: 3px;
+	margin-top: 20px;
 }
 .cardText > p {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
 .card:hover .cardText {
-	transform: translateY(10%);
+	width: 96%;
+	height: 98%;
+	transform: translateY(2%);
+	margin: -2px 0px 0px 4px;
+	border-radius: 17px;
 }
 /*-------------------------------------*/
 
@@ -662,6 +668,12 @@ nav ul > li > h3:not(.active):hover {
 		width: 90%;
 		padding-bottom: 30px;
 	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.cardText {
+		border-radius: 20px 20px 20px 20px;
+	}
 	.contactInfo > p > a {
 		letter-spacing: -2px;
 	}
@@ -728,14 +740,20 @@ nav ul > li > h3:not(.active):hover {
 		margin: 0px 20px 100px;
 	}
 	.card {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 	.cardText {
-		transform: translateY(10%);
-		border: solid 1px #c3e2c2;
+		transform: translateY(1%);
+
 		border-top: none;
-		border-radius: 20px;
+		border-radius: 17px;
+		width: 96%;
+		height: 97%;
+		margin: 1px 0px 0px 4px;
 	}
+	/* .cardText > h3 {
+		margin-top: 30px;
+	} */
 	.experiencesTitle {
 		/* margin: 20px auto 240px; */
 		width: 80%;
@@ -816,6 +834,9 @@ nav ul > li > h3:not(.active):hover {
 	.experiencesTitle > p {
 		font-size: 28px;
 		line-height: 1.2;
+	}
+	.cardText {
+		backdrop-filter: blur(1px);
 	}
 	.cardDescription > p {
 		font-size: 28px;

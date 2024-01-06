@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 function Card({ tour }) {
 	return (
 		<>
-			<Link href='/CardInfo'>
+			<Link href='/TourView'>
 				<div className='card'>
 					<img src={tour.cardImage.src} alt={tour.cardImage.alt} />
 

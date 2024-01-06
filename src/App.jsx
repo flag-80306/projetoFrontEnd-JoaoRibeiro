@@ -7,7 +7,7 @@ import ContactView from './views/ContactView.jsx';
 import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
-import CardInfo from './components/CardInfo.jsx';
+import TourView from './views/TourView.jsx';
 import BookNowView from './views/BookNowView.jsx';
 
 function App() {
@@ -33,8 +33,8 @@ function App() {
 				<Route path='*'>
 					<NotFoundPageView />
 				</Route>
-				<Route path='/CardInfo'>
-					<CardInfo />
+				<Route path='/TourView'>
+					<TourView />
 				</Route>
 				<Route path='/BookNow'>
 					<BookNowView />

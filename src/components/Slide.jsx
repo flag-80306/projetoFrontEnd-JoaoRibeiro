@@ -3,6 +3,17 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 function Slide({ services }) {
 	const [slide, setSlide] = useState(0);
 
+	// async function getSlideData() {
+	// 	const response = await fetch('/mockAPI/mockAPIInfo.json');
+	// 	const result = await response.json();
+	// 	console.log(result);
+	// 	console.log(result.info);
+	// 	setSlide(result);
+	// }
+	// useEffect(function () {
+	// 	getSlideData();
+	// }, []);
+
 	const NextSlide = () => {
 		setSlide(slide === services.length - 1 ? 0 : slide + 1);
 	};
