@@ -194,9 +194,11 @@ nav ul > li > h3:not(.active):hover {
 	transform: translateY(68%);
 	transition: all 0.3s ease-in-out;
 	color: white;
-	backdrop-filter: blur(1px);
+	backdrop-filter: blur(2px);
 	z-index: 2;
 	/* margin: 0px 0px 0px 5px; */
+	display: flex;
+	flex-wrap: wrap;
 }
 .cardText > h3 {
 	font-size: 24px;
@@ -206,8 +208,9 @@ nav ul > li > h3:not(.active):hover {
 	margin-top: 20px;
 }
 .cardText > p {
-	font-size: 16px;
+	font-size: 20px;
 	margin-bottom: 10px;
+	text-align: left !important;
 }
 .card:hover .cardText {
 	width: 96%;

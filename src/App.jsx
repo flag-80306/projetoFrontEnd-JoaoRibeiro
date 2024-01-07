@@ -8,6 +8,7 @@ import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
 import TourView from './views/TourView.jsx';
+// import TourView_test from './views/TourView_test.jsx';
 import BookNowView from './views/BookNowView.jsx';
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
 				<Route path='/TourView'>
 					<TourView />
 				</Route>
+				{/* <Route path='/TourView_test'>
+					<TourView_test />
+				</Route> */}
 				<Route path='/BookNow'>
 					<BookNowView />
 				</Route>

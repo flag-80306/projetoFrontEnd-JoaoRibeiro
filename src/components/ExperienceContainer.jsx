@@ -9,6 +9,7 @@ function ExperienceContainer() {
 		(async function () {
 			const result = await tourAPIService.getToursData();
 			const bestTours = result.info.slice(0, 5);
+
 			setExperienceInfo(bestTours);
 		})();
 	}, []);
