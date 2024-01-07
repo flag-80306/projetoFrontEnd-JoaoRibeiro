@@ -12,36 +12,28 @@ function ContactView() {
 					</p>
 					<form action='' method='post' className='contactForm'>
 						<div className='infoContactForm'>
-							<div>
+							<div className='contactForm'>
 								<label for='name'>Name: </label>
-								<input type='text' id='nome' name='name' placeholder='First and Last name' className='allBoxContact' required />
+								<input type='text' id='name' name='name' placeholder='First and Last Name' className='boxSize allBoxContact' required />
 							</div>
-							<div>
+							<div className='contactForm'>
 								<label for='email'>Email: </label>
-								<input type='email' id='email' name='email' placeholder='email' className='allBoxContact' required />
+								<input type='email' id='email' name='email' placeholder='Email' className='allBoxContact' required />
 							</div>
-							<div>
-								<label for='phoneNumberphone'>Phone: </label>
-								<input type='phoneNumberphone' id='phoneNumberphone' name='phoneNumber' placeholder='Phone Number' className='allBoxContact' required />
-							</div>
-						</div>
-						<div className='DateContactForm'>
-							<div>
-								<label for='startDate'>From: </label>
-								<input type='date' id='startDate' name='startDate' className='allBoxContact' />
-							</div>
-							<div>
-								<label for='endDate'>To: </label>
-								<input type='date' id='endDate' name='endDate' className='allBoxContact' />
+							<div className='contactForm'>
+								<label for='phoneNumber'>Phone: </label>
+								<input type='phoneNumber' id='phoneNumber' name='phoneNumber' placeholder='Phone Number' className=' allBoxContact' required />
 							</div>
 						</div>
-						<div className='textBoxContactForm'>
-							<label for='mensagem' className='writeMessage'>
+
+						<div className='contactForm'>
+							<label for='message' className='writeMessage'>
 								Your Message:
 							</label>
 
 							<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea allBoxContact  '></textarea>
 						</div>
+
 						<input type='submit' value='Send' className='button btnSendSize' />
 					</form>
 				</div>
@@ -50,9 +42,13 @@ function ContactView() {
 						<p>
 							Phone Number:
 							<br />
-							<a href='tel:+351918409757'>+351 918409757</a>
+							<a href='tel:+351918409757' className='numberContact'>
+								+351 918409757
+							</a>
 							<br />
-							<a href='tel:+351919155900'>+351 919155900</a>
+							<a href='tel:+351919155900' className='numberContact'>
+								+351 919155900
+							</a>
 						</p>
 						<p>
 							Email:

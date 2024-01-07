@@ -139,7 +139,6 @@ nav ul > li > h3:not(.active):hover {
 	padding: 5px 20px 20px;
 	font-size: 32px;
 	text-align: center;
-
 	line-height: 1.5;
 }
 .marginFifty {
@@ -231,6 +230,9 @@ nav ul > li > h3:not(.active):hover {
 	justify-content: space-between;
 	margin-bottom: 30px;
 	/* border: solid 3px red; */
+}
+.icon {
+	width: 30px;
 }
 .cardDescription {
 	display: flex;
@@ -410,7 +412,7 @@ nav ul > li > h3:not(.active):hover {
 	/* border: solid 5px red; */
 }
 .aboutUsTitle > img {
-	border: solid 5px rgb(55, 211, 120);
+	border: solid 5px #c3e2c2;
 	width: 280px;
 	height: 280px;
 	object-fit: cover;
@@ -499,11 +501,11 @@ nav ul > li > h3:not(.active):hover {
 	justify-content: center;
 	/* flex-direction: column; */
 	padding-bottom: 20px;
-	margin: auto;
+	margin: 0px auto;
 	/* border: solid 4px red; */
 }
-.DateContactForm {
-	gap: 20px;
+.contactForm {
+	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -519,15 +521,17 @@ nav ul > li > h3:not(.active):hover {
 	border-radius: 20px;
 	text-align: center;
 	height: 40px;
-
+	width: 300px;
 	font-size: 26px;
 	color: rgb(90, 85, 85);
+	border: solid 2px #c3e2c2;
 }
 .contactTextArea {
-	height: 50%;
+	height: 70%;
 	width: 90%;
 	margin: 0px auto;
 	display: flex;
+	border: solid 2px #c3e2c2;
 }
 .writeMessage {
 	padding-left: 6%;
@@ -623,7 +627,7 @@ nav ul > li > h3:not(.active):hover {
 	}
 	nav ul > li {
 		font-size: 28px;
-		letter-spacing: -3px;
+		letter-spacing: -1px;
 	}
 	.mainTitle {
 		margin: -170px 0px 50px 0px;
@@ -799,7 +803,7 @@ nav ul > li > h3:not(.active):hover {
 	}
 	nav ul {
 		width: 45%;
-		margin: 324px 5% 0px 0px;
+		margin: 298px 5% 0px 0px;
 	}
 	nav ul > li {
 		font-size: 28px;
@@ -818,21 +822,22 @@ nav ul > li > h3:not(.active):hover {
 		gap: 20px;
 	}
 	.mainTitle {
-		margin: -120px 0px 40px 0px;
+		margin: -80px 0px 20px 0px;
 	}
 	.mainTitle > h1 {
-		font-size: 40px;
+		font-size: 32px;
 	}
 	.mainTitle > h3 {
-		font-size: 24px;
+		font-size: 20px;
 	}
+
 	.secondTitle > h2,
 	.experiencesTitle > h2 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	.secondTitle > p,
 	.experiencesTitle > p {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 1.2;
 	}
 	.cardText {
@@ -850,5 +855,65 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.pageNotFound {
 		width: 80%;
+	}
+	.buttonSize {
+		width: 250px;
+	}
+
+	.contactContainer > h2 {
+		margin: 20px auto 0px;
+		font-size: 32px;
+	}
+	.contactContainer > p {
+		margin: 0px 0px 0px 20px;
+		font-size: 28px;
+	}
+	.infoContactForm {
+		margin: 0px 12%;
+	}
+	.allBoxContact {
+		width: 250px;
+		font-size: 20px;
+		/* border: solid 4px red; */
+	}
+	.contactForm,
+	.textBoxContactForm {
+		gap: 10px;
+		font-size: 24px;
+	}
+	.writeMessage {
+		margin-left: 10px !important;
+	}
+	.infoContactForm {
+		margin: 0px auto;
+		/* border: solid 4px red; */
+	}
+	.button {
+		height: 40px !important;
+		width: 200px !important;
+		font-size: 20px !important;
+		margin-bottom: 20px !important;
+	}
+	.button:hover {
+		box-shadow: 40px 20px 5px 1px #c3e2c2;
+	}
+	.button > p {
+		font-size: 20px !important;
+		margin-bottom: 20px;
+	}
+	.marginBottom {
+		margin-bottom: 40px !important;
+	}
+	.contactInfo > p,
+	.contactInfo > p > a {
+		font-size: 24px;
+		letter-spacing: 0px;
+	}
+	.contactInfo > p {
+		padding-top: 10px !important;
+	}
+
+	.numberContact {
+		font-size: 18px !important;
 	}
 }

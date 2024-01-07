@@ -5,7 +5,8 @@
 			"name": "Inside Marão",
 			"lat": 0,
 			"lon": 0,
-			"date": "Since 05.05.2018",
+			"icon": "/img/icon.svg",
+			"date": "All Year",
 			"city": "Amarante",
 			"duration": "6 hours",
 			"price": "70€ per person",
@@ -32,6 +33,7 @@
 			"name": "Inside Amarante",
 			"lat": 0,
 			"lon": 0,
+			"icon": "/img/icon.svg",
 			"date": "Since 05.05.2018",
 			"city": "Amarante",
 			"duration": "2 hours",
@@ -62,12 +64,13 @@
 			"name": "Inside Pastries",
 			"lat": 0,
 			"lon": 0,
-			"date": "Since 05.05.2018",
+			"icon": "/img/icon.svg",
+			"date": "Every year except on sundays",
 			"city": "Amarante",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"duration": "1 hours",
+			"price": "20€ per person",
+			"shortDescription": "Conventual pastry workshop and tasting.",
+			"description": "In the Conventual Pastry Workshop, made in the city since the 13th century, you will get your hands in our traditions, making and tasting the conventual sweets of Amarante,  you will keep this taste in your mouth and in your mind for long time! You should try all of them, the Brisa do Tâmega, the Foguete, the Papo de Anjo, the Léria or the S. Gonçalo. A unique experience with lots of calories!",
 			"cardImage": { "src": "/img/cardPhoto/pastry.png", "alt": "Pastry workshp experience" },
 			"slideInfo": [
 				{
@@ -89,12 +92,13 @@
 			"name": "Inside Verde",
 			"lat": 0,
 			"lon": 0,
-			"date": "Since 05.05.2018",
+			"icon": "/img/icon.svg",
+			"date": "All Year",
 			"city": "Amarante",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"duration": "3 hours",
+			"price": "45€ per person",
+			"shortDescription": "Guided visit a local winery with 3 wine tasting.",
+			"description": "In this experience we will introduce you to the region’s wine, Vinho Verde. We will visit a farm in the region where we will explain the origins of the wine’s name, its history and its evolution over time accompanied by a tasting of the different wines and a regional lunch.",
 			"cardImage": { "src": "/img/cardPhoto/verde.png", "alt": "Verde Wine tour" },
 			"slideInfo": [
 				{
@@ -114,10 +118,15 @@
 		{
 			"id": 5,
 			"name": "Inside Kayak",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"lat": 0,
+			"lon": 0,
+			"icon": "/img/icon.svg",
+			"date": "From may to october",
+			"city": "Amarante",
+			"duration": "1,5 hours",
+			"price": "20€ per person",
+			"shortDescription": "Kayak tour in Tâmega´s river",
+			"description": "In this Kayak Tour in Tâmega River you will enjoy all the nature, fresh air, quiet and relax places and a beautiful landscape in a very easy track in quiet and calm waters.This tour is perfect for families and groups of friends! We are waiting for you!",
 			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" },
 			"slideInfo": [
 				{
@@ -137,10 +146,15 @@
 		{
 			"id": 6,
 			"name": "Inside Aboboreira",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"lat": 0,
+			"lon": 0,
+			"icon": "/img/icon.svg",
+			"date": "All Year",
+			"city": "Amarante",
+			"duration": "3 hours",
+			"price": "45€ per person",
+			"shortDescription": "Jeep tour in Aboboreira's Mountain",
+			"description": "Tour through the megalithic mountain in Aboboreira, where you will visit the megalithic monuments and discover superb landscapes, where you can breathe fresh and prehistoric air, where the unparalleled blue sky contrasts with a landscape made up of small vegetation in the company of a granitic buttress.",
 			"cardImage": { "src": "/img/cardPhoto/aboboreira.png", "alt": "Aboboreira jeep tour" },
 			"slideInfo": [
 				{
@@ -160,10 +174,15 @@
 		{
 			"id": 7,
 			"name": "Inside Amadeo",
-			"duration": "6 hours",
+			"lat": 0,
+			"lon": 0,
+			"icon": "/img/icon.svg",
+			"date": "All Year",
+			"city": "Amarante",
+			"duration": "8 hours",
 			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"shortDescription": "Life of Amadeo de Souza Cardoso with a museum visit and drawing workshop",
+			"description": "Presentation of the life and work of Amadeo de Souza Cardoso, … “the father of Portuguese modernism.”, with a visit to the museum on his behalf and a workshop of drawing with the theme of “XXI Dessins” (Amadeo drawings)",
 			"cardImage": { "src": "/img/cardPhoto/amadeo.png", "alt": "Amadeo tour" },
 			"slideInfo": [
 				{
@@ -184,10 +203,15 @@
 		{
 			"id": 8,
 			"name": "Inside Hiking",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"lat": 0,
+			"lon": 0,
+			"icon": "/img/icon.svg",
+			"date": "All Year",
+			"city": "Amarante",
+			"duration": "4 hours",
+			"price": "28€ per person",
+			"shortDescription": "Tailor-made hike with difficulty and duration chosen by you.",
+			"description": "Explore the nature in a tailor-made hike with distance and difficulty adjusted to your needs. Hike along the trails that make their way through secret places in the mountain and be dazzled by the landscape and traditions that  we will found.",
 			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" },
 			"slideInfo": [
 				{
@@ -206,24 +230,29 @@
 		},
 		{
 			"id": 9,
-			"name": "Inside Hiking",
+			"name": "Inside Romanesque",
+			"lat": 0,
+			"lon": 0,
+			"icon": "/img/icon.svg",
+			"date": "All Year",
+			"city": "Amarante",
 			"duration": "6 hours",
 			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/hike.png", "alt": "Hiking tour" },
+			"shortDescription": "Guided visit to the Romanesque monuments and traditions",
+			"description": "The tour through the flavors and stories of the Romanesque will take you to visit the center of the Route of the Romanesque and to visit some of the most importante monuments and you cannot miss the workshop of the conventual pastry in the city of Amarante.",
+			"cardImage": { "src": "/img/cardPhoto/romanesque.png", "alt": "Romanesque tour" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/hike_1.png",
-					"alt": "Hiking tour"
+					"src": "/img/slider/romanesque_1.png",
+					"alt": "Romanesque tour"
 				},
 				{
-					"src": "/img/slider/hike_2.png",
-					"alt": "Hiking tour"
+					"src": "/img/slider/romanesque_2.png",
+					"alt": "Romanesque tour"
 				},
 				{
-					"src": "/img/slider/hike_3.png",
-					"alt": "Hiking tour"
+					"src": "/img/slider/romanesque_3.png",
+					"alt": "Romanesque tour"
 				}
 			]
 		}

@@ -7,7 +7,10 @@ function CardInfo({ tour }) {
 			<div className='cardInfoTitle marginFifty'>
 				<h2>Inside Marão</h2>
 				{/* <h2>{tour.name}</h2> */}
-				<p>(icon)13-03-2020</p>
+				<p>
+					<img src='/src/img/schedule.svg' alt='Schedule icon' className='icon' />
+					Available all year
+				</p>
 				{/* <p>(icon){tour.date}</p> */}
 			</div>
 			<div className='CardSlide'>
