@@ -9,7 +9,7 @@ function TitleContainer() {
 		const result = await response.json();
 
 		console.log(result);
-		console.log(result.video);
+		// console.log(result.video);
 		setVideoInfo(result);
 	}
 	useEffect(function () {
@@ -20,8 +20,8 @@ function TitleContainer() {
 		<>
 			<div className='mainImageTitle'>
 				<video width='100%' height='700px' autoPlay muted loop>
-					{/* <source src='/public/video/intro.mp4' type='video/mp4' /> */}
-					<source src={videoInfo?.video} type='video/mp4' />
+					<source src='/public/video/intro.mp4' type='video/mp4' />
+					{/* <source src={videoInfo?.video} type='video/mp4' /> */}
 					{/* <source src={videoInfo.video} type='video/mp4' /> */}
 					Your browser do not support this promotional video about Inside Experiences.
 				</video>

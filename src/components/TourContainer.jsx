@@ -8,16 +8,16 @@ function TourContainer() {
 	useEffect(function () {
 		(async function () {
 			const result = await tourAPIService.getToursData();
-			const allTours = result.info;
-			setTourInfo(allTours);
-			console.log(allTours);
+
+			setTourInfo(result);
+			console.log(result);
 		});
 	}, []);
 	return (
 		<>
 			<div className='cardInfoTitle marginFifty'>
-				{tourInfo.info?.map(item => (
-					<CardInfo key={item.id} description={item} />
+				{tourInfo.map(kiwi => (
+					<CardInfo key={kiwi.id} tourInfo={kiwi} />
 				))}
 			</div>
 		</>
