@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
 
 function Card({ tour }) {
-	console.log(tour);
+	// console.log(tour);
 	return (
 		<>
 			{/* <Link href='/TourView/'> */}

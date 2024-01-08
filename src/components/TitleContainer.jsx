@@ -4,26 +4,31 @@ function TitleContainer() {
 	const [videoInfo, setVideoInfo] = useState('');
 
 	async function getVideoData() {
-		// const response = await fetch('/mockAPI/mockAPIVideo.json?url');
 		const response = await fetch('/mockAPI/mockAPIVideo.json');
 		const result = await response.json();
-
-		console.log(result);
-		// console.log(result.video);
 		setVideoInfo(result);
 	}
-	useEffect(function () {
+
+	useEffect(() => {
 		getVideoData();
 	}, []);
+
+	function renderVideo() {
+		if (videoInfo && videoInfo.video) {
+			return videoInfo.video; // Retorna o link do vídeo se existir
+		} else {
+			return '/video/AmaranteTours.mp4'; // Retorna um vídeo padrão se não houver informações do vídeo
+		}
+	}
+
+	const videoSrc = renderVideo();
 
 	return (
 		<>
 			<div className='mainImageTitle'>
 				<video width='100%' height='700px' autoPlay muted loop>
-					{/* <source src='/public/video/intro.mp4' type='video/mp4' /> */}
-					{/* <source src={videoInfo?.video} type='video/mp4' /> */}
-					<source src={videoInfo.video} type='video/mp4' />
-					Your browser do not support this promotional video about Inside Experiences.
+					<source src={videoSrc} type='video/mp4' />
+					Your browser does not support this promotional video about Inside Experiences.
 				</video>
 
 				<div className='mainTitle'>
@@ -34,4 +39,5 @@ function TitleContainer() {
 		</>
 	);
 }
+
 export default TitleContainer;

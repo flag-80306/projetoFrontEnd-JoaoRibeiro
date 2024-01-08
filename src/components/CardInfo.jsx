@@ -1,7 +1,7 @@
 import Slide from './Slide.jsx';
 // import { city } from '/public/mockAPI/slideData.json';
 import tourAPIService from '../services/tourAPIService';
-function CardInfo({ tour }) {
+function CardInfo() {
 	const [tourInfo, setTourInfo] = useState([]);
 
 	useEffect(function () {
