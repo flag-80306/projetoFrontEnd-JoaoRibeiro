@@ -34,9 +34,8 @@ function App() {
 				<Route path='*'>
 					<NotFoundPageView />
 				</Route>
-				<Route path='/TourView'>
-					<TourView />
-				</Route>
+				<Route path='/TourView/:tour'>{params => <TourView tourInfo={params.tour} />}</Route>
+
 				{/* <Route path='/TourView_test'>
 					<TourView_test />
 				</Route> */}

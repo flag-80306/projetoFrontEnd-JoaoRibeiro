@@ -3,6 +3,7 @@
 		{
 			"id": 1,
 			"name": "Inside Marão",
+			"nameID": "InsideMarao",
 			"lat": 41.26899,
 			"lon": -8.07863,
 			"icon": "/img/icon.svg",
@@ -32,6 +33,7 @@
 		{
 			"id": 2,
 			"name": "Inside Amarante",
+			"nameID": "InsideAmarante",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -63,6 +65,7 @@
 		{
 			"id": 3,
 			"name": "Inside Pastries",
+			"nameID": "InsidePastries",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -91,6 +94,7 @@
 		{
 			"id": 4,
 			"name": "Inside Verde",
+			"nameID": "InsideVerde",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -119,6 +123,7 @@
 		{
 			"id": 5,
 			"name": "Inside Kayak",
+			"nameID": "InsideKayak",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -147,6 +152,7 @@
 		{
 			"id": 6,
 			"name": "Inside Aboboreira",
+			"nameID": "InsideAboboreira",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -175,6 +181,7 @@
 		{
 			"id": 7,
 			"name": "Inside Amadeo",
+			"nameID": "InsideAmadeo",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -204,6 +211,7 @@
 		{
 			"id": 8,
 			"name": "Inside Hiking",
+			"nameID": "InsideHiking",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",
@@ -232,6 +240,7 @@
 		{
 			"id": 9,
 			"name": "Inside Romanesque",
+			"nameID": "InsideRomanesque",
 			"lat": 0,
 			"lon": 0,
 			"icon": "/img/icon.svg",

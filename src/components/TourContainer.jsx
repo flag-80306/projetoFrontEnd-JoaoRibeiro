@@ -9,7 +9,7 @@ function TourContainer() {
 		(async function () {
 			const result = await tourAPIService.getToursData();
 
-			setTourInfo(result);
+			setTourInfo(result.info);
 			console.log(result);
 		});
 	}, []);

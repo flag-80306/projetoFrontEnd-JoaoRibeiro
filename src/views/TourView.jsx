@@ -1,13 +1,22 @@
 import { Link } from 'wouter';
 // import AmtWeather from './AmtWeather.jsx';
-import TourContainer from '../components/TourContainer.jsx';
+// import TourContainer from '../components/TourContainer.jsx';
+import { useEffect, useState } from 'react';
+import CardInfo from '../components/CardInfo.jsx';
+import tourAPIService from '../services/tourAPIService';
 
-function TourView() {
+function TourView({ tourInfo }) {
 	return (
 		<>
 			<div>
-				{/* <CardInfo /> */}
-				<TourContainer />
+				<h1>{tourInfo}</h1>
+				{/* <CardInfo name={tourInfo} /> */}
+				{/* <TourContainer /> */}
+				{/* <div className='cardInfoTitle marginFifty'>
+					{tourInfo.map(kiwi => (
+						<CardInfo key={kiwi.id} tourInfo={kiwi} />
+					))}
+				</div> */}
 
 				<div className='cardWeather'>
 					<img src='/img/weather.png' alt='tempo' />
