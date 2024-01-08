@@ -1,8 +1,17 @@
 import Slide from './Slide.jsx';
 // import { city } from '/public/mockAPI/slideData.json';
+import tourAPIService from '../services/tourAPIService';
+function CardInfo({ tour }) {
+	const [tourInfo, setTourInfo] = useState([]);
 
-function CardInfo({ tourInfo }) {
-	console.log(tourInfo);
+	useEffect(function () {
+		(async function () {
+			const result = await tourAPIService.getToursData();
+
+			setTourInfo(result.tour);
+			console.log(result);
+		});
+	}, []);
 	return (
 		<>
 			<div className='cardInfoTitle marginFifty'>
@@ -12,10 +21,10 @@ function CardInfo({ tourInfo }) {
 					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
 					Available all year
 				</p>
-				<p>(icon){tourInfo.date}</p>
+				{/* <p>(icon){tourInfo.date}</p> */}
 			</div>
-			<div className='CardSlide'>
-				{/* {<Slide services={city} />} */}
+			{/* <div className='CardSlide'>
+				{<Slide services={city} />}
 				{tourInfo.slideInfo?.map(item => (
 					<Slide key={item.id} services={item} />
 				))}
@@ -27,14 +36,14 @@ function CardInfo({ tourInfo }) {
 			</div>
 			<div className='infoCard'>
 				<div className='cardDescription'>
-					{/* <p>
+					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, facere pariatur nemo perferendis animi doloremque repellendus itaque aperiam non molestiae ex iste, eos a qui possimus
 						aspernatur ad? Quae, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ad vero ab reiciendis cumque laborum aperiam quaerat temporibus quos exercitationem libero inventore,
 						animi saepe eos consequatur facere esse amet quasi!longitude
-					</p> */}
+					</p>
 					<p>{tourInfo.description}</p>;
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }

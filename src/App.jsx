@@ -8,6 +8,7 @@ import HomeView from './views/HomeView.jsx';
 import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
 import TourView from './views/TourView.jsx';
+import Banana from './views/Banana.jsx';
 // import TourView_test from './views/TourView_test.jsx';
 import BookNowView from './views/BookNowView.jsx';
 
@@ -34,8 +35,9 @@ function App() {
 				<Route path='*'>
 					<NotFoundPageView />
 				</Route>
-				<Route path='/TourView/:tour'>{params => <TourView tourInfo={params.tour} />}</Route>
 
+				<Route path='/Banana/:tour' component={Banana} />
+				{/* <Route path='/TourView/:tour' component={TourView} /> */}
 				{/* <Route path='/TourView_test'>
 					<TourView_test />
 				</Route> */}

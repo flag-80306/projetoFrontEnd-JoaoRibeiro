@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 function TitleContainer() {
-	const [videoInfo, setVideoInfo] = useState({});
+	const [videoInfo, setVideoInfo] = useState('');
 
 	async function getVideoData() {
 		// const response = await fetch('/mockAPI/mockAPIVideo.json?url');
@@ -20,9 +20,9 @@ function TitleContainer() {
 		<>
 			<div className='mainImageTitle'>
 				<video width='100%' height='700px' autoPlay muted loop>
-					<source src='/public/video/intro.mp4' type='video/mp4' />
+					{/* <source src='/public/video/intro.mp4' type='video/mp4' /> */}
 					{/* <source src={videoInfo?.video} type='video/mp4' /> */}
-					{/* <source src={videoInfo.video} type='video/mp4' /> */}
+					<source src={videoInfo.video} type='video/mp4' />
 					Your browser do not support this promotional video about Inside Experiences.
 				</video>
 

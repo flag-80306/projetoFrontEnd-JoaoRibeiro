@@ -5,7 +5,7 @@ function Card({ tour }) {
 	return (
 		<>
 			{/* <Link href='/TourView/'> */}
-			<Link href={'/TourView/' + tour.nameID}>
+			<Link href={'/Banana/' + tour.nameID}>
 				<div className='card'>
 					<img src={tour.cardImage.src} alt={tour.cardImage.alt} />
 
