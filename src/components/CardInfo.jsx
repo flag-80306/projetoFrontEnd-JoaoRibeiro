@@ -1,29 +1,31 @@
-import Slide from './Slide.jsx';
-// import { city } from '/public/mockAPI/slideData.json';
-import tourAPIService from '../services/tourAPIService';
-function CardInfo() {
-	const [tourInfo, setTourInfo] = useState([]);
+// import Slide from './Slide.jsx';
+// // import { city } from '/public/mockAPI/slideData.json';
+// import tourAPIService from '../services/tourAPIService';
+// function CardInfo() {
+// 	const [tourInfo, setTourInfo] = useState([]);
 
-	useEffect(function () {
-		(async function () {
-			const result = await tourAPIService.getToursData();
+// 	useEffect(function () {
+// 		(async function () {
+// 			const result = await tourAPIService.getToursData();
 
-			setTourInfo(result.tour);
-			console.log(result);
-		});
-	}, []);
-	return (
-		<>
-			<div className='cardInfoTitle marginFifty'>
-				{/* <h2>Inside Marão</h2> */}
-				<h2>{tourInfo.name}</h2>
-				<p>
-					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
-					Available all year
-				</p>
-				{/* <p>(icon){tourInfo.date}</p> */}
-			</div>
-			{/* <div className='CardSlide'>
+// 			setTourInfo(result.tour);
+// 			console.log(result);
+// 		});
+// 	}, []);
+// 	return (
+// 		<>
+// 			<div className='cardInfoTitle marginFifty'>
+// 				{/* <h2>Inside Marão</h2> */}
+// 				<h2>{tourInfo.name}</h2>
+// 				<p>
+// 					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
+// 					Available all year
+// 				</p>
+
+/* <p>(icon){tourInfo.date}</p> */
+/* </div> */
+
+/* <div className='CardSlide'>
 				{<Slide services={city} />}
 				{tourInfo.slideInfo?.map(item => (
 					<Slide key={item.id} services={item} />
@@ -43,9 +45,10 @@ function CardInfo() {
 					</p>
 					<p>{tourInfo.description}</p>;
 				</div>
-			</div> */}
-		</>
-	);
-}
+			</div> */
+// }
+// </>
+// 	);
+// }
 
-export default CardInfo;
+// export default CardInfo;

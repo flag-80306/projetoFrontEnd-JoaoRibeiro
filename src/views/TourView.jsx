@@ -1,32 +1,54 @@
-import { Link } from 'wouter';
-// import AmtWeather from './AmtWeather.jsx';
-// import TourContainer from '../components/TourContainer.jsx';
 import { useEffect, useState } from 'react';
-import CardInfo from '../components/CardInfo.jsx';
-import tourAPIService from '../services/tourAPIService';
+import tourAPIService from '../services/tourAPIService.js';
+import Slide from '../components/Slide.jsx';
 
-function TourView({ tourInfo }) {
+function TourView({ params }) {
+	// console.log(params);
+	// console.log(params.tour);
+	const [tourDetails, setTourDetails] = useState({});
+
+	useEffect(() => {
+		(async function fetchTourDetails() {
+			const responseAPI = await tourAPIService.getToursData();
+
+			const findInfo = responseAPI.info;
+
+			for (let i = 0; i < findInfo.length; i++) {
+				// console.log('Params tour:', params.tour);
+				// console.log('Checking:', findInfo[i].nameID);
+				if (findInfo[i].nameID === params.tour) {
+					setTourDetails(findInfo[i]);
+					break;
+				}
+			}
+		})();
+	}, [params.tour]);
+
 	return (
 		<>
-			<div>
-				<h1>{tourInfo}</h1>
-				{/* <CardInfo name={tourInfo} /> */}
-				{/* <TourContainer /> */}
-				{/* <div className='cardInfoTitle marginFifty'>
-					{tourInfo.map(kiwi => (
-						<CardInfo key={kiwi.id} tourInfo={kiwi} />
-					))}
-				</div> */}
-
-				<div className='cardWeather'>
-					<img src='/img/weather.png' alt='tempo' />
-					{/* <AmtWeather /> */}
-				</div>
+			<div className='cardInfoTitle marginFifty'>
+				<h2>{tourDetails.name}</h2>
+				<p>
+					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
+					{tourDetails.date}
+				</p>
 			</div>
-			<div className='button marginBottom'>
-				<Link href='/BookNow'>
-					<p>Book Now!</p>
-				</Link>
+			<div className='CardSlide'>
+				{/* {tourDetails.slideInfo?.map(slide => (
+					<Slide key={slide.id} services={slide} />
+				))} */}
+				<Slide services={tourDetails.slideInfo} />
+				{/* <Slide services={tourDetails.slideInfo} || []/> podemos colocar aqui o [] vazio ou envia o [] = ao services como prop no slide.jsx */}
+			</div>
+			<div className='cardMap'>
+				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
+
+				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p>
+			</div>
+			<div className='infoCard'>
+				<div className='cardDescription'>
+					<p>{tourDetails.description}</p>;
+				</div>
 			</div>
 		</>
 	);

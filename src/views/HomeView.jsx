@@ -1,6 +1,6 @@
 import ExperienceContainer from '../components/ExperienceContainer.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
-import Test from '../components/Test.jsx';
+// import Test from '../components/Test.jsx';
 
 function HomeView() {
 	return (

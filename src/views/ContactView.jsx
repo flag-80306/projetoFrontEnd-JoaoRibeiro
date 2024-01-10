@@ -1,5 +1,17 @@
 import { Link } from 'wouter'; // npm i wouter
 function ContactView() {
+	function handleSubmit(event) {
+		// ou const handleSubmit = event => {
+		const formData = new FormData(event.target);
+
+		const formValues = {};
+		formData.forEach((value, key) => {
+			formValues[key] = value;
+		});
+
+		console.log('Dados do formulário:', formValues);
+		event.target.reset();
+	}
 	return (
 		<>
 			<div className='contactFormContainer'>
@@ -10,31 +22,31 @@ function ContactView() {
 						more. <br />
 						<b>#DiscoverWithLocals</b>
 					</p>
-					<form action='' method='post' className='contactForm'>
+					<form onSubmit={handleSubmit} method='post' className='contactForm'>
 						<div className='infoContactForm'>
 							<div className='contactForm'>
-								<label for='name'>Name: </label>
+								<label htmlFor='name'>Name: </label>
 								<input type='text' id='name' name='name' placeholder='First and Last Name' className='boxSize allBoxContact' required />
 							</div>
 							<div className='contactForm'>
-								<label for='email'>Email: </label>
+								<label htmlFor='email'>Email: </label>
 								<input type='email' id='email' name='email' placeholder='Email' className='allBoxContact' required />
 							</div>
 							<div className='contactForm'>
-								<label for='phoneNumber'>Phone: </label>
-								<input type='phoneNumber' id='phoneNumber' name='phoneNumber' placeholder='Phone Number' className=' allBoxContact' required />
+								<label htmlFor='phoneNumber'>Phone: </label>
+								<input type='phoneNumber' id='phoneNumber' name='phoneNumber' placeholder='Phone Number' pattern='[0-9]*' className=' allBoxContact' required />
 							</div>
 						</div>
 
 						<div className='contactForm'>
-							<label for='message' className='writeMessage'>
+							<label htmlFor='message' className='writeMessage'>
 								Your Message:
 							</label>
 
 							<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea allBoxContact  '></textarea>
 						</div>
 
-						<input type='submit' value='Send' className='button btnSendSize' />
+						<input type='submit' value='Send' className='sendButton btnSendSize' />
 					</form>
 				</div>
 				<div className='contactBox'>

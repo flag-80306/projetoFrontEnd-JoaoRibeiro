@@ -356,6 +356,26 @@ nav ul > li > h3:not(.active):hover {
 	transition: rotate 4s, color 4s;
 	color: #c3e2c2;
 }
+
+.sendButton {
+	display: block;
+	border-radius: 25px;
+	border: solid 5px #4a6660;
+	background-color: #c3e2c2;
+	height: 60px;
+	width: 250px;
+	margin: 0px auto 40px;
+	cursor: pointer;
+}
+.sendButton:hover {
+	background-color: #4a6660;
+	border: solid 5px #c3e2c2;
+
+	border-radius: 50px 0px;
+
+	transition: color;
+	color: #c3e2c2;
+}
 /*-------------------------------------*/
 /*----------------AboutUs---------------------*/
 .aboutUsContainer {
@@ -608,6 +628,8 @@ nav ul > li > h3:not(.active):hover {
 .countainerPageNF {
 	margin: -100px auto 30px;
 }
+
+/*--------------Page Not Found--------------------                                                                                         ---*/
 .pageNotFound {
 	width: 60%;
 	border-radius: 45%;
@@ -615,6 +637,7 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	margin: 0px auto;
 }
+
 /*------------responsive-------------------------*/
 
 @media screen and (max-width: 1024px) {
