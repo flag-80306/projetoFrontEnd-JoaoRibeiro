@@ -1,38 +1,43 @@
 import { useEffect, useState } from 'react';
+
 import tourAPIService from '../services/tourAPIService.js';
 import Slide from '../components/Slide.jsx';
 
 function Banana({ params }) {
+	// console.log(params);
+	// console.log(params.tour);
 	const [tourDetails, setTourDetails] = useState({});
 
-	useEffect(function () {
-		(async function () {
+	useEffect(() => {
+		(async function fetchTourDetails() {
 			const responseAPI = await tourAPIService.getToursData();
-			const findInfo = responseAPI.find(obj => {
-				return obj.nameID == params.tour;
-			});
-			setTourDetails(findInfo);
-			console.log(findInfo);
-		});
-	}, []);
 
-	console.log(tourDetails);
+			const findInfo = responseAPI.info;
+
+			for (let i = 0; i < findInfo.length; i++) {
+				// console.log('Params tour:', params.tour);
+				// console.log('Checking:', findInfo[i].nameID);
+				if (findInfo[i].nameID === params.tour) {
+					setTourDetails(findInfo[i]);
+					break;
+				}
+			}
+		})();
+	}, [params.tour]);
 
 	return (
 		<>
 			<div className='cardInfoTitle marginFifty'>
-				{/* <h2>Inside Marão</h2> */}
-				<h2>{params.name}</h2>
+				<h2>{tourDetails.name}</h2>
 				<p>
 					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
-					Available all year
+					{tourDetails.date}
 				</p>
-				<p>(icon){tourDetails.date}</p>
 			</div>
 			<div className='CardSlide'>
-				{tourDetails.slideInfo?.map(item => (
-					<Slide key={item.id} services={item} />
-				))}
+				{/* {tourDetails.slideInfo?.map(slide => (
+					<Slide key={slide.id} services={slide} />
+				))} */}
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />

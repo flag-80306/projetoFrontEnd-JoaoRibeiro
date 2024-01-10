@@ -35,7 +35,7 @@ function App() {
 				<Route path='*'>
 					<NotFoundPageView />
 				</Route>
-
+				{/* <Route path='/Banana/:tour'>{params => <Banana pathParams={params.tour} />}</Route> */}
 				<Route path='/Banana/:tour' component={Banana} />
 				{/* <Route path='/TourView/:tour' component={TourView} /> */}
 				{/* <Route path='/TourView_test'>
