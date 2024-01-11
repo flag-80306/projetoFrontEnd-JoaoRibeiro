@@ -1,10 +1,14 @@
 import { Link } from 'wouter'; // npm i wouter
 function ContactView() {
 	function handleSubmit(event) {
-		// ou const handleSubmit = event => {
+		// ou --> const handleSubmit = event => {
+		// o .preventDefault() evita que a página volte a carregar após o envio da informação e assim o erro HTTP ERROR 404 não aparece.
+		event.preventDefault();
+		// função que vai buscar a info do formulário
 		const formData = new FormData(event.target);
-
+		// Cria um objeto vazio para armazenar os valores do formulário
 		const formValues = {};
+		// A info do formData é copiada, utilizando o método forEach, para um objeto vazio do formValuespara ser organizada e enviada para o console.log
 		formData.forEach((value, key) => {
 			formValues[key] = value;
 		});

@@ -2,22 +2,22 @@ import React from 'react';
 
 function BookNowView() {
 	const handleSubmit = event => {
-		event.preventDefault(); // Evita o comportamento padrão de recarregar a página ao enviar o formulário
+		// ou --> function handleSubmit(event) {
 
-		const formData = new FormData(event.target); // Captura os dados do formulário
-
-		// Converte os dados do formulário para um objeto para exibição no console
-		const formValues = {}; // Cria um objeto vazio para armazenar os valores do formulário
+		// o .preventDefault() evita que a página volte a carregar após o envio da informação e assim o erro HTTP ERROR 404 não aparece.
+		event.preventDefault();
+		// função que vai buscar a info do formulário
+		const formData = new FormData(event.target);
+		// Cria um objeto vazio para armazenar os valores do formulário
+		const formValues = {};
+		// A info do formData é copiada, utilizando o método forEach, para um objeto vazio do formValuespara ser organizada e enviada para o console.log
 		formData.forEach((value, key) => {
-			// Para cada campo no formulário, adiciona o par chave/valor ao objeto formValues
 			formValues[key] = value;
 		});
 
-		console.log('Dados do formulário:', formValues); // Exibe os dados do formulário no console
+		console.log('Dados do formulário:', formValues);
 		event.target.reset();
 	};
-
-	// Renderização da componente
 	return (
 		<div className='contactContainer'>
 			<h2>Book Here With Us!</h2>
