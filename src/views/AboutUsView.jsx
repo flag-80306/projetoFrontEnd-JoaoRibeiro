@@ -1,5 +1,20 @@
-import { Link } from 'wouter'; // npm i wouter
+import { useEffect, useState } from 'react';
+import ProfileSlide from '../components/ProfileSlide.jsx';
 function AboutUsView() {
+	const [profileInfo, setProfileInfo] = useState();
+
+	useEffect(function () {
+		(async function () {
+			const response = await fetch('/mockAPI/mockAPIProfile.json');
+			const result = await response.json();
+			const findProfile = result.aboutUs;
+
+			setProfileInfo(findProfile);
+			console.log('Estou aqui');
+			console.log(result);
+		})();
+	}, []);
+
 	return (
 		<>
 			<div className='aboutUsContainer'>
@@ -23,21 +38,9 @@ function AboutUsView() {
 						It represents an experience etched in memory for a lifetime.
 					</p>
 				</div>
-				<div className='aboutUsTitle'>
-					<h2>Hello, my name is João Pedro! </h2>
-					<img src='/img/joao.png' alt='João Pedro' />
 
-					<p>
-						My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking.
-						After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and
-						enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside
-						Experiences with Liliana Pereira.
-					</p>
-					<div className='button marginBottom buttonSize'>
-						<Link href='/AboutUsLiliana'>
-							<p>Get to know Liliana</p>
-						</Link>
-					</div>
+				<div className='aboutUs'>
+					<ProfileSlide profile={profileInfo} />
 				</div>
 			</div>
 		</>

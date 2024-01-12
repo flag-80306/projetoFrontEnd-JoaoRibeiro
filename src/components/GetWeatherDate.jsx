@@ -1,5 +1,5 @@
 function GetWeatherDate() {
-	const weekDay = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+	const weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 	let objectDate = new Date();
 	let year = objectDate.getFullYear();

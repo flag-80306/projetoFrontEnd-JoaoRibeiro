@@ -6,7 +6,7 @@ function HomeView() {
 	return (
 		<>
 			<TitleContainer />
-			{/* <Test /> */}
+
 			<div className='secondTitle'>
 				<h2>Top-notch Journey Experiences</h2>
 				<p>This list contains our best selling and best rated experiences.</p>
