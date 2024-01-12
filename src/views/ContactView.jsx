@@ -16,6 +16,12 @@ function ContactView() {
 		console.log('Dados do formulário:', formValues);
 		event.target.reset();
 	}
+	for (var i = 0; i < 5; i++) {
+		setTimeout(function () {
+			console.log(i);
+			console.log('-');
+		}, i * 1000);
+	}
 	return (
 		<>
 			<div className='contactFormContainer'>

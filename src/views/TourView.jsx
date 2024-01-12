@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import tourAPIService from '../services/tourAPIService.js';
 import Slide from '../components/Slide.jsx';
+import AmtWeather from '../components/AmtWeather.jsx';
+import { Link } from 'wouter';
 
 function TourView({ params }) {
 	// console.log(params);
 	// console.log(params.tour);
 	const [tourDetails, setTourDetails] = useState({});
-
+	const [weatherInfo, setWeatherInfo] = useState({});
 	useEffect(() => {
 		(async function fetchTourDetails() {
 			const responseAPI = await tourAPIService.getToursData();
@@ -18,6 +20,18 @@ function TourView({ params }) {
 				// console.log('Checking:', findInfo[i].nameID);
 				if (findInfo[i].nameID === params.tour) {
 					setTourDetails(findInfo[i]);
+
+					const { lat, lon } = findInfo[i];
+					// isto é o mesmo que usar o --> const lat = findInfo[i].lat; e o --> const lon = findInfo[i].lon;
+
+					const urlWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=20a33353c598f90c78dc5d9127b60779`;
+
+					const responseWeatherAPI = await fetch(urlWeatherAPI);
+					const resultWeatherAPI = await responseWeatherAPI.json();
+
+					setWeatherInfo(resultWeatherAPI);
+					console.log(resultWeatherAPI);
+
 					break;
 				}
 			}
@@ -31,24 +45,33 @@ function TourView({ params }) {
 				<p>
 					<img src='/img/schedule.svg' alt='Schedule icon' className='icon' />
 					{tourDetails.date}
+					<br />
+					{tourDetails.city}, {tourDetails.country}
 				</p>
 			</div>
 			<div className='CardSlide'>
-				{/* {tourDetails.slideInfo?.map(slide => (
-					<Slide key={slide.id} services={slide} />
-				))} */}
 				<Slide services={tourDetails.slideInfo} />
-				{/* <Slide services={tourDetails.slideInfo} || []/> podemos colocar aqui o [] vazio ou envia o [] = ao services como prop no slide.jsx */}
 			</div>
 			<div className='cardMap'>
 				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
 
 				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p>
 			</div>
+
 			<div className='infoCard'>
 				<div className='cardDescription'>
 					<p>{tourDetails.description}</p>;
 				</div>
+
+				<div className='cardWeather'>
+					<AmtWeather tourDetails={tourDetails} weatherInfo={weatherInfo} />
+					{/* <AmtForecast forecastInfo={forecastInfo} /> try later */}
+				</div>
+			</div>
+			<div className='button marginBottom'>
+				<Link href='/BookNow'>
+					<p>Book Now!</p>
+				</Link>
 			</div>
 		</>
 	);

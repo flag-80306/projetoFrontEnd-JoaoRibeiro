@@ -9,7 +9,6 @@ import ExperiencesView from './views/ExperiencesView.jsx';
 import NotFoundPageView from './views/NotFoundPageView.jsx';
 import TourView from './views/TourView.jsx';
 
-// import TourView_test from './views/TourView_test.jsx';
 import BookNowView from './views/BookNowView.jsx';
 
 function App() {
