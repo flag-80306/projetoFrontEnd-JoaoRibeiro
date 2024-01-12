@@ -48,7 +48,7 @@ function ContactView() {
 							</div>
 						</div>
 
-						<div className='contactForm'>
+						<div className='contactMessage'>
 							<label htmlFor='message' className='writeMessage'>
 								Your Message:
 							</label>

@@ -500,7 +500,6 @@ nav ul > li > h3:not(.active):hover {
 	position: absolute;
 	bottom: 16px;
 	top: 98%;
-	/* margin: 20px; */
 }
 .indicator {
 	border: solid 1px #c3e2c2;
@@ -526,14 +525,16 @@ nav ul > li > h3:not(.active):hover {
 	/* border: solid 3px red; */
 	gap: 20px;
 	width: 100%;
+	/* border: solid 2px red; */
 }
 
 .contactContainer {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
+	width: 60%;
 	margin: auto;
-	align-items: flex-start;
+	/* align-items: flex-start; */
+	/* border: solid 2px red; */
 }
 
 .contactContainer > h2 {
@@ -542,15 +543,29 @@ nav ul > li > h3:not(.active):hover {
 }
 .contactContainer > p {
 	line-height: 2;
-	padding: 20px 10px;
+	padding: 20px 25px;
 	font-size: 32px;
+	/* margin: 0px auto; */
 	/* border: solid 3px red; */
 }
-
+.contactBox {
+	background-color: #dbcc95;
+	width: 36%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	/* margin: auto 0px; */
+	/* border: solid 2px red; */
+}
 .contactInfo {
 	width: 90%;
 	display: flex;
-	margin-bottom: 30px;
+	flex-wrap: wrap;
+	align-content: left;
+	margin-bottom: 50px;
+	margin: auto 0px;
+	/* border: solid 2px red; */
 }
 .contactInfo > p > a {
 	text-decoration: none;
@@ -558,30 +573,27 @@ nav ul > li > h3:not(.active):hover {
 	line-height: 0px;
 	font-size: 28px;
 	/* margin: 0px auto; */
+	/* border: solid 2px red; */
 }
 .contactInfo > p {
 	padding: 15px;
 	font-size: 32px;
-
 	text-align: left;
-	margin: 0px auto;
+	/* margin: 0px auto; */
 	/* border: solid 3px red; */
-}
-.contactBox {
-	background-color: #dbcc95;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .contactForm {
-	display: flex;
-	gap: 20px;
-	flex-direction: column;
-	/* margin: 0px auto; */
 	font-size: 28px;
-	/* border: solid 3px red; */
+	gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contactMessage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
 }
 .infoContactForm {
 	gap: 30px;
@@ -591,16 +603,11 @@ nav ul > li > h3:not(.active):hover {
 	/* align-items: center; */
 	justify-content: center;
 	/* flex-direction: column; */
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 	margin: 0px auto;
 	/* border: solid 4px red; */
 }
-.contactForm {
-	gap: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+
 .textBoxContactForm {
 	padding: 20px;
 	display: flex;
