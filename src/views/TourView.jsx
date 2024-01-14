@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import tourAPIService from '../services/tourAPIService.js';
 import Slide from '../components/Slide.jsx';
 import AmtWeather from '../components/AmtWeather.jsx';
+import MapBox from '../components/MapBox.jsx';
 import { Link } from 'wouter';
 
 function TourView({ params }) {
@@ -53,9 +54,9 @@ function TourView({ params }) {
 				<Slide services={tourDetails.slideInfo} />
 			</div>
 			<div className='cardMap'>
-				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
+				{/* <img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
 
-				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p>
+				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p> */}
 			</div>
 
 			<div className='infoCard'>
@@ -65,9 +66,9 @@ function TourView({ params }) {
 
 				<div className='cardWeather'>
 					<AmtWeather tourDetails={tourDetails} weatherInfo={weatherInfo} />
-					{/* <AmtForecast forecastInfo={forecastInfo} /> try later */}
 				</div>
 			</div>
+			<div className='cardContainerForecast'>{/* <AmtForecast forecastInfo={forecastInfo} /> try later */}</div>
 			<div className='button marginBottom'>
 				<Link href='/BookNow'>
 					<p>Book Now!</p>

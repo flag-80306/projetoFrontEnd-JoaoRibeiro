@@ -16,7 +16,7 @@ function ProfileSlide({ profile = [] }) {
 	return (
 		<>
 			<div className='sliderContainer'>
-				<BsArrowLeftCircleFill className='arrow left-arrow' onClick={PrevSlide} />
+				<BsArrowLeftCircleFill className='arrow left-arrowProfile' onClick={PrevSlide} />
 				{profile.map(({ name, photoSRC, photoALT, description, city, country }, index) => (
 					<div key={index} className={slide === index ? 'slideProfile' : 'slideHiddenProfile'}>
 						<h2>Hello, my name is {name}</h2>
@@ -28,8 +28,8 @@ function ProfileSlide({ profile = [] }) {
 						</p>
 					</div>
 				))}
-				<BsArrowRightCircleFill className='arrow right-arrow' onClick={NextSlide} />
-				<span className='indicators'>
+				<BsArrowRightCircleFill className='arrow right-arrowProfile' onClick={NextSlide} />
+				<span className='indicatorsProfile'>
 					{profile.map((_, index) => {
 						return <button key={index} onClick={() => setSlide(index)} className={slide === index ? 'indicator' : 'indicator indicatorInactive'}></button>;
 					})}

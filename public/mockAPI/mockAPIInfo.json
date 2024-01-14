@@ -80,15 +80,15 @@
 			"cardImage": { "src": "/img/cardPhoto/pastry.png", "alt": "Pastry workshp experience" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/Pastry_1.png",
+					"src": "/img/slider/pastry_1.png",
 					"alt": "Pastry workshp experience"
 				},
 				{
-					"src": "/img/slider/Pastry_2.png",
+					"src": "/img/slider/pastry_2.png",
 					"alt": "Pastry workshp experience"
 				},
 				{
-					"src": "/img/slider/Pastry_3.png",
+					"src": "/img/slider/pastry_3.png",
 					"alt": "Pastry workshp experience"
 				}
 			]
@@ -170,15 +170,15 @@
 			"cardImage": { "src": "/img/cardPhoto/aboboreira.png", "alt": "Aboboreira jeep tour" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/Aboboreira_1.png",
+					"src": "/img/slider/aboboreira_1.png",
 					"alt": "Aboboreira jeep tour"
 				},
 				{
-					"src": "/img/slider/Aboboreira_2.png",
+					"src": "/img/slider/aboboreira_2.png",
 					"alt": "Aboboreira jeep tour"
 				},
 				{
-					"src": "/img/slider/Aboboreira_3.png",
+					"src": "/img/slider/aboboreira_3.png",
 					"alt": "Aboboreira jeep tour"
 				}
 			]
@@ -200,15 +200,15 @@
 			"cardImage": { "src": "/img/cardPhoto/amadeo.png", "alt": "Amadeo tour" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/Amadeo_1.png",
+					"src": "/img/slider/amadeo_1.png",
 					"alt": "Amadeo tour"
 				},
 				{
-					"src": "/img/slider/Amadeo_2.png",
+					"src": "/img/slider/amadeo_2.png",
 					"alt": "Amadeo tour"
 				},
 				{
-					"src": "/img/slider/Amadeo_3.png",
+					"src": "/img/slider/amadeo_3.png",
 
 					"alt": "Amadeo tour"
 				}
@@ -281,7 +281,7 @@
 			"name": "João Pedro",
 			"photoSRC": "/img/aboutUs/Joao.png",
 			"photoALT": "João Pedro picture",
-			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences with Liliana Pereira.",
+			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I left Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences.",
 			"city": "Amarante"
 		},
 		{

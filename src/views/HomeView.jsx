@@ -1,6 +1,7 @@
 import ExperienceContainer from '../components/ExperienceContainer.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
-// import Test from '../components/Test.jsx';
+import MapBox from '../components/MapBox.jsx';
+import TestMap from '../components/TestMap.jsx';
 
 function HomeView() {
 	return (
@@ -15,7 +16,8 @@ function HomeView() {
 				<ExperienceContainer />
 			</div>
 			<div className='cardMap'>
-				<img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
+				{/* <TestMap /> */}
+				<MapBox />
 			</div>
 		</>
 	);

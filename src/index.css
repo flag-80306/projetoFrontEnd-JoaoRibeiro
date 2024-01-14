@@ -136,7 +136,7 @@ nav ul > li > h3:not(.active):hover {
 .secondTitle > p,
 .experiencesTitle > p,
 .cardInfoTitle > p {
-	padding: 5px 20px 20px;
+	padding: 10px 20px 20px;
 	font-size: 32px;
 	text-align: center;
 	line-height: 1.5;
@@ -224,14 +224,15 @@ nav ul > li > h3:not(.active):hover {
 /*----------------------CardInfo---------------*/
 
 .CardSlide {
-	width: 90%;
-	margin: -90px auto;
+	width: 70%;
+	margin: -70px auto;
 }
 .infoCard {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 30px;
+
 	/* border: solid 3px red; */
 }
 .icon {
@@ -239,7 +240,8 @@ nav ul > li > h3:not(.active):hover {
 }
 .cardDescription {
 	display: flex;
-	width: 530px;
+	/* width: 530px; */
+	width: 60%;
 	/* padding-bottom: 30px; */
 	margin: 10px auto;
 	/* border: solid 3px blue; */
@@ -249,21 +251,52 @@ nav ul > li > h3:not(.active):hover {
 	font-size: 40px;
 	line-height: 1.5;
 }
+/*--------------weather-----------------*/
 .cardWeather {
 	display: flex;
-	margin: 10px auto 50px;
+	margin: 0px auto;
 	text-align: center;
-	padding: 0px 10px;
+	padding: 20px 10px;
+	width: 290px;
+	justify-content: center;
+	align-items: center;
 }
-.cardWeather > img {
-	border: solid 5px rgb(55, 211, 120);
-	border-radius: 15%;
-	min-width: 300px;
-	min-height: 300px;
-	margin: auto;
+.weatherContainer {
+	background-color: #4a6660;
+	color: #f4f2de;
+	width: 100%;
+	font-size: 24px;
+	height: 290px;
+	border-radius: 50%;
+	border: solid 5px #4a6660;
+	/* border-radius: 27px 27px 0px 0px; */
+}
+.weatherContainer > h2 {
+	/* background-color: #4a6660; */
+	border-radius: 25px 25px 0px 0px;
+	padding: 20px;
+	color: #f4f2de;
+	font-size: 28px;
 }
 
-/*-------------------------------------*/
+.weatherDate {
+	background-color: #f4f2de;
+	border-radius: 35px 35px 0px 0px;
+	padding: 10px;
+	color: #4a6660;
+}
+
+.weatherDetails {
+	/* background-color: #f4f2de; */
+	display: flex;
+	flex-wrap: wrap;
+	/* background-color: #4a6660; */
+	border-radius: 45px 45px 0px 0px;
+	padding: 10px 10px 5px;
+	justify-content: center;
+	align-items: center;
+}
+
 /*----------------------map---------------*/
 .cardMap {
 	display: flex;
@@ -473,7 +506,7 @@ nav ul > li > h3:not(.active):hover {
 	text-align: left;
 	padding: 40px 30px;
 
-	line-height: 1.5;
+	line-height: 1.7;
 
 	/* text-align: justify; */
 }
@@ -489,17 +522,14 @@ nav ul > li > h3:not(.active):hover {
 }
 .left-arrow {
 	left: 16px;
-	top: 25%;
 }
 .right-arrow {
 	right: 16px;
-	top: 25%;
 }
 .indicators {
 	right: 50%;
 	position: absolute;
 	bottom: 16px;
-	top: 98%;
 }
 .indicator {
 	border: solid 1px #c3e2c2;
@@ -514,6 +544,21 @@ nav ul > li > h3:not(.active):hover {
 	height: 1rem;
 	width: 1rem;
 	cursor: pointer;
+}
+
+.left-arrowProfile {
+	left: 16px;
+	top: 25%;
+}
+.right-arrowProfile {
+	right: 16px;
+	top: 25%;
+}
+.indicatorsProfile {
+	right: 50%;
+	position: absolute;
+	bottom: 16px;
+	top: 98%;
 }
 
 /*-------------------------------------*/
@@ -637,6 +682,12 @@ nav ul > li > h3:not(.active):hover {
 .boxSize {
 	width: 430px;
 }
+/*-------------MAPBOX------------------------*/
+.mainMapContainer {
+	width: 90%;
+	height: 500px;
+	margin: 10% auto;
+}
 /*-------------------------------------*/
 
 .marginBottom {
@@ -658,6 +709,17 @@ nav ul > li > h3:not(.active):hover {
 	margin: 0px auto;
 }
 
+/*-------test-------*/
+.marker-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.marker-btn img {
+	width: 20px;
+	height: 20px;
+}
 /*------------responsive-------------------------*/
 
 @media screen and (max-width: 1024px) {
