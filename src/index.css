@@ -221,43 +221,13 @@ nav ul > li > h3:not(.active):hover {
 }
 /*-------------------------------------*/
 
-/*----------------------CardInfo---------------*/
-
-.CardSlide {
-	width: 70%;
-	margin: -70px auto;
-}
-.infoCard {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 30px;
-
-	/* border: solid 3px red; */
-}
-.icon {
-	width: 30px;
-}
-.cardDescription {
-	display: flex;
-	/* width: 530px; */
-	width: 60%;
-	/* padding-bottom: 30px; */
-	margin: 10px auto;
-	/* border: solid 3px blue; */
-}
-.cardDescription > p {
-	margin-left: 20px;
-	font-size: 40px;
-	line-height: 1.5;
-}
 /*--------------weather-----------------*/
 .cardWeather {
 	display: flex;
 	margin: 0px auto;
 	text-align: center;
 	padding: 20px 10px;
-	width: 290px;
+	width: 320px;
 	justify-content: center;
 	align-items: center;
 }
@@ -266,23 +236,24 @@ nav ul > li > h3:not(.active):hover {
 	color: #f4f2de;
 	width: 100%;
 	font-size: 24px;
-	height: 290px;
+	height: 320px;
 	border-radius: 50%;
 	border: solid 5px #4a6660;
 	/* border-radius: 27px 27px 0px 0px; */
 }
 .weatherContainer > h2 {
 	/* background-color: #4a6660; */
-	border-radius: 25px 25px 0px 0px;
-	padding: 20px;
+	/* border-radius: 25px 25px 0px 0px; */
+	margin: 10px auto 0px;
+	padding: 15px;
 	color: #f4f2de;
 	font-size: 28px;
 }
 
 .weatherDate {
 	background-color: #f4f2de;
-	border-radius: 35px 35px 0px 0px;
-	padding: 10px;
+	border-radius: 35px;
+	padding: 15px;
 	color: #4a6660;
 }
 
@@ -291,10 +262,44 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	/* background-color: #4a6660; */
-	border-radius: 45px 45px 0px 0px;
-	padding: 10px 10px 5px;
+	/* border-radius: 45px 45px 0px 0px; */
+	padding: 20px 10px 5px;
 	justify-content: center;
 	align-items: center;
+}
+/*--------------forecast-----------------*/
+
+.forecastContainer {
+	background-color: #4a6660;
+	color: #f4f2de;
+	width: 90%;
+	font-size: 16px;
+	height: 220px;
+	margin: 0px auto 30px;
+	/* border-radius: 50%; */
+	border: solid 5px #4a6660;
+	border-radius: 30px;
+}
+.forecast {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.forecastContainer > h2 {
+	/* background-color: #4a6660; */
+	/* border-radius: 25px 25px 0px 0px; */
+	margin: 20px auto;
+	text-align: center;
+
+	color: #f4f2de;
+	font-size: 28px;
+}
+
+.forecastDate {
+	background-color: #f4f2de;
+	border-radius: 35px;
+	padding: 15px;
+	color: #4a6660;
 }
 
 /*----------------------map---------------*/
@@ -410,6 +415,36 @@ nav ul > li > h3:not(.active):hover {
 	color: #c3e2c2;
 }
 /*-------------------------------------*/
+/*----------------------CardInfo---------------*/
+
+.CardSlide {
+	width: 80%;
+	margin: -70px auto;
+}
+.infoCard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+	/* border: solid 3px red; */
+}
+.icon {
+	width: 30px;
+}
+.cardDescription {
+	display: flex;
+	/* width: 530px; */
+	width: 60%;
+	/* padding-bottom: 30px; */
+	margin: 10px auto;
+	/* border: solid 3px blue; */
+}
+.cardDescription > p {
+	margin-left: 20px;
+	font-size: 40px;
+	line-height: 1.5;
+}
 /*----------------AboutUs---------------------*/
 .aboutUsContainer {
 	display: flex;
@@ -466,14 +501,12 @@ nav ul > li > h3:not(.active):hover {
 	justify-content: right;
 	position: relative;
 	width: 100%;
-	/* border: solid 1px red; */
 }
 .slide {
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px #c3e2c2;
 	width: 100%;
 	height: 100%;
-	/* border: solid 1px red; */
 }
 .slideHidden,
 .slideHiddenProfile {
@@ -683,14 +716,13 @@ nav ul > li > h3:not(.active):hover {
 	width: 430px;
 }
 /*-------------MAPBOX------------------------*/
-.cardBox {
-	/* border: solid 2px #f10000;
-	border-radius: 25px; */
+.cardMap {
+	margin: 0px auto;
 }
 .mainMapContainer {
-	width: 80%;
-	height: 600px;
-	margin: 10% auto;
+	width: 800px;
+	height: 450px;
+	margin: 150px auto 50px;
 }
 /*-------------------------------------*/
 

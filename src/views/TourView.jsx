@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import tourAPIService from '../services/tourAPIService.js';
 import Slide from '../components/Slide.jsx';
 import AmtWeather from '../components/AmtWeather.jsx';
+import AmtForecast from '../components/AmtForecast.jsx';
 import MapBoxTour from '../components/MapBoxTour.jsx';
 
 import { Link } from 'wouter';
@@ -71,7 +72,9 @@ function TourView({ params }) {
 					<AmtWeather tourDetails={tourDetails} weatherInfo={weatherInfo} />
 				</div>
 			</div>
-			<div className='cardContainerForecast'>{/* <AmtForecast forecastInfo={forecastInfo} /> try later */}</div>
+			<div className='cardContainerForecast'>
+				<AmtForecast tourDetails={tourDetails} weatherInfo={weatherInfo} />{' '}
+			</div>
 			<div className='button marginBottom'>
 				<Link href='/BookNow'>
 					<p>Book Now!</p>

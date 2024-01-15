@@ -5,7 +5,7 @@ function AmtWeather({ tourDetails, weatherInfo }) {
 		<>
 			<div className='weatherContainer'>
 				<h2>
-					{tourDetails.city}, {tourDetails.country}
+					{tourDetails.city},<br /> {tourDetails.country}
 				</h2>
 				<div className='todaysWeather'>
 					<div className='weatherDate'>
