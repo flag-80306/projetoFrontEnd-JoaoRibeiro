@@ -683,9 +683,13 @@ nav ul > li > h3:not(.active):hover {
 	width: 430px;
 }
 /*-------------MAPBOX------------------------*/
+.cardBox {
+	/* border: solid 2px #f10000;
+	border-radius: 25px; */
+}
 .mainMapContainer {
-	width: 90%;
-	height: 500px;
+	width: 80%;
+	height: 600px;
 	margin: 10% auto;
 }
 /*-------------------------------------*/
@@ -709,17 +713,6 @@ nav ul > li > h3:not(.active):hover {
 	margin: 0px auto;
 }
 
-/*-------test-------*/
-.marker-btn {
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.marker-btn img {
-	width: 20px;
-	height: 20px;
-}
 /*------------responsive-------------------------*/
 
 @media screen and (max-width: 1024px) {

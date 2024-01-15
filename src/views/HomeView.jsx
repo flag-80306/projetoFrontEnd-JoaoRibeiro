@@ -1,7 +1,6 @@
 import ExperienceContainer from '../components/ExperienceContainer.jsx';
 import TitleContainer from '../components/TitleContainer.jsx';
-import MapBox from '../components/MapBox.jsx';
-import TestMap from '../components/TestMap.jsx';
+import MapBoxHome from '../components/MapBoxHome.jsx';
 
 function HomeView() {
 	return (
@@ -16,8 +15,7 @@ function HomeView() {
 				<ExperienceContainer />
 			</div>
 			<div className='cardMap'>
-				{/* <TestMap /> */}
-				<MapBox />
+				<MapBoxHome />
 			</div>
 		</>
 	);

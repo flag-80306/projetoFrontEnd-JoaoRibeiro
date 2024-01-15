@@ -1,5 +1,6 @@
 import TitleContainer from '../components/TitleContainer.jsx';
 import InsideTours from '../components/InsideTours.jsx';
+import MapBoxExperiences from '../components/MapBoxExperiences.jsx';
 
 function ExperiencesView() {
 	return (
@@ -12,6 +13,7 @@ function ExperiencesView() {
 			<div className='cardContainer'>
 				<InsideTours />
 			</div>
+			<MapBoxExperiences />
 		</>
 	);
 }

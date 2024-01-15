@@ -2,36 +2,6 @@
 	"info": [
 		{
 			"id": 1,
-			"name": "Inside Marão",
-			"nameID": "InsideMarao",
-			"lat": 41.26899,
-			"lon": -8.07863,
-			"icon": "/img/icon.svg",
-			"date": "Available All Year",
-			"city": "Amarante",
-			"country": "Portugal",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
-			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
-			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" },
-			"slideInfo": [
-				{
-					"src": "/img/slider/marao_1.png",
-					"alt": "marao Jeep photo"
-				},
-				{
-					"src": "/img/slider/marao_2.png",
-					"alt": "marao Jeep photo"
-				},
-				{
-					"src": "/img/slider/marao_3.png",
-					"alt": "marao Jeep photo"
-				}
-			]
-		},
-		{
-			"id": 2,
 			"name": "Inside Amarante",
 			"nameID": "InsideAmarante",
 			"lat": 41.268846,
@@ -64,37 +34,37 @@
 			]
 		},
 		{
-			"id": 3,
-			"name": "Inside Pastries",
-			"nameID": "InsidePastries",
-			"lat": 41.268617,
-			"lon": -8.077406,
+			"id": 2,
+			"name": "Inside Marão",
+			"nameID": "InsideMarao",
+			"lat": 41.248244519172914,
+			"lon": -7.88720328416363,
 			"icon": "/img/icon.svg",
-			"date": "Available All Year Except on Sundays",
+			"date": "Available All Year",
 			"city": "Amarante",
 			"country": "Portugal",
-			"duration": "1 hours",
-			"price": "20€ per person",
-			"shortDescription": "Conventual pastry workshop and tasting.",
-			"description": "In the Conventual Pastry Workshop, made in the city since the 13th century, you will get your hands in our traditions, making and tasting the conventual sweets of Amarante,  you will keep this taste in your mouth and in your mind for long time! You should try all of them, the Brisa do Tâmega, the Foguete, the Papo de Anjo, the Léria or the S. Gonçalo. A unique experience with lots of calories!",
-			"cardImage": { "src": "/img/cardPhoto/pastry.png", "alt": "Pastry workshp experience" },
+			"duration": "6 hours",
+			"price": "70€ per person",
+			"shortDescription": "Jeep tour in Marão's Mountain",
+			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
+			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/pastry_1.png",
-					"alt": "Pastry workshp experience"
+					"src": "/img/slider/marao_1.png",
+					"alt": "marao Jeep photo"
 				},
 				{
-					"src": "/img/slider/pastry_2.png",
-					"alt": "Pastry workshp experience"
+					"src": "/img/slider/marao_2.png",
+					"alt": "marao Jeep photo"
 				},
 				{
-					"src": "/img/slider/pastry_3.png",
-					"alt": "Pastry workshp experience"
+					"src": "/img/slider/marao_3.png",
+					"alt": "marao Jeep photo"
 				}
 			]
 		},
 		{
-			"id": 4,
+			"id": 3,
 			"name": "Inside Verde",
 			"nameID": "InsideVerde",
 			"lat": 41.294379,
@@ -124,37 +94,7 @@
 			]
 		},
 		{
-			"id": 5,
-			"name": "Inside Kayak",
-			"nameID": "InsideKayak",
-			"lat": 41.273863,
-			"lon": -8.07298,
-			"icon": "/img/icon.svg",
-			"date": "Available May - October",
-			"city": "Amarante",
-			"country": "Portugal",
-			"duration": "1,5 hours",
-			"price": "20€ per person",
-			"shortDescription": "Kayak tour in Tâmega´s river",
-			"description": "In this Kayak Tour in Tâmega River you will enjoy all the nature, fresh air, quiet and relax places and a beautiful landscape in a very easy track in quiet and calm waters.This tour is perfect for families and groups of friends! We are waiting for you!",
-			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" },
-			"slideInfo": [
-				{
-					"src": "/img/slider/kayak_1.png",
-					"alt": "Kayak tour"
-				},
-				{
-					"src": "/img/slider/kayak_2.png",
-					"alt": "Kayak tour"
-				},
-				{
-					"src": "/img/slider/kayak_3.png",
-					"alt": "Kayak tour"
-				}
-			]
-		},
-		{
-			"id": 6,
+			"id": 4,
 			"name": "Inside Aboboreira",
 			"nameID": "InsideAboboreira",
 			"lat": 41.203375,
@@ -180,6 +120,66 @@
 				{
 					"src": "/img/slider/aboboreira_3.png",
 					"alt": "Aboboreira jeep tour"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Inside Romanesque",
+			"nameID": "InsideRomanesque",
+			"lat": 41.278601,
+			"lon": -8.28327,
+			"icon": "/img/icon.svg",
+			"date": "Available All Year",
+			"city": "Lousada",
+			"country": "Portugal",
+			"duration": "6 hours",
+			"price": "70€ per person",
+			"shortDescription": "Guided visit to the Romanesque monuments and traditions",
+			"description": "The tour through the flavors and stories of the Romanesque will take you to visit the center of the Route of the Romanesque and to visit some of the most importante monuments and you cannot miss the workshop of the conventual pastry in the city of Amarante.",
+			"cardImage": { "src": "/img/cardPhoto/romanesque.png", "alt": "Romanesque tour" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/romanesque_1.png",
+					"alt": "Romanesque tour"
+				},
+				{
+					"src": "/img/slider/romanesque_2.png",
+					"alt": "Romanesque tour"
+				},
+				{
+					"src": "/img/slider/romanesque_3.png",
+					"alt": "Romanesque tour"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "Inside Pastries",
+			"nameID": "InsidePastries",
+			"lat": 41.268617,
+			"lon": -8.077406,
+			"icon": "/img/icon.svg",
+			"date": "Available All Year Except on Sundays",
+			"city": "Amarante",
+			"country": "Portugal",
+			"duration": "1 hours",
+			"price": "20€ per person",
+			"shortDescription": "Conventual pastry workshop and tasting.",
+			"description": "In the Conventual Pastry Workshop, made in the city since the 13th century, you will get your hands in our traditions, making and tasting the conventual sweets of Amarante,  you will keep this taste in your mouth and in your mind for long time! You should try all of them, the Brisa do Tâmega, the Foguete, the Papo de Anjo, the Léria or the S. Gonçalo. A unique experience with lots of calories!",
+			"cardImage": { "src": "/img/cardPhoto/pastry.png", "alt": "Pastry workshp experience" },
+			"slideInfo": [
+				{
+					"src": "/img/slider/pastry_1.png",
+					"alt": "Pastry workshp experience"
+				},
+				{
+					"src": "/img/slider/pastry_2.png",
+					"alt": "Pastry workshp experience"
+				},
+				{
+					"src": "/img/slider/pastry_3.png",
+					"alt": "Pastry workshp experience"
 				}
 			]
 		},
@@ -246,31 +246,31 @@
 		},
 		{
 			"id": 9,
-			"name": "Inside Romanesque",
-			"nameID": "InsideRomanesque",
-			"lat": 41.278601,
-			"lon": -8.28327,
+			"name": "Inside Kayak",
+			"nameID": "InsideKayak",
+			"lat": 41.273863,
+			"lon": -8.07298,
 			"icon": "/img/icon.svg",
-			"date": "Available All Year",
-			"city": "Lousada",
+			"date": "Available May - October",
+			"city": "Amarante",
 			"country": "Portugal",
-			"duration": "6 hours",
-			"price": "70€ per person",
-			"shortDescription": "Guided visit to the Romanesque monuments and traditions",
-			"description": "The tour through the flavors and stories of the Romanesque will take you to visit the center of the Route of the Romanesque and to visit some of the most importante monuments and you cannot miss the workshop of the conventual pastry in the city of Amarante.",
-			"cardImage": { "src": "/img/cardPhoto/romanesque.png", "alt": "Romanesque tour" },
+			"duration": "1,5 hours",
+			"price": "20€ per person",
+			"shortDescription": "Kayak tour in Tâmega´s river",
+			"description": "In this Kayak Tour in Tâmega River you will enjoy all the nature, fresh air, quiet and relax places and a beautiful landscape in a very easy track in quiet and calm waters.This tour is perfect for families and groups of friends! We are waiting for you!",
+			"cardImage": { "src": "/img/cardPhoto/kayak.png", "alt": "Kayak tour" },
 			"slideInfo": [
 				{
-					"src": "/img/slider/romanesque_1.png",
-					"alt": "Romanesque tour"
+					"src": "/img/slider/kayak_1.png",
+					"alt": "Kayak tour"
 				},
 				{
-					"src": "/img/slider/romanesque_2.png",
-					"alt": "Romanesque tour"
+					"src": "/img/slider/kayak_2.png",
+					"alt": "Kayak tour"
 				},
 				{
-					"src": "/img/slider/romanesque_3.png",
-					"alt": "Romanesque tour"
+					"src": "/img/slider/kayak_3.png",
+					"alt": "Kayak tour"
 				}
 			]
 		}

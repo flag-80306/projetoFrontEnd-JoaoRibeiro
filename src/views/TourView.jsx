@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import tourAPIService from '../services/tourAPIService.js';
 import Slide from '../components/Slide.jsx';
 import AmtWeather from '../components/AmtWeather.jsx';
-import MapBox from '../components/MapBox.jsx';
+import MapBoxTour from '../components/MapBoxTour.jsx';
+
 import { Link } from 'wouter';
 
 function TourView({ params }) {
@@ -39,6 +40,12 @@ function TourView({ params }) {
 		})();
 	}, [params.tour]);
 
+	function tourLocation() {
+		if ((tourDetails.lat && tourDetails.lon) != undefined) {
+			return <MapBoxTour tourDetails={tourDetails} />;
+		}
+	}
+
 	return (
 		<>
 			<div className='cardInfoTitle marginFifty'>
@@ -53,11 +60,7 @@ function TourView({ params }) {
 			<div className='CardSlide'>
 				<Slide services={tourDetails.slideInfo} />
 			</div>
-			<div className='cardMap'>
-				{/* <img src='https://www.oficinadanet.com.br/media/post/27852/750/adicionar-parada.jpg' alt='mapa' />
-
-				<p>mapa (precisamos de latitude e longitude para marcar cada um dos 5 pontos de atração)</p> */}
-			</div>
+			<div className='cardMap'>{tourLocation()}</div>
 
 			<div className='infoCard'>
 				<div className='cardDescription'>

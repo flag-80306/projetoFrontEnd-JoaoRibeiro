@@ -5,7 +5,7 @@ function AboutUsView() {
 
 	useEffect(function () {
 		(async function () {
-			const response = await fetch('/mockAPI/mockAPIProfile.json');
+			const response = await fetch('/mockAPI/mockAPIInfo.json');
 			const result = await response.json();
 			const findProfile = result.aboutUs;
 
