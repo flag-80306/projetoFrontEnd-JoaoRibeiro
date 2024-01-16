@@ -31,7 +31,7 @@ function NextFiveDays() {
 			month = `0${month}`;
 		}
 
-		let dateFormat = `${day}-${month}-${year}, ${weekday}`;
+		let dateFormat = `${day}-${month}-${year}`;
 
 		// Com o .push() adiciono uma data e dia da semana ao array em forma de objeto
 		getNextFiveDays.push({

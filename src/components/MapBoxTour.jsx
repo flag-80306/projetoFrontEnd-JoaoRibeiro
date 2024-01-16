@@ -18,7 +18,7 @@ function MapBoxTour({ tourDetails }) {
 					initialViewState={{
 						latitude: lat,
 						longitude: lon,
-						zoom: 12,
+						zoom: 10,
 						interactive: false,
 					}}
 				>

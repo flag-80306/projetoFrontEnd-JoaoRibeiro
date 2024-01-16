@@ -73,7 +73,7 @@ function TourView({ params }) {
 					{tourDetails.city}, {tourDetails.country}
 				</p>
 			</div>
-			<div className='CardSlide'>
+			<div className='cardSlide'>
 				<Slide services={tourDetails.slideInfo} />
 			</div>
 			<div className='cardMap'>{tourLocation()}</div>

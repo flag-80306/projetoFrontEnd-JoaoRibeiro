@@ -33,7 +33,7 @@ function MapBoxHome() {
 					initialViewState={{
 						latitude: 41.268846,
 						longitude: -8.078793,
-						zoom: 10,
+						zoom: 8,
 						interactive: true,
 					}}
 				>

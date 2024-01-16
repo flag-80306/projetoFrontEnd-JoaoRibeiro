@@ -55,8 +55,9 @@ function ContactView() {
 
 							<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea allBoxContact  '></textarea>
 						</div>
-
-						<input type='submit' value='Send' className='sendButton btnSendSize' />
+						<div>
+							<input type='submit' value='Send' className='sendButton btnSendSize' />
+						</div>
 					</form>
 				</div>
 				<div className='contactBox'>
