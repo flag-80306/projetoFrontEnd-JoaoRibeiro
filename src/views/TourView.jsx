@@ -41,10 +41,10 @@ function TourView({ params }) {
 
 					const responseForecastAPI = await fetch(forecastAPI);
 					const resultForecastAPI = await responseForecastAPI.json();
-					// console.log('forecast');
-					// console.log(resultForecastAPI);
+					console.log('forecast');
+					console.log(resultForecastAPI);
 					//sempre no horário das 12h
-					const forecastResult = [resultForecastAPI.list[3], resultForecastAPI.list[11], resultForecastAPI.list[19], resultForecastAPI.list[27], resultForecastAPI.list[35]];
+					const forecastResult = [resultForecastAPI.list[11], resultForecastAPI.list[19], resultForecastAPI.list[27], resultForecastAPI.list[35], resultForecastAPI.list[39]];
 					// a hora da previsão do estado do tempo está para as 12h.
 					setForecastInfo(forecastResult);
 					// console.log('resultForecast');

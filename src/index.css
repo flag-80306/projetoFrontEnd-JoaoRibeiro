@@ -269,21 +269,22 @@ nav ul > li > h3:not(.active):hover {
 	color: #4a6660;
 }
 
-.weatherDetails {
+.weatherDetails,
+.forecastDetails {
 	/* background-color: #f4f2de; */
 	display: flex;
 	flex-wrap: wrap;
 	/* background-color: #4a6660; */
-
 	padding: 20px 10px 5px;
-	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 }
-/* .forecastIcon,
-.mainTemp {
-	border: solid 1px red;
-} */
-
+.weatherDetails {
+	justify-content: center;
+}
+.forecastDetails {
+	justify-content: space-between;
+	font-size: 20px;
+}
 /*--------------forecast-----------------*/
 .cardContainerForecast {
 	margin-top: 100px;

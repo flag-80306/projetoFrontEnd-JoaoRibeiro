@@ -15,7 +15,7 @@ function AmtForecast({ tourDetails, forecastInfo }) {
 							<div className='forecastDate'>
 								<GetWeatherDate dateInfo={nextFiveDays[index]} />
 							</div>
-							<div className='weatherDetails'>
+							<div className='forecastDetails'>
 								<div className='forecastIcon'>
 									<img src={'https://openweathermap.org/img/wn/' + item.weather?.[0].icon + '.png'} alt={'weather-icon-' + item.weather?.[0].main} />
 								</div>
