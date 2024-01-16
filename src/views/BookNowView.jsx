@@ -71,7 +71,7 @@ function BookNowView() {
 						<label htmlFor='message' className='writeMessage'>
 							Your Message:
 						</label>
-						<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea allBoxContact'></textarea>
+						<textarea id='message' name='message' rows='4' cols='50' placeholder='Write here your message' className='contactTextArea allBoxContact' />
 					</div>
 				</div>
 

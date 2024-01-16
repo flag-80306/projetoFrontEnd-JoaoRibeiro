@@ -45,7 +45,7 @@
 			"country": "Portugal",
 			"duration": "6 hours",
 			"price": "70€ per person",
-			"shortDescription": "Jeep tour in Marão's Mountain",
+			"shortDescription": "Jeep tour in Marão's Mountain with picnic.",
 			"description": "Inside Marão will deflower a heritage made up of beautiful forest spots, we will explore the highest places with breathtaking landscapes and passing by the Nossa Senhora de Moreira viewpoint, where we feel insignificant such is the beauty and the vastness of everything that we surrounds.",
 			"cardImage": { "src": "/img/cardPhoto/marao.png", "alt": "Marão jeep tour" },
 			"slideInfo": [
@@ -282,7 +282,8 @@
 			"photoSRC": "/img/aboutUs/Joao.png",
 			"photoALT": "João Pedro picture",
 			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I left Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences.",
-			"city": "Amarante"
+			"city": "Amarante",
+			"country": "Portugal"
 		},
 		{
 			"id": 2,
@@ -290,7 +291,8 @@
 			"photoSRC": "/img/aboutUs/Liliana.png",
 			"photoALT": "Liliana picture",
 			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences with Liliana Pereira.",
-			"city": "Amarante"
+			"city": "Amarante",
+			"country": "Portugal"
 		}
 	]
 }

@@ -1,85 +1,30 @@
 import GetWeatherDate from './GetWeatherDate';
+import NextFiveDays from './NextFiveDays';
 
-function AmtForecast({ tourDetails, weatherInfo }) {
+function AmtForecast({ tourDetails, forecastInfo }) {
+	const nextFiveDays = NextFiveDays();
 	return (
 		<>
 			<div className='forecastContainer'>
-				<h2>Amarante Forecast</h2>
+				<h2>
+					Forecast for {tourDetails.city}, {tourDetails.country}
+				</h2>
 				<div className='forecast'>
-					<div className='todaysforecast'>
-						<div className='weatherDate'>
-							<GetWeatherDate />
-						</div>
-
-						<div className='weatherDetails'>
-							<div className='forecastIcon'>
-								<img src={'https://openweathermap.org/img/wn/' + weatherInfo.weather?.[0].icon + '.png'} alt={'weather-icon-' + weatherInfo.weather?.[0].main} />
+					{forecastInfo?.map((item, index) => (
+						<div key={item.dt} className='todaysforecast'>
+							<div className='forecastDate'>
+								<GetWeatherDate dateInfo={nextFiveDays[index]} />
 							</div>
-							<div className='mainTemp'>
-								{Math.round(weatherInfo.main?.temp)}&deg;, {weatherInfo.weather?.[0].main}
-							</div>
-						</div>
-					</div>
-
-					<div className='todaysforecast'>
-						<div className='weatherDate'>
-							<GetWeatherDate />
-						</div>
-
-						<div className='weatherDetails'>
-							<div className='weatherIcon'>
-								<img src={'https://openweathermap.org/img/wn/' + weatherInfo.weather?.[0].icon + '.png'} alt={'weather-icon-' + weatherInfo.weather?.[0].main} />
-							</div>
-							<div className='mainTemp'>
-								{Math.round(weatherInfo.main?.temp)}&deg;, {weatherInfo.weather?.[0].main}
+							<div className='weatherDetails'>
+								<div className='forecastIcon'>
+									<img src={'https://openweathermap.org/img/wn/' + item.weather?.[0].icon + '.png'} alt={'weather-icon-' + item.weather?.[0].main} />
+								</div>
+								<div className='mainTemp'>
+									{Math.round(item.main?.temp)}&deg;, {item.weather?.[0].main}
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<div className='todaysforecast'>
-						<div className='weatherDate'>
-							<GetWeatherDate />
-						</div>
-
-						<div className='weatherDetails'>
-							<div className='weatherIcon'>
-								<img src={'https://openweathermap.org/img/wn/' + weatherInfo.weather?.[0].icon + '.png'} alt={'weather-icon-' + weatherInfo.weather?.[0].main} />
-							</div>
-							<div className='mainTemp'>
-								{Math.round(weatherInfo.main?.temp)}&deg;, {weatherInfo.weather?.[0].main}
-							</div>
-						</div>
-					</div>
-
-					<div className='todaysforecast'>
-						<div className='weatherDate'>
-							<GetWeatherDate />
-						</div>
-
-						<div className='weatherDetails'>
-							<div className='weatherIcon'>
-								<img src={'https://openweathermap.org/img/wn/' + weatherInfo.weather?.[0].icon + '.png'} alt={'weather-icon-' + weatherInfo.weather?.[0].main} />
-							</div>
-							<div className='mainTemp'>
-								{Math.round(weatherInfo.main?.temp)}&deg;, {weatherInfo.weather?.[0].main}
-							</div>
-						</div>
-					</div>
-
-					<div className='todaysforecast'>
-						<div className='weatherDate'>
-							<GetWeatherDate />
-						</div>
-
-						<div className='weatherDetails'>
-							<div className='weatherIcon'>
-								<img src={'https://openweathermap.org/img/wn/' + weatherInfo.weather?.[0].icon + '.png'} alt={'weather-icon-' + weatherInfo.weather?.[0].main} />
-							</div>
-							<div className='mainTemp'>
-								{Math.round(weatherInfo.main?.temp)}&deg;, {weatherInfo.weather?.[0].main}
-							</div>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</>

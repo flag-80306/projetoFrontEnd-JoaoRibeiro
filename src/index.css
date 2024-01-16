@@ -42,7 +42,6 @@ nav ul {
 }
 nav ul > li {
 	list-style: none;
-	font-size: 28px;
 	letter-spacing: -1px;
 	margin: auto;
 	text-align: center;
@@ -54,6 +53,7 @@ nav ul.open {
 
 nav ul > li > h3 {
 	/* border: solid 3px red; */
+	font-size: 36px;
 	padding: 5px;
 	border-radius: 15px;
 	margin: 0px 10px;
@@ -133,6 +133,7 @@ nav ul > li > h3:not(.active):hover {
 	font-size: 40px;
 	text-align: center;
 }
+
 .secondTitle > p,
 .experiencesTitle > p,
 .cardInfoTitle > p {
@@ -150,10 +151,10 @@ nav ul > li > h3:not(.active):hover {
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 20px 150px;
+	margin: 0px 80px 30px;
 	justify-content: space-evenly;
-	gap: 90px;
-	row-gap: 100px;
+	gap: 60px;
+	row-gap: 80px;
 }
 .card:hover {
 	cursor: pointer;
@@ -220,6 +221,17 @@ nav ul > li > h3:not(.active):hover {
 	border-radius: 17px;
 }
 /*-------------------------------------*/
+/*-------------MAPBOX------------------------*/
+.cardMap {
+	/* margin: 0px auto; */
+	/* border: solid 1px red; */
+}
+.mainMapContainer {
+	width: 80%;
+	height: 450px;
+	margin: 100px auto 80px;
+	/* border: solid 1px red; */
+}
 
 /*--------------weather-----------------*/
 .cardWeather {
@@ -232,7 +244,7 @@ nav ul > li > h3:not(.active):hover {
 	align-items: center;
 }
 .weatherContainer {
-	background-color: #4a6660;
+	background-color: #4a6660dd;
 	color: #f4f2de;
 	width: 100%;
 	font-size: 24px;
@@ -262,29 +274,46 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	/* background-color: #4a6660; */
-	/* border-radius: 45px 45px 0px 0px; */
+
 	padding: 20px 10px 5px;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
-/*--------------forecast-----------------*/
+/* .forecastIcon,
+.mainTemp {
+	border: solid 1px red;
+} */
 
+/*--------------forecast-----------------*/
+.cardContainerForecast {
+	margin-top: 100px;
+}
 .forecastContainer {
-	background-color: #4a6660;
+	background-color: #4a6660dd;
 	color: #f4f2de;
 	width: 90%;
 	font-size: 16px;
-	height: 220px;
+
 	margin: 0px auto 30px;
 	/* border-radius: 50%; */
-	border: solid 5px #4a6660;
+	border: solid 5px #4a6660dd;
 	border-radius: 30px;
 }
 .forecast {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	gap: 30px;
 }
+.forecastDate {
+	background-color: #f4f2de;
+	border-radius: 35px;
+	padding: 15px;
+	color: #4a6660;
+	width: 120px;
+	font-size: 20px;
+}
+
 .forecastContainer > h2 {
 	/* background-color: #4a6660; */
 	/* border-radius: 25px 25px 0px 0px; */
@@ -294,30 +323,14 @@ nav ul > li > h3:not(.active):hover {
 	color: #f4f2de;
 	font-size: 28px;
 }
-
+.todaysforecast {
+	/* border: solid 1px red; */
+}
 .forecastDate {
 	background-color: #f4f2de;
 	border-radius: 35px;
 	padding: 15px;
 	color: #4a6660;
-}
-
-/*----------------------map---------------*/
-.cardMap {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 150px auto 40px;
-	text-align: center;
-}
-.cardMap > img {
-	width: 80%;
-	border-radius: 10%;
-}
-.cardMap > p {
-	font-size: 24px;
-	margin: 20px 0px;
 }
 
 /*----------------------footer---------------*/
@@ -408,9 +421,7 @@ nav ul > li > h3:not(.active):hover {
 .sendButton:hover {
 	background-color: #4a6660;
 	border: solid 5px #c3e2c2;
-
 	border-radius: 50px 0px;
-
 	transition: color;
 	color: #c3e2c2;
 }
@@ -437,7 +448,7 @@ nav ul > li > h3:not(.active):hover {
 	/* width: 530px; */
 	width: 60%;
 	/* padding-bottom: 30px; */
-	margin: 10px auto;
+	margin: -50px auto;
 	/* border: solid 3px blue; */
 }
 .cardDescription > p {
@@ -460,7 +471,6 @@ nav ul > li > h3:not(.active):hover {
 	width: 61%;
 	margin: 0px auto;
 	align-items: flex-start;
-	/* border: solid 5px red; */
 }
 .companyContainer > h2,
 .contactContainer > h2 {
@@ -468,7 +478,6 @@ nav ul > li > h3:not(.active):hover {
 	width: 100%;
 	margin: 30px auto 30px;
 	text-align: center;
-	/* border: solid 5px red; */
 }
 .companyContainer > img {
 	width: 280px;
@@ -476,26 +485,22 @@ nav ul > li > h3:not(.active):hover {
 	border-radius: 20%;
 	margin: 0px auto;
 	border: solid 5px #c3e2c2;
-	/* border: solid 5px red; */
 }
 .companyContainer > p {
 	font-size: 32px;
 	line-height: 2;
-
 	margin: 30px auto 50px;
-	/* border: solid 5px red; */
 	width: 90%;
 }
 .aboutUs {
 	background-color: #dbcc95;
 	width: 36%;
 	margin: 0px;
-	/* border: solid 5px red; */
 }
 
 /*---------------Slider----------------------*/
 .sliderContainer {
-	margin: 0px;
+	margin-bottom: 120px;
 	align-items: center;
 	display: flex;
 	justify-content: right;
@@ -538,7 +543,7 @@ nav ul > li > h3:not(.active):hover {
 	font-size: 28px;
 	text-align: left;
 	padding: 40px 30px;
-
+	margin-bottom: 10px;
 	line-height: 1.7;
 
 	/* text-align: justify; */
@@ -554,10 +559,18 @@ nav ul > li > h3:not(.active):hover {
 	cursor: pointer;
 }
 .left-arrow {
-	left: 16px;
+	left: 30px;
 }
 .right-arrow {
-	right: 16px;
+	right: 30px;
+}
+.left-arrowProfile {
+	left: 30px !important;
+	top: 430px !important;
+}
+.right-arrowProfile {
+	right: 30px !important;
+	top: 430px !important;
 }
 .indicators {
 	right: 50%;
@@ -591,25 +604,25 @@ nav ul > li > h3:not(.active):hover {
 	right: 50%;
 	position: absolute;
 	bottom: 16px;
-	top: 98%;
+	top: 97%;
 }
 
 /*-------------------------------------*/
 /*----------------------contact---------------*/
-.contactFormContainer {
+/* .contactFormContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* border: solid 3px red; */
+	border: solid 3px red;
 	gap: 20px;
 	width: 100%;
-	/* border: solid 2px red; */
-}
+	border: solid 2px red;
+} */
 
 .contactContainer {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	/* align-items: flex-start; */
 	/* border: solid 2px red; */
@@ -617,48 +630,42 @@ nav ul > li > h3:not(.active):hover {
 
 .contactContainer > h2 {
 	/* border: solid 3px red; */
-	margin: 20px auto 0px;
+	margin: 30px auto 0px;
 }
 .contactContainer > p {
 	line-height: 2;
-	padding: 20px 25px;
+	/* padding: 20px 25px; */
 	font-size: 32px;
-	/* margin: 0px auto; */
+	margin: 20px auto 50px;
 	/* border: solid 3px red; */
 }
 .contactBox {
 	background-color: #dbcc95;
-	width: 36%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	/* margin: auto 0px; */
-	/* border: solid 2px red; */
 }
 .contactInfo {
 	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: left;
+	justify-content: space-evenly;
 	margin-bottom: 50px;
-	margin: auto 0px;
-	/* border: solid 2px red; */
+	margin: 0px auto;
 }
 .contactInfo > p > a {
 	text-decoration: none;
 	color: #4a6660;
 	line-height: 0px;
 	font-size: 28px;
-	/* margin: 0px auto; */
-	/* border: solid 2px red; */
 }
 .contactInfo > p {
 	padding: 15px;
 	font-size: 32px;
 	text-align: left;
-	/* margin: 0px auto; */
-	/* border: solid 3px red; */
+	margin: 30px auto 30px;
 }
 
 .contactForm {
@@ -667,6 +674,11 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+.bookCheckBox {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 .contactMessage {
 	display: flex;
@@ -715,15 +727,7 @@ nav ul > li > h3:not(.active):hover {
 .boxSize {
 	width: 430px;
 }
-/*-------------MAPBOX------------------------*/
-.cardMap {
-	margin: 0px auto;
-}
-.mainMapContainer {
-	width: 800px;
-	height: 450px;
-	margin: 150px auto 50px;
-}
+
 /*-------------------------------------*/
 
 .marginBottom {
@@ -753,14 +757,17 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.headerMenuLogo {
 		height: 150%;
-		margin-left: -10px;
+		margin-left: -20px;
 	}
 	nav ul {
 		margin-left: -20px;
 	}
-	nav ul > li {
-		font-size: 28px;
-		letter-spacing: -1px;
+
+	nav ul > li > h3 {
+		font-size: 32px;
+		padding: 4px;
+
+		letter-spacing: -2px;
 	}
 	.mainTitle {
 		margin: -170px 0px 50px 0px;
@@ -794,10 +801,6 @@ nav ul > li > h3:not(.active):hover {
 	.contactContainer > h2 {
 		font-size: 36px;
 	}
-	.cardContainer {
-		margin: 0px 40px 150px;
-		gap: 50px;
-	}
 	.boxSize {
 		width: 378px;
 	}
@@ -814,15 +817,22 @@ nav ul > li > h3:not(.active):hover {
 	.contactInfo > p > a {
 		letter-spacing: -2px;
 	}
+	.mainMapContainer {
+		width: 80%;
+		height: 350px;
+		margin: 0px auto 100px;
+	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
+	/* medida do meu tablet */
 	.navBar {
 		padding: 8px 30px 8px 5px;
 	}
 	.headerMenuLogo {
 		margin-left: 0px;
 	}
+
 	.hamburguerMenu {
 		display: flex;
 		cursor: pointer;
@@ -874,7 +884,8 @@ nav ul > li > h3:not(.active):hover {
 		font-size: 28px;
 	}
 	.cardContainer {
-		margin: 0px 20px 100px;
+		margin: 0px 80px 10px;
+		gap: 80px;
 	}
 	.card {
 		margin-bottom: 50px;
@@ -896,7 +907,6 @@ nav ul > li > h3:not(.active):hover {
 		width: 80%;
 	}
 
-	.companyContainer > h2,
 	.contactContainer > h2 {
 		font-size: 36px;
 		margin: 40px;
@@ -921,6 +931,9 @@ nav ul > li > h3:not(.active):hover {
 	.countainerPageNF {
 		margin: -130px auto 30px;
 	}
+	.indicatorsProfile {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -936,7 +949,7 @@ nav ul > li > h3:not(.active):hover {
 	}
 	nav ul {
 		width: 45%;
-		margin: 298px 5% 0px 0px;
+		margin: 308px 5% 0px 0px;
 	}
 	nav ul > li {
 		font-size: 28px;
@@ -955,7 +968,7 @@ nav ul > li > h3:not(.active):hover {
 		gap: 20px;
 	}
 	.mainTitle {
-		margin: -80px 0px 20px 0px;
+		margin: -90px 0px 30px 0px;
 	}
 	.mainTitle > h1 {
 		font-size: 32px;
@@ -969,9 +982,10 @@ nav ul > li > h3:not(.active):hover {
 		font-size: 28px;
 	}
 	.secondTitle > p,
-	.experiencesTitle > p {
+	.experiencesTitle > p,
+	.cardInfoTitle > p {
 		font-size: 24px;
-		line-height: 1.2;
+		/* line-height: 1.2; */
 	}
 	.cardText {
 		backdrop-filter: blur(1px);
@@ -989,10 +1003,19 @@ nav ul > li > h3:not(.active):hover {
 	.pageNotFound {
 		width: 80%;
 	}
-	.buttonSize {
-		width: 250px;
+
+	.btnSendSize {
+		width: 200px !important;
+		height: 50px !important;
+		font-size: 20px;
 	}
 
+	.sendButton {
+		border: solid 3px #4a6660;
+	}
+	.cardContainer {
+		margin: 0px 70px 30px;
+	}
 	.contactContainer > h2 {
 		margin: 20px auto 0px;
 		font-size: 32px;
@@ -1023,7 +1046,7 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.button {
 		height: 40px !important;
-		width: 200px !important;
+		width: 280px !important;
 		font-size: 20px !important;
 		margin-bottom: 20px !important;
 	}
@@ -1048,5 +1071,8 @@ nav ul > li > h3:not(.active):hover {
 
 	.numberContact {
 		font-size: 18px !important;
+	}
+	.mapContainer {
+		height: 250px;
 	}
 }

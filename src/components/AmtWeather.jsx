@@ -1,4 +1,4 @@
-import GetWeatherDate from './GetWeatherDate';
+import GetWeatherDay from './GetWeatherDay';
 
 function AmtWeather({ tourDetails, weatherInfo }) {
 	return (
@@ -9,7 +9,7 @@ function AmtWeather({ tourDetails, weatherInfo }) {
 				</h2>
 				<div className='todaysWeather'>
 					<div className='weatherDate'>
-						<GetWeatherDate />
+						<GetWeatherDay />
 					</div>
 				</div>
 				<div className='weatherDetails'>

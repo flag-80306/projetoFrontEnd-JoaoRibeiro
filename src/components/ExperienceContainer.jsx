@@ -16,11 +16,11 @@ function ExperienceContainer() {
 
 	return (
 		<>
-			<div className='cardContainer'>
-				{experienceInfo.map(item => (
-					<Card key={item.id} tour={item} />
-				))}
-			</div>
+			{/* <div className='cardContainer'> */}
+			{experienceInfo.map(item => (
+				<Card key={item.id} tour={item} />
+			))}
+			{/* </div> */}
 		</>
 	);
 }
