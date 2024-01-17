@@ -43,9 +43,9 @@ function TourView({ params }) {
 					const resultForecastAPI = await responseForecastAPI.json();
 					console.log('forecast');
 					console.log(resultForecastAPI);
-					//sempre no horário das 12h
-					const forecastResult = [resultForecastAPI.list[7], resultForecastAPI.list[15], resultForecastAPI.list[23], resultForecastAPI.list[32], resultForecastAPI.list[39]];
-					// a hora da previsão do estado do tempo está para as 9h dos próximos 5 dias mas penso que a cada 3h é atualizada.
+					//criada no horário das 12h mas atualiza a cada 3 horas
+					const forecastResult = [resultForecastAPI.list[6], resultForecastAPI.list[14], resultForecastAPI.list[22], resultForecastAPI.list[31], resultForecastAPI.list[39]];
+
 					setForecastInfo(forecastResult);
 					console.log('resultForecast');
 					console.log(forecastResult);

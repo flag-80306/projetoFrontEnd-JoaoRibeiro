@@ -328,6 +328,9 @@ nav ul > li > h3:not(.active):hover {
 	font-size: 28px;
 	font-weight: 600;
 }
+.sendButtonContainer {
+	width: 500px;
+}
 .button > p {
 	padding: 8px;
 	display: flex;
