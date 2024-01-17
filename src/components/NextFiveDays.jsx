@@ -1,6 +1,5 @@
 function NextFiveDays() {
 	const weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-	//alterei a ordem do array para enganar o sistema porque normalemte 'sunday' é o elemento [0] - obs às 12h altera o dia
 
 	// Função que recebe uma data e um número de dias e retorna a data futura
 	// const getNextDate = (date, days) => {

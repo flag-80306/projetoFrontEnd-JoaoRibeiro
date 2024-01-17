@@ -1,10 +1,9 @@
 * {
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 	font-family: 'Satisfy', cursive;
 	margin: 0px;
 	padding: 0px;
 }
-
 body {
 	background-color: #f4f2de;
 	margin: 0px 5%;
@@ -26,7 +25,6 @@ body {
 	box-shadow: rgba(182, 148, 106, 0.767) 0px 03px 20px 0px;
 	align-items: center;
 }
-
 .headerMenu {
 	height: 100%;
 	width: 100%;
@@ -50,9 +48,7 @@ nav ul > li {
 nav ul.open {
 	display: flex;
 }
-
 nav ul > li > h3 {
-	/* border: solid 3px red; */
 	font-size: 36px;
 	padding: 2px;
 	border-radius: 15px;
@@ -63,11 +59,6 @@ nav ul > li > h3:not(.active):hover {
 	color: #f4f2de;
 	cursor: pointer;
 }
-/* .active {
-	background-color: #4a6660;
-	color: #f4f2de;
-} */
-/* para manter selecionado a página aberta */
 /*--------------HamburguerMenu-----------------------*/
 .hamburguerMenu {
 	display: none;
@@ -79,7 +70,6 @@ nav ul > li > h3:not(.active):hover {
 	height: 48px;
 	cursor: pointer;
 	margin-right: 30px;
-	/* border: solid 3px red; */
 }
 .mobileHamburguer {
 	height: 8px;
@@ -87,13 +77,9 @@ nav ul > li > h3:not(.active):hover {
 	background-color: #4a6660;
 	border-radius: 3px;
 }
-
-/*-------------------------------------*/
-
 /*----------------------TitleContainer---------------*/
 .mainImageTitle {
 	height: 100%;
-	/* position: relative; */
 }
 .mainImageTitle > video {
 	opacity: 0.4;
@@ -103,7 +89,6 @@ nav ul > li > h3:not(.active):hover {
 .mainTitle {
 	margin: -200px 0px 70px 0px;
 }
-
 .mainTitle > h1 {
 	text-align: center;
 	font-size: 64px;
@@ -112,9 +97,6 @@ nav ul > li > h3:not(.active):hover {
 	text-align: center;
 	font-size: 48px;
 }
-
-/*-------------------------------------*/
-
 /*----------------------Title---------------*/
 .secondTitle,
 .experiencesTitle,
@@ -133,7 +115,6 @@ nav ul > li > h3:not(.active):hover {
 	font-size: 40px;
 	text-align: center;
 }
-
 .secondTitle > p,
 .experiencesTitle > p,
 .cardInfoTitle > p {
@@ -145,8 +126,6 @@ nav ul > li > h3:not(.active):hover {
 .marginFifty {
 	margin-top: 50px;
 }
-
-/*-------------------------------------*/
 /*----------------------Card---------------*/
 .cardContainer {
 	display: flex;
@@ -159,14 +138,11 @@ nav ul > li > h3:not(.active):hover {
 .card:hover {
 	cursor: pointer;
 }
-
 .card {
 	border-radius: 20px;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px 10px;
-
 	width: 200px;
 	height: 310px;
-
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -181,7 +157,6 @@ nav ul > li > h3:not(.active):hover {
 	position: absolute;
 	z-index: 1;
 }
-
 .cardText {
 	padding-left: 20px;
 	background-color: rgba(0, 0, 0, 0.192);
@@ -197,7 +172,6 @@ nav ul > li > h3:not(.active):hover {
 	color: white;
 	backdrop-filter: blur(2px);
 	z-index: 2;
-	/* margin: 0px 0px 0px 5px; */
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -220,19 +194,12 @@ nav ul > li > h3:not(.active):hover {
 	margin: -2px 0px 0px 4px;
 	border-radius: 17px;
 }
-/*-------------------------------------*/
 /*-------------MAPBOX------------------------*/
-.cardMap {
-	/* margin: 0px auto; */
-	/* border: solid 1px red; */
-}
 .mainMapContainer {
 	width: 80%;
 	height: 450px;
 	margin: 100px auto 80px;
-	/* border: solid 1px red; */
 }
-
 /*--------------weather-----------------*/
 .cardWeather {
 	display: flex;
@@ -251,32 +218,24 @@ nav ul > li > h3:not(.active):hover {
 	height: 320px;
 	border-radius: 50%;
 	border: solid 5px #4a6660;
-	/* border-radius: 27px 27px 0px 0px; */
 }
 .weatherContainer > h2 {
-	/* background-color: #4a6660; */
-	/* border-radius: 25px 25px 0px 0px; */
 	margin: 10px auto 0px;
 	padding: 15px;
 	color: #f4f2de;
 	font-size: 28px;
 }
-
 .weatherDate {
 	background-color: #f4f2de;
 	border-radius: 35px;
-	padding: 15px;
+	padding: 10px;
 	color: #4a6660;
 }
-
 .weatherDetails,
 .forecastDetails {
-	/* background-color: #f4f2de; */
 	display: flex;
 	flex-wrap: wrap;
-	/* background-color: #4a6660; */
 	padding: 20px 10px 5px;
-	/* align-items: center; */
 }
 .weatherDetails {
 	justify-content: center;
@@ -294,9 +253,7 @@ nav ul > li > h3:not(.active):hover {
 	color: #f4f2de;
 	width: 90%;
 	font-size: 16px;
-
 	margin: 0px auto 30px;
-	/* border-radius: 50%; */
 	border: solid 5px #4a6660dd;
 	border-radius: 30px;
 }
@@ -311,31 +268,16 @@ nav ul > li > h3:not(.active):hover {
 	border-radius: 35px;
 	padding: 15px;
 	color: #4a6660;
-	width: 120px;
+	width: 150px;
 	font-size: 20px;
 }
-
 .forecastContainer > h2 {
-	/* background-color: #4a6660; */
-	/* border-radius: 25px 25px 0px 0px; */
 	margin: 20px auto;
 	text-align: center;
-
 	color: #f4f2de;
 	font-size: 28px;
 }
-.todaysforecast {
-	/* border: solid 1px red; */
-}
-.forecastDate {
-	background-color: #f4f2de;
-	border-radius: 35px;
-	padding: 15px;
-	color: #4a6660;
-}
-
 /*----------------------footer---------------*/
-
 .footerContainer {
 	background-color: #c3e2c2;
 	padding: 20px;
@@ -364,7 +306,6 @@ nav ul > li > h3:not(.active):hover {
 	color: #c3e2c2;
 	cursor: pointer;
 }
-/*-------------------------------------*/
 /*----------------Button---------------------*/
 .button {
 	display: block;
@@ -402,13 +343,11 @@ nav ul > li > h3:not(.active):hover {
 	box-shadow: 40px 40px 5px 1px #c3e2c2;
 	transition: background-color 3s, rotate 3s, border-radius 3s, box-shadow 3s;
 }
-
 .button > p:hover {
 	rotate: 360deg;
 	transition: rotate 4s, color 4s;
 	color: #c3e2c2;
 }
-
 .sendButton {
 	display: block;
 	border-radius: 25px;
@@ -426,9 +365,7 @@ nav ul > li > h3:not(.active):hover {
 	transition: color;
 	color: #c3e2c2;
 }
-/*-------------------------------------*/
 /*----------------------CardInfo---------------*/
-
 .CardSlide {
 	width: 80%;
 	margin: -70px auto;
@@ -438,19 +375,14 @@ nav ul > li > h3:not(.active):hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 30px;
-
-	/* border: solid 3px red; */
 }
 .icon {
 	width: 30px;
 }
 .cardDescription {
 	display: flex;
-	/* width: 530px; */
 	width: 60%;
-	/* padding-bottom: 30px; */
 	margin: -50px auto;
-	/* border: solid 3px blue; */
 }
 .cardDescription > p {
 	margin-left: 20px;
@@ -463,8 +395,6 @@ nav ul > li > h3:not(.active):hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 20px;
-	/* text-align: center; */
-	/* border: solid 5px red; */
 }
 .companyContainer {
 	display: flex;
@@ -498,15 +428,14 @@ nav ul > li > h3:not(.active):hover {
 	width: 36%;
 	margin: 0px;
 }
-
 /*---------------Slider----------------------*/
 .sliderContainer {
-	margin-bottom: 120px;
+	margin: 0px auto 120px;
 	align-items: center;
 	display: flex;
 	justify-content: right;
 	position: relative;
-	width: 100%;
+	width: 80%;
 }
 .slide {
 	border-radius: 20px;
@@ -530,7 +459,6 @@ nav ul > li > h3:not(.active):hover {
 	text-align: center;
 	padding: 10px;
 	font-size: 32px;
-	/* border: solid 5px red; */
 }
 .slideProfile > img {
 	border: solid 5px #c3e2c2;
@@ -546,8 +474,6 @@ nav ul > li > h3:not(.active):hover {
 	padding: 40px 30px;
 	margin-bottom: 10px;
 	line-height: 1.7;
-
-	/* text-align: justify; */
 }
 .arrow {
 	position: absolute;
@@ -592,7 +518,6 @@ nav ul > li > h3:not(.active):hover {
 	width: 1rem;
 	cursor: pointer;
 }
-
 .left-arrowProfile {
 	left: 16px;
 	top: 25%;
@@ -607,38 +532,20 @@ nav ul > li > h3:not(.active):hover {
 	bottom: 16px;
 	top: 97%;
 }
-
-/*-------------------------------------*/
 /*----------------------contact---------------*/
-/* .contactFormContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border: solid 3px red;
-	gap: 20px;
-	width: 100%;
-	border: solid 2px red;
-} */
-
 .contactContainer {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
 	margin: auto;
-	/* align-items: flex-start; */
-	/* border: solid 2px red; */
 }
-
 .contactContainer > h2 {
-	/* border: solid 3px red; */
 	margin: 30px auto 0px;
 }
 .contactContainer > p {
 	line-height: 2;
-	/* padding: 20px 25px; */
 	font-size: 32px;
 	margin: 20px auto 50px;
-	/* border: solid 3px red; */
 }
 .contactBox {
 	background-color: #dbcc95;
@@ -668,7 +575,6 @@ nav ul > li > h3:not(.active):hover {
 	text-align: left;
 	margin: 30px auto 30px;
 }
-
 .contactForm {
 	font-size: 28px;
 	gap: 30px;
@@ -690,13 +596,8 @@ nav ul > li > h3:not(.active):hover {
 	gap: 30px;
 	display: flex;
 	flex-wrap: wrap;
-	/* align-content: center; */
-	/* align-items: center; */
 	justify-content: center;
-	/* flex-direction: column; */
-	/* padding-bottom: 20px; */
 	margin: 0px auto;
-	/* border: solid 4px red; */
 }
 
 .textBoxContactForm {
@@ -704,7 +605,6 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
-	/* border: solid 4px red; */
 }
 .allBoxContact {
 	border-radius: 20px;
@@ -723,14 +623,16 @@ nav ul > li > h3:not(.active):hover {
 	border: solid 2px #c3e2c2;
 }
 .writeMessage {
-	padding-left: 6%;
+	padding: 0px 0px 20px 40px;
 }
 .boxSize {
 	width: 430px;
 }
-
-/*-------------------------------------*/
-
+.selectOption {
+	font-size: 16px;
+	width: 50px !important;
+}
+/*---------------Extra----------------------*/
 .marginBottom {
 	margin-bottom: 50px;
 }
@@ -741,7 +643,7 @@ nav ul > li > h3:not(.active):hover {
 	margin: -100px auto 30px;
 }
 
-/*--------------Page Not Found--------------------                                                                                         ---*/
+/*-----------Page_Not_Found-------------------*/
 .pageNotFound {
 	width: 60%;
 	border-radius: 45%;
@@ -749,7 +651,6 @@ nav ul > li > h3:not(.active):hover {
 	display: flex;
 	margin: 0px auto;
 }
-
 /*------------responsive-------------------------*/
 
 @media screen and (max-width: 1024px) {
@@ -763,12 +664,13 @@ nav ul > li > h3:not(.active):hover {
 	nav ul {
 		margin-left: -20px;
 	}
-
 	nav ul > li > h3 {
 		font-size: 32px;
 		padding: 4px;
-
 		letter-spacing: -2px;
+	}
+	.sliderContainer {
+		width: 90%;
 	}
 	.mainTitle {
 		margin: -170px 0px 50px 0px;
@@ -823,24 +725,23 @@ nav ul > li > h3:not(.active):hover {
 		height: 350px;
 		margin: 0px auto 100px;
 	}
+	.forecastDate {
+		width: 180px;
+	}
 }
-
 @media screen and (max-width: 799px) {
-	/* medida do meu tablet */
 	.navBar {
 		padding: 8px 30px 8px 5px;
 	}
 	.headerMenuLogo {
 		margin-left: 0px;
 	}
-
 	.hamburguerMenu {
 		display: flex;
 		cursor: pointer;
 		position: relative;
 		right: -20px;
 	}
-
 	nav ul {
 		display: none;
 		flex-direction: column;
@@ -848,7 +749,7 @@ nav ul > li > h3:not(.active):hover {
 		background-color: #c3e2c2;
 		position: absolute;
 		right: 0px;
-		margin: 352px 5% 0px 0px;
+		margin: 335px 5% 0px 0px;
 		padding: 0px 20px 10px;
 		z-index: 1;
 		border-radius: 0px 0px 0px 50px;
@@ -859,6 +760,9 @@ nav ul > li > h3:not(.active):hover {
 		padding: 0px;
 		justify-content: right;
 		font-size: 32px;
+	}
+	.sliderContainer {
+		width: 100%;
 	}
 	.footerCard > h3,
 	.footerCard > a > h3 {
@@ -900,19 +804,13 @@ nav ul > li > h3:not(.active):hover {
 		height: 97%;
 		margin: 1px 0px 0px 4px;
 	}
-	/* .cardText > h3 {
-		margin-top: 30px;
-	} */
 	.experiencesTitle {
-		/* margin: 20px auto 240px; */
 		width: 80%;
 	}
-
 	.contactContainer > h2 {
 		font-size: 36px;
 		margin: 40px;
 	}
-
 	.companyContainer > p,
 	.companyContainer > p {
 		font-size: 28px;
@@ -928,7 +826,6 @@ nav ul > li > h3:not(.active):hover {
 	.contactInfo > p {
 		margin: 0px;
 	}
-
 	.countainerPageNF {
 		margin: -130px auto 30px;
 	}
@@ -937,7 +834,6 @@ nav ul > li > h3:not(.active):hover {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 640px) {
 	body {
 		margin: 0px 5%;
@@ -950,8 +846,8 @@ nav ul > li > h3:not(.active):hover {
 		height: 180%;
 	}
 	nav ul {
-		width: 45%;
-		margin: 323px 5% 0px 0px;
+		width: 70%;
+		margin: 300px 5% 0px 0px;
 	}
 	nav ul > li {
 		font-size: 28px;
@@ -964,7 +860,6 @@ nav ul > li > h3:not(.active):hover {
 		width: 250px;
 		border-radius: 20%;
 		margin: auto;
-		/* border: solid 5px red; */
 	}
 	.aboutUsContainer {
 		gap: 20px;
@@ -978,7 +873,6 @@ nav ul > li > h3:not(.active):hover {
 	.mainTitle > h3 {
 		font-size: 20px;
 	}
-
 	.secondTitle > h2,
 	.experiencesTitle > h2,
 	.cardInfoTitle > h2 {
@@ -988,7 +882,6 @@ nav ul > li > h3:not(.active):hover {
 	.experiencesTitle > p,
 	.cardInfoTitle > p {
 		font-size: 24px;
-		/* line-height: 1.2; */
 	}
 	.cardSlide {
 		width: 90%;
@@ -1000,7 +893,6 @@ nav ul > li > h3:not(.active):hover {
 	.cardDescription > p {
 		font-size: 28px;
 	}
-
 	.marginFifty {
 		margin-top: 30px;
 	}
@@ -1010,13 +902,11 @@ nav ul > li > h3:not(.active):hover {
 	.pageNotFound {
 		width: 80%;
 	}
-
 	.btnSendSize {
 		width: 200px !important;
 		height: 50px !important;
 		font-size: 20px;
 	}
-
 	.sendButton {
 		border: solid 3px #4a6660;
 	}
@@ -1037,7 +927,6 @@ nav ul > li > h3:not(.active):hover {
 	.allBoxContact {
 		width: 250px;
 		font-size: 20px;
-		/* border: solid 4px red; */
 	}
 	.contactForm,
 	.textBoxContactForm {
@@ -1049,7 +938,6 @@ nav ul > li > h3:not(.active):hover {
 	}
 	.infoContactForm {
 		margin: 0px auto;
-		/* border: solid 4px red; */
 	}
 	.button {
 		height: 40px !important;
@@ -1063,6 +951,7 @@ nav ul > li > h3:not(.active):hover {
 	.button > p {
 		font-size: 20px !important;
 		margin-bottom: 20px;
+		padding-top: 0px;
 	}
 	.marginBottom {
 		margin-bottom: 40px !important;
@@ -1075,7 +964,6 @@ nav ul > li > h3:not(.active):hover {
 	.contactInfo > p {
 		padding-top: 10px !important;
 	}
-
 	.numberContact {
 		font-size: 18px !important;
 	}
@@ -1089,35 +977,24 @@ nav ul > li > h3:not(.active):hover {
 	.right-arrow {
 		right: 10px;
 	}
-
 	.cardWeather {
 		margin-top: 30px;
 	}
 	.weatherContainer {
-		/* background-color: #4a6660dd; */
-		/* color: #f4f2de; */
 		width: 250px;
-		/* font-size: 24px; */
 		height: 250px;
-		/* border-radius: 50%; */
-		/* border: solid 5px #4a6660; */
-		/* border-radius: 27px 27px 0px 0px; */
 	}
 	.weatherContainer > h2 {
-		/* background-color: #4a6660; */
-		/* border-radius: 25px 25px 0px 0px; */
-		/* margin: 10px auto 0px; */
 		padding: 10px;
-		/* color: #f4f2de; */
 		font-size: 20px;
 	}
-
 	.weatherDate {
 		font-size: 20px;
-		/* padding: 15px;
-		color: #4a6660; */
+		padding: 8px;
 	}
-
+	.weatherDetails {
+		padding: 10px;
+	}
 	.mainTemp {
 		padding-top: 10px;
 		font-size: 20px;

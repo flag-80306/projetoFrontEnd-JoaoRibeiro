@@ -29,28 +29,6 @@ function BookNowView() {
 
 			<form onSubmit={handleSubmit} className='contactForm'>
 				<div className='infoContactForm'>
-					<div className='contactForm'>
-						<label htmlFor='startDate'>You will arrive in :</label>
-						<input type='date' id='startDate' name='startDate' className='allBoxContact' />
-					</div>
-					<div className='contactForm'>
-						<label htmlFor='endDate'>You will be around until :</label>
-						<input type='date' id='endDate' name='endDate' className='allBoxContact' />
-					</div>
-					<div className='infoContactForm'>
-						<label htmlFor='experiencesList'>Select your Experience: </label>
-						<select id='experiencesList' name='experiencesList' className='allBoxContact'>
-							<option value='Marão'>Marão</option>
-							<option value='Verde'>Verde</option>
-							<option value='Amarante'>Amarante</option>
-							<option value='Aboboreira'>Aboboreira</option>
-							<option value='Pastries'>Pastries</option>
-							<option value='Kayak'>Kayak</option>
-							<option value='Amadeo'>Amadeo</option>
-							<option value='Hiking'>Hiking</option>
-							<option value='Romanesque'>Romanesque</option>
-						</select>
-					</div>
 					<div className='infoContactForm'>
 						<div className='contactForm'>
 							<label htmlFor='name'>Name: </label>
@@ -66,6 +44,46 @@ function BookNowView() {
 							<label htmlFor='phoneNumber'>Phone: </label>
 							<input type='phoneNumber' id='phoneNumber' name='phoneNumber' placeholder='Phone Number' pattern='[0-9]*' className=' allBoxContact' required />
 						</div>
+					</div>
+					<div className='contactForm'>
+						<label htmlFor='startDate'>You will arrive in :</label>
+						<input type='date' id='startDate' name='startDate' className='allBoxContact' />
+					</div>
+					<div className='contactForm'>
+						<label htmlFor='endDate'>You will be around until :</label>
+						<input type='date' id='endDate' name='endDate' className='allBoxContact' />
+					</div>
+					<div className='infoContactForm'>
+						<label htmlFor='experiencesList'>Select your Experience: </label>
+						<select id='experiencesList' name='experiencesList' className='allBoxContact'>
+							<option value='Marão' className='selectOption'>
+								Marão
+							</option>
+							<option value='Verde' className='selectOption'>
+								Verde
+							</option>
+							<option value='Amarante' className='selectOption'>
+								Amarante
+							</option>
+							<option value='Aboboreira' className='selectOption'>
+								Aboboreira
+							</option>
+							<option value='Pastries' className='selectOption'>
+								Pastries
+							</option>
+							<option value='Kayak' className='selectOption'>
+								Kayak
+							</option>
+							<option value='Amadeo' className='selectOption'>
+								Amadeo
+							</option>
+							<option value='Hiking' className='selectOption'>
+								Hiking
+							</option>
+							<option value='Romanesque' className='selectOption'>
+								Romanesque
+							</option>
+						</select>
 					</div>
 					<div className='textBoxContactForm'>
 						<label htmlFor='message' className='writeMessage'>

@@ -15,7 +15,7 @@ function MapBoxExperiences() {
 			setMapBoxData(bestToursMapBox);
 		})();
 	}, []);
-	console.log(mapBoxData);
+	// console.log(mapBoxData);
 	// 	console.log(1);
 
 	const myToken = 'pk.eyJ1Ijoiam9hb3BmcmliZWlybyIsImEiOiJjbHI5eTdsdWowNmY1Mmp2eGU4YWNnbW14In0.JIDUWfe4UlB-bomQJGKZzQ';

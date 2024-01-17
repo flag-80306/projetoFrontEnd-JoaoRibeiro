@@ -10,8 +10,8 @@ function AboutUsView() {
 			const findProfile = result.aboutUs;
 
 			setProfileInfo(findProfile);
-			console.log('Estou aqui');
-			console.log(result);
+			// console.log('Estou aqui');
+			// console.log(result);
 		})();
 	}, []);
 

@@ -4,9 +4,9 @@ function TitleContainer() {
 	const [videoInfo, setVideoInfo] = useState('');
 
 	async function getVideoData() {
-		const response = await fetch('/mockAPI/mockAPIVideo.json');
+		const response = await fetch('/mockAPI/mockAPIInfo.json');
 		const result = await response.json();
-		setVideoInfo(result);
+		setVideoInfo(result.video);
 	}
 
 	useEffect(() => {
@@ -15,6 +15,7 @@ function TitleContainer() {
 
 	function renderVideo() {
 		if (videoInfo && videoInfo.video) {
+			//se videoInfo existe vamos avançar para videoInfo.video
 			return videoInfo.video; // Retorna o link do vídeo se existir
 		} else {
 			return '/video/AmaranteTours.mp4'; // Retorna um vídeo padrão se não houver informações do vídeo

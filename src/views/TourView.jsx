@@ -34,8 +34,8 @@ function TourView({ params }) {
 					const resultWeatherAPI = await responseWeatherAPI.json();
 
 					setWeatherInfo(resultWeatherAPI);
-					// console.log('weather');
-					// console.log(resultWeatherAPI);
+					console.log('weather');
+					console.log(resultWeatherAPI);
 
 					const forecastAPI = `https://api.openweathermap.org/data/2.5/forecast?&lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=20a33353c598f90c78dc5d9127b60779`;
 
@@ -44,12 +44,11 @@ function TourView({ params }) {
 					console.log('forecast');
 					console.log(resultForecastAPI);
 					//sempre no horário das 12h
-					const forecastResult = [resultForecastAPI.list[11], resultForecastAPI.list[19], resultForecastAPI.list[27], resultForecastAPI.list[35], resultForecastAPI.list[39]];
-					// a hora da previsão do estado do tempo está para as 12h.
+					const forecastResult = [resultForecastAPI.list[7], resultForecastAPI.list[15], resultForecastAPI.list[23], resultForecastAPI.list[32], resultForecastAPI.list[39]];
+					// a hora da previsão do estado do tempo está para as 9h dos próximos 5 dias mas penso que a cada 3h é atualizada.
 					setForecastInfo(forecastResult);
-					// console.log('resultForecast');
-					// console.log(forecastResult);
-					// console.log(forecastInfo);
+					console.log('resultForecast');
+					console.log(forecastResult);
 					break;
 				}
 			}
