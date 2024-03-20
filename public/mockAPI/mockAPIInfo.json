@@ -279,7 +279,7 @@
 		{
 			"id": 1,
 			"name": "João Pedro",
-			"photoSRC": "/img/aboutUs/Joao.png",
+			"photoSRC": "/img/aboutUS/Joao.png",
 			"photoALT": "João Pedro picture",
 			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I left Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences.",
 			"city": "Amarante",
@@ -288,7 +288,7 @@
 		{
 			"id": 2,
 			"name": "Liliana Pereira",
-			"photoSRC": "/img/aboutUs/Liliana.png",
+			"photoSRC": "/img/aboutUS/Liliana.png",
 			"photoALT": "Liliana picture",
 			"description": "My lifelong passion for adventurous activities, rooted in childhood and carried through university, led me from sports like football to pursuits in nature such as hiking and kayaking. After completing my academic journey, I took on a new challenge, leaving Portugal to work on a cruise ship. This experience broadened my horizons, allowing me to travel extensively and enhance my skills. I became a flow rider monitor (surf simulator) and trained as an indoor skydiving instructor (indoor skydiving tunnel). Upon returning to Portugal, I co-founded Inside Experiences with Liliana Pereira.",
 			"city": "Amarante",

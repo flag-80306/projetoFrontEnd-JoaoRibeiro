@@ -28,7 +28,7 @@ function TourView({ params }) {
 					const { lat, lon } = findInfo[i];
 					// isto é o mesmo que usar o --> const lat = findInfo[i].lat; e o --> const lon = findInfo[i].lon;
 
-					const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=20a33353c598f90c78dc5d9127b60779`;
+					const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=${import.meta.env.VITE_MY_API_KEY}`;
 
 					const responseWeatherAPI = await fetch(weatherAPI);
 					const resultWeatherAPI = await responseWeatherAPI.json();
@@ -37,7 +37,7 @@ function TourView({ params }) {
 					console.log('weather');
 					console.log(resultWeatherAPI);
 
-					const forecastAPI = `https://api.openweathermap.org/data/2.5/forecast?&lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=20a33353c598f90c78dc5d9127b60779`;
+					const forecastAPI = `https://api.openweathermap.org/data/2.5/forecast?&lat=${lat}&lon=${lon}&exclude=current&units=metric&appid=${import.meta.env.VITE_MY_API_KEY}`;
 
 					const responseForecastAPI = await fetch(forecastAPI);
 					const resultForecastAPI = await responseForecastAPI.json();
