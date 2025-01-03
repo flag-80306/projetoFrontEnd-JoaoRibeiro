@@ -8,8 +8,6 @@ import MapBoxTour from '../components/MapBoxTour.jsx';
 import { Link } from 'wouter';
 
 function TourView({ params }) {
-	// console.log(params);
-	// console.log(params.tour);
 	const [tourDetails, setTourDetails] = useState({});
 	const [weatherInfo, setWeatherInfo] = useState({});
 	const [forecastInfo, setForecastInfo] = useState([]);

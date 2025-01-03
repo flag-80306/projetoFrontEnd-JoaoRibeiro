@@ -18,7 +18,7 @@ function MapBoxHome() {
 	// console.log(mapBoxData);
 	// 	console.log(1);
 
-	const myToken = 'pk.eyJ1Ijoiam9hb3BmcmliZWlybyIsImEiOiJjbHI5eTdsdWowNmY1Mmp2eGU4YWNnbW14In0.JIDUWfe4UlB-bomQJGKZzQ';
+	const myToken = 'pk.eyJ1Ijoiam9hb3BmcmliZWlybyIsImEiOiJjbHJkbGh3OGQwaWpzMmlvM3hiM2x6YzU0In0.J_yeYuSbciQDxsuWNsOOdA';
 
 	function handleClick(info) {
 		window.location.href = '/TourView/' + info.nameID;
